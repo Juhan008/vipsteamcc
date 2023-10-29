@@ -1,5 +1,5 @@
-# Java4FirstProject
-자바4기 첫번째 프로젝트 입니다.
+# develop
+개발용 브랜치입니다.
 
-## 적용 코딩 컨벤션
-eclipse-java-google-style
+## 커밋메세지 규칙
+상의 후 결정
