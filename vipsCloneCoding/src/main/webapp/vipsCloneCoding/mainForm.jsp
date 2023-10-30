@@ -11,7 +11,14 @@
 	<div id="wrapAll">
 		<div id="wrapper">
 			<div id="wrap">
-				<div id="header"></div>
+				<div id="header">
+					<h1>
+						<a href="">
+							<img src="../images/templet/vipsImage1.png" alt="빕스 my no.1 steakhouse steak & salad bar">
+						</a>
+					</h1>
+					
+				</div>
 				<div id="container">					
 					<div id="content-wrap"></div>
 					<hr>
