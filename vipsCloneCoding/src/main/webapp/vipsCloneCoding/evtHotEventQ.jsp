@@ -13,7 +13,7 @@
 			<div id="wrap">
 				<div><jsp:include page="header.jsp"></jsp:include></div>
 				<div id="container">
-					<div id="sidebar"></div>
+					<div><jsp:include page="sidebar.jsp"></jsp:include></div>
 					<div id="content-wrap"></div>
 				</div>
 			</div>
