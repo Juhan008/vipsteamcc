@@ -48,6 +48,12 @@
 				<img src="../images/intro/about-us.png" alt="회사소개" class="about-us-noline" />
 				<img src="../images/intro/sitemap.png" alt="사이트맵" class="about-us" />
 				<img src="../images/intro/terms-of-use.png" alt="이용약관" class="about-us" />
+				<img src="../images/intro/location-terms-of-use.png" alt="위치기반서비스 이용약관" class="about-us" />
+				<img src="../images/intro/privacy.png" alt="개인정보처리방침" class="about-us" />
+				<img src="../images/intro/email-reject.png" alt="이메일 무단수집거부" class="about-us" />
+				<img src="../images/intro/legal.png" alt="법적고지" class="about-us" />
+				<img src="../images/intro/report-center.png" alt="윤리신고센터" class="about-us" />
+					<img src="../images/intro/address.png" alt="주소" class="address" />
 			</div>
 		</div>
 
