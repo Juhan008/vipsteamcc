@@ -6,14 +6,14 @@
 }
 
 #wrapAll {
-	background: url(../images/main/bg_body.gif) no-repeat center top;
+	background: url(../images/templet/backImage1.gif) no-repeat center top;
 	position: relative;
 }
 
 #wrapper {
 	margin: 0 auto;
     width: 1032px;
-    background: url(../images/main/bg_allwrap.gif) no-repeat left top;
+    background: url(../images/templet/wrapperImage1.gif) no-repeat left top;
     position: relative;
 }
 
@@ -31,11 +31,18 @@
     box-sizing: border-box;
     z-index: 3;
     width: 1000px;
-    background: url(../images/main/gnb-bg_full.png) no-repeat left top;
+    background: url(../images/templet/headerImage1.png) no-repeat left top;
+}
+
+#header h1 {
+    position: absolute;
+    left: 436px;
+    top: 32px;
+    z-index: 2;
 }
 
 #container {
-	background: #f0ebdd url(../images/main/bg_contents.gif) repeat-y;
+	background: #f0ebdd url(../images/templet/bg-mainContents1.gif) repeat-y;
 	top: 151px;
     position: relative;
     z-index: 1;
@@ -59,7 +66,7 @@
 	position: relative;
     float: left;
     width: 785px;
-    background: url(../images/main/bg_contents_top.gif) no-repeat;
+    background: url(../images/templet/bg-rightContents.gif) no-repeat;
 }
 
 #content-wrap .path {
@@ -128,7 +135,7 @@ hr {
 
 #footer {
     padding-top: 70px;
-    background: url(/images/common/bg_contents_bottom.gif) no-repeat;
+    background: url(../images/templet/bg-bottomContents1.gif) no-repeat;
     position: relative;
     top: 134px;
 }
