@@ -6,8 +6,7 @@
 }
 
 #root {
-
-	background: #060403;
+	/*background: #060403;*/
 }
 
 .main-img {
@@ -20,7 +19,6 @@
 }
 
 .VIPS-logo {
-	position: absolute;
 	left: 321px;
 	top: 49px;
 }
