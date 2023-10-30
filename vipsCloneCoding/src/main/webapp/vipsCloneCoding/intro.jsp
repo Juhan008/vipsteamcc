@@ -45,8 +45,9 @@
 
 		<div class="footer">
 			<div class="footer-padding-box">
-				<img src="../images/intro/about-us.png" alt="회사소개" class="about-us" />
-				<img src="../images/intro/sitemap.png" alt="사이트맵" class="sitemap" />
+				<img src="../images/intro/about-us.png" alt="회사소개" class="about-us-noline" />
+				<img src="../images/intro/sitemap.png" alt="사이트맵" class="about-us" />
+				<img src="../images/intro/terms-of-use.png" alt="이용약관" class="about-us" />
 			</div>
 		</div>
 
