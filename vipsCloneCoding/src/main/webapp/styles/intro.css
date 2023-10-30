@@ -35,6 +35,21 @@
 	position: absolute;
 	left: 471px;
 	top: 400px;
+	animation: button-animation 3s infinite;
+}
+
+@keyframes button-animation {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 .homepage-button {
@@ -76,4 +91,10 @@
 	display: inline-block;
 	padding: 0 6px 0 12px;
 	background: url(../images/intro/line.png) no-repeat 0 1px;
+}
+
+.address {
+	position: relative;
+	left: 56px;
+	top: 29px;
 }
