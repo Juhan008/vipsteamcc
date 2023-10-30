@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#header-bg{
+	background:url('../images/header/gnb-bg_full.png') no-repeat left top;
+	position:absolute;
+	box-sizing:border-box;
+	height: 151px;
+	width: 1000px;
+}
