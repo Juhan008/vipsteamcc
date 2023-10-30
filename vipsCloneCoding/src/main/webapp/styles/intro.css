@@ -19,6 +19,7 @@
 }
 
 .VIPS-logo {
+	position: relative;
 	left: 321px;
 	top: 49px;
 }
