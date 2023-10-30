@@ -12,7 +12,10 @@
 		<div id="vips-bg">
 			<div id="wrap">
 				<div><jsp:include page="header.jsp"></jsp:include></div>
-			<div id="container"></div>
+				<div id="container">
+					<div id="sidebar"></div>
+					<div id="content-wrap"></div>
+				</div>
 			</div>
 		</div>
 	</div>

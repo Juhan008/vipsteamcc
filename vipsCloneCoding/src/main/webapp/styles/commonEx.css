@@ -24,6 +24,10 @@ body{margin:0%;}
 	top: 151px;
 	position: relative;
 	z-index: 1;
-	width: 1000px;
-	height: 1000px;
+}
+#content-wrap{
+	background: url('/images/common/bg_contents_top.gif') no-repeat;
+	position:relative;
+	float:left;
+	width: 785px;
 }
