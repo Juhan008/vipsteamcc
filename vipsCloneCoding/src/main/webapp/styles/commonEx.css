@@ -8,7 +8,9 @@ body{margin:0%;}
 
 #vips-bg {
 	background: url('../images/common/bg_body.gif') no-repeat center top;
+	height: 1000px;
 	position: relative;
+	
 }
 
 #wrap {
@@ -20,14 +22,16 @@ body{margin:0%;}
 }
 
 #container {
-	background: #f0ebdd url('/images/common/bg_contents.gif') repeat-y;
+	background: #f0ebdd url('../images/common/bg_contents.gif') repeat-y;
 	top: 151px;
 	position: relative;
 	z-index: 1;
 }
+
 #content-wrap{
-	background: url('/images/common/bg_contents_top.gif') no-repeat;
 	position:relative;
 	float:left;
-	width: 785px;
+	width: 783px;
+	height: 500px;
+	background: url('../images/common/bg_contents_top.gif') no-repeat;
 }
