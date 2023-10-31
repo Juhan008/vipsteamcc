@@ -17,9 +17,9 @@
 							<img src="../images/templet/vipsImage1.png" alt="빕스 my no.1 steakhouse steak & salad bar">
 						</a>
 					</h1>
-					
+					<div class="test">실험용</div>
 				</div>
-				<div id="container">					
+				<div id="container">				
 					<div id="content-wrap"></div>
 					<hr>
 					<div id="footer"></div>
