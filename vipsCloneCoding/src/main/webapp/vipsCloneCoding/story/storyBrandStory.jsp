@@ -30,7 +30,26 @@
 					</div>
 				</div>
 
-				<div class="info-area"></div>
+				<div class="info-area">
+					<div class="path">
+						<span>
+							<img src="../../images/story/storyBrandStory/homeIcon.png"
+								alt="홈으로" />
+							Home
+
+						</span>
+						<span>
+							<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								alt="화살표" />
+							VIPS STORY
+						</span>
+						<span>
+							<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								alt="화살표" />
+							<strong> 브랜드 스토리</strong>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<jsp:include page="../template/templateFooterFirst.jsp"></jsp:include>

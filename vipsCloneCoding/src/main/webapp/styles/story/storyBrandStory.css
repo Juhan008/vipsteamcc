@@ -14,11 +14,11 @@
 
 .padding-box {
 	height: 100%;
-	/*background-color: rgba(0, 255, 0, 0.5);*/
 	padding: 151px 0px 0px 0px;
 	position: relative;
 	width: 1017px;
 	margin: auto;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
 .wrap {
@@ -26,12 +26,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url('../../images/story/storyBrandStory/backgroundInfo.gif');
+	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
 .side-menu-area {
 	width: 215px;
 	background-image: url('../../images/story/storyBrandStory/sidemenuBackground.gif');
 	background-repeat: no-repeat;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
 .side-button-area {
@@ -46,5 +48,17 @@
 
 
 .info-area {
-	width: 50%;
+	width: 78.5%;
+	background-image: url('../../images/story/storyBrandStory/infoBackground.gif');
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.path {
+	margin: 39px 0px 0px 0px;
+	font-size: 11px;
+	color: #765a3a;
+}
+
+.path img{
+	margin: 0px 3px 0px 2px;
 }
