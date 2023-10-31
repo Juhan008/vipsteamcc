@@ -18,8 +18,7 @@ body {
 	background-position: top;
 }
 
-#template-root {
-}
+#template-root {}
 
 .template-padding-box {
 	width: 100%;
@@ -165,6 +164,7 @@ body {
 
 .template-foot-menu {
 	background-image: url('../../images/main/foot-menu-background.gif');
+	background-repeat: no-repeat;
 }
 
 .template-foot-menu-icon-area {
