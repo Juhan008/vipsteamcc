@@ -35,11 +35,14 @@
 						</div>
 
 						<div class="move-menu-area" onmouseleave="close_hidden_menu()">
-							<div class="move-menu-button" onmouseover="open_hidden_menu()">VIPS STORY</div>
-
+							<a href="story/storyBrandStory.jsp">
+								<div class="move-menu-button" onmouseover="open_hidden_menu()">VIPS
+									STORY</div>
+							</a>
 							<div class="move-menu-button" onmouseover="open_hidden_menu()">STEAK</div>
 
-							<div class="move-menu-button" onmouseover="open_hidden_menu()">SALAD BAR</div>
+							<div class="move-menu-button" onmouseover="open_hidden_menu()">SALAD
+								BAR</div>
 
 							<div class="move-menu-button" onmouseover="open_hidden_menu()">STORE</div>
 
@@ -51,7 +54,9 @@
 
 							<div class="hidden-move-area" id="hidden-move-area">
 								<div class="hidden-move-button">
-									<div>브랜드 스토리</div>
+									<a href="story/storyBrandStory.jsp">
+										<div>브랜드 스토리</div>
+									</a>
 									<br>
 									<div>새소식</div>
 								</div>

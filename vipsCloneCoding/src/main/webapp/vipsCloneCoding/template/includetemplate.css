@@ -122,6 +122,7 @@ body {
 	font-size: 14px;
 	color: white;
 	text-align: center;
+	z-index: 5;
 }
 
 .template-hidden-move-button {
