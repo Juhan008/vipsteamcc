@@ -1,8 +1,54 @@
 @charset "UTF-8";
-#header-bg{
-	background:url('../images/header/gnb-bg_full.png') no-repeat left top;
-	position:absolute;
-	box-sizing:border-box;
-	height: 151px;
+
+
+.top-head {
+	position: relative;
+	background-image: url('../images/main/top-main-bar.png');
 	width: 1000px;
+	height: 151px;
+	margin: auto;
 }
+
+.english-button-area {
+	position: absolute;
+	left: 46px;
+	top: 34px;
+}
+
+.english-button {
+	padding: 3px 24px;
+	box-sizing: border-box;
+	border: 2px solid #634f3e;
+	border-radius: 13px;
+	font-size: 12px;
+	color: #9c806b;
+	background: url('../images/main/english-right-button.png') no-repeat right 13px top 8px;
+}
+
+.VIPS-logo-area {
+	position: absolute;
+	left: 436px;
+	top: 32px;
+}
+
+.head-menu-area {
+	position: absolute;
+	right: 50px;
+	top: 45px;
+	font-size: 12px;
+	color: #9c806b;
+}
+
+.head-menu {
+	float: left;
+	padding-right: 11px;
+	background: url('../images/main/head-vertical-line.png') no-repeat right 3px;
+	margin-right: 8px;
+}
+
+.head-menu-finish {
+	float: left;
+}
+
+
+

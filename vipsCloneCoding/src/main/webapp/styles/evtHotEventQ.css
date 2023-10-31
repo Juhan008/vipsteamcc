@@ -1,9 +1,30 @@
 @charset "UTF-8";
-
-.sidebar{
-	background:url('../images/event/bg_lnb.gif') no-repeat;
-	float:left;
-	width:215px;
-	min-height: 375px;
-	line-height:0;
+#container{
+height: 100%;
+}
+#content-wrap .event-visual {
+    background: url(../images/event/bg_visual.png) no-repeat right top;
+    font-size: 38px;
+    color: #3a2b1f;
+    font-weight: bold;
+}
+#content-wrap .visual-sub h4{
+position: absolute;
+    top: 80px;
+    font-size: 38px;
+    color: #3a2b1f;
+    font-weight: bold;
+}
+img {
+    vertical-align: top;
+    border: 0 none;
+}
+#content-wrap .visual-sub p {
+    position: absolute;
+    top: 138px;
+}
+.event-list {
+    padding-top: 4px;
+    background: url() no-repeat;
+    background: url(../images/event/line.png) no-repeat;
 }
