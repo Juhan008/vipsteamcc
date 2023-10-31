@@ -16,7 +16,7 @@
 					<div class="template-foot">
 						<div class="template-foot-site">
 							<div class="template-foot-site-icon-area">
-								<img src="/main/webapp/images/main/foot-cj-icon.gif" alt="cj"
+								<img src="../../images/main/foot-cj-icon.gif" alt="cj"
 									class="template-foot-site-icon" />
 								<img src="../../images/main/foot-touslesjours-icon.gif"
 									alt="뚜레주르" class="template-foot-site-icon" />
