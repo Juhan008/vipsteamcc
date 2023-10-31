@@ -19,9 +19,6 @@ body {
 }
 
 #root {
-	background-image: url('../../images/main/background-logo.gif');
-	background-repeat: no-repeat;
-	background-position: center top;
 }
 
 .padding-box {
