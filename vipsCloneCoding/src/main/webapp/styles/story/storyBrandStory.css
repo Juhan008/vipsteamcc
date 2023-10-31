@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#root {
+	background-image: url('../images/main/background-logo.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.padding{
+	width: 100%;
+	height: 100%;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+	padding: 0px 0px 0px 0px;
+	position: relative;
+}
