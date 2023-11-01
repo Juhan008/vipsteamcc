@@ -4,9 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>My No.1 스테이크하우스 빕스 - VIPS</title>
-<link rel='stylesheet'
-	href='../../styles/premiumSteak/premiumSteak.css' />
+<title>빕스 돌잔치 소개 | 돌잔치 - VIPS</title>
+<link rel='stylesheet' href='../../styles/store/storeFirstBirthdayQ.css' />
 </head>
 <body>
 
@@ -18,14 +17,13 @@
 				<div class="wrap">
 
 					<div class="side-menu-area">
-						<img src="../../images/premiumSteak/sideSteak.gif"
-							alt="스테이크" class="VIPSSTORY" />
+						<img src="../../images/store/sideSTORE.gif" alt="스토어"
+							class="VIPSSTORY" />
 
 						<div class="side-button-area">
-							<a href="./premiumSteak.jsp">
-								<img
-									src="../../images/premiumSteak/premiumSteakSideButton.gif"
-									alt="프리미엄 스테이크" class="VIPS-story" />
+							<a href="./storeFirstBirthdayQ.jsp">
+								<img src="../../images/store/firstBirthdayParty.gif" alt="돌잔치"
+									class="VIPS-story" />
 							</a>
 						</div>
 					</div>
@@ -40,25 +38,34 @@
 								</a>
 							</span>
 							<span>
-								<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
+								<a href="./storeFirstBirthdayQ.jsp">
 									<img src="../../images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									STEAK
+									STORE
 								</a>
 							</span>
 							<span>
 								<img src="../../images/story/storyBrandStory/arrowIcon.png"
 									alt="화살표" />
-								<strong> Premium Steak</strong>
+								<strong> 돌잔치</strong>
 							</span>
 						</div>
-						
-						<div class="preminum-steak-info">
-						<img src="../../images/premiumSteak/premiumSteakInfo.jpg"
-									alt="스테이크 소개" />
+
+						<div class="info-area-title">
+
+							<img src="../../images/store/happyBirthday1stParty.png"
+								alt="생일축하" />
+							<img src="../../images/store/firstBirthdayMessage.png" alt="생일축하"
+								class="firstBirthdayMessage" />
+
+							<img src="../../images/store/infoTitleBackground.png"
+								class="infoTitleBackground">
+
 						</div>
-						
-						
+
+
+						<!-- 여기서부턴 db -->
+						<div>예약관련 내용이 들어갈곳</div>
 					</div>
 				</div>
 			</div>

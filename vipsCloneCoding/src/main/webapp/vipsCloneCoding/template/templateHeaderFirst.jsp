@@ -50,8 +50,11 @@
 							<div class="template-move-menu-button"
 								onmouseover="open_hidden_menu()">SALAD BAR</div>
 
-							<div class="template-move-menu-button"
-								onmouseover="open_hidden_menu()">STORE</div>
+							<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+								<div class="template-move-menu-button"
+									onmouseover="open_hidden_menu()">STORE</div>
+							</a>
+
 
 							<div class="template-move-menu-button"
 								onmouseover="open_hidden_menu()">EVENT</div>
@@ -96,9 +99,9 @@
 									</div>
 								</div>
 								<div class="template-hidden-move-button">
-									<div>매장안내</div>
-									<br>
-									<div>돌잔치</div>
+									<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+										<div>돌잔치</div>
+									</a>
 								</div>
 								<div class="template-hidden-move-button">HOT 이벤트</div>
 								<div class="template-hidden-move-button">

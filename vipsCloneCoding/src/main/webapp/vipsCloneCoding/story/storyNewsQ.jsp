@@ -8,15 +8,11 @@
 <link rel='stylesheet' href='../../styles/story/storyNewsQ.css' />
 </head>
 <body>
-
-
 	<div id="root">
 		<div class="background-shadow">
 			<jsp:include page="../template/templateHeaderFirst.jsp"></jsp:include>
 			<div class="padding-box">
-
 				<div class="wrap">
-
 					<div class="side-menu-area">
 						<img src="../../images/story/storyBrandStory/VIPS_STORY.gif"
 							alt="VIPS" class="VIPSSTORY" />
