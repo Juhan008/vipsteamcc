@@ -42,7 +42,7 @@
 									onmouseover="open_hidden_menu()">VIPS STORY</div>
 							</a>
 
-							<a href="/vipsCloneCoding/steak/preminumSteak.jsp">
+							<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">STEAK</div>
 							</a>
@@ -77,7 +77,7 @@
 									</a>
 								</div>
 
-								<a href="/vipsCloneCoding/steak/preminumSteak.jsp">
+								<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
 									<div class="template-hidden-move-button">Premium Steak</div>
 								</a>
 
