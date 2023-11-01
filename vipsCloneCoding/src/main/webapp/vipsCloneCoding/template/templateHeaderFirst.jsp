@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>위 템플릿</title>
-<script src='../template/templatejs.js'></script>
+<script src='/vipsCloneCoding/template/templatejs.js'></script>
 <link rel='stylesheet' href='/vipsCloneCoding/template/includetemplate.css' />
 </head>
 <body>
@@ -37,7 +37,7 @@
 
 						<div class="template-move-menu-area"
 							onmouseleave="close_hidden_menu()">
-							<a href="../story/storyBrandStory.jsp">
+							<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">VIPS STORY</div>
 							</a>
