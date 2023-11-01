@@ -11,7 +11,7 @@
 	<div id="lnb">
 		<h3>
 			<a href="">
-				<img src="../images/salad/saladbar/SALAD BAR.gif" alt="SALAD BAR">
+				<img src="../images/templet/SaladBarIg1.gif" alt="SALAD BAR">
 			</a>
 		</h3>
 		<ul>
