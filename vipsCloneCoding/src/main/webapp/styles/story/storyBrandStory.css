@@ -12,9 +12,17 @@
 	background-position: center top;
 }
 
+
+.background-shadow {
+	background-image: url('../../images/story/storyBrandStory/backgroundShadow.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
 .padding-box {
 	height: 100%;
-	padding: 151px 0px 0px 0px;
+	padding: 151px 0px 0px 8px;
 	position: relative;
 	width: 1017px;
 	margin: auto;
