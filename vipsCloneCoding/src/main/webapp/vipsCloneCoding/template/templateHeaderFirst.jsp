@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>위 템플릿</title>
 <script src='../template/templatejs.js'></script>
-<link rel='stylesheet' href='../template/includetemplate.css' />
+<link rel='stylesheet' href='/vipsCloneCoding/template/includetemplate.css' />
 </head>
 <body>
 
@@ -22,8 +22,8 @@
 
 						<div class="template-VIPS-logo-area">
 							<div class="template-VIPS-logo">
-								<a href="../intro.jsp">
-									<img src="../../images/main/VIPS.png" alt="VIPS"
+								<a href="/vipsCloneCoding/intro.jsp">
+									<img src="/images/main/VIPS.png" alt="VIPS"
 										class="template-VIPS-logo" />
 								</a>
 							</div>
@@ -62,7 +62,7 @@
 							<div class="template-hidden-move-area"
 								id="template-hidden-move-area">
 								<div class="template-hidden-move-button">
-									<a href="../story/storyBrandStory.jsp">
+									<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
 										<div>브랜드 스토리</div>
 									</a>
 									<br>
