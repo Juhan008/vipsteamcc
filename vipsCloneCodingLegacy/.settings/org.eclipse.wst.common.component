@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     	
+<<<<<<< HEAD
     <wb-module deploy-name="vipsCloneCoding-1.0.0-BUILD-SNAPSHOT">
+=======
+    <wb-module deploy-name="vipsCloneCodingLegacy">
+>>>>>>> branch 'develop' of https://github.com/mabiTLM/Java4FirstProject.git
                 
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         		
@@ -10,8 +14,11 @@
         		
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
+<<<<<<< HEAD
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-test-sources/test-annotations"/>
+=======
+>>>>>>> branch 'develop' of https://github.com/mabiTLM/Java4FirstProject.git
         		
         <property name="java-output-path" value="target/classes"/>
                 
