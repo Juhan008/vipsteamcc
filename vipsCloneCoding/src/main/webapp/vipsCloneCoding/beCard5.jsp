@@ -16,7 +16,7 @@
 					<div class="wrapall">
 						<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
 						<div class="header"><jsp:include
-								page="/vipsCloneCoding/header.jsp"></jsp:include>
+								page="../vipsCloneCoding/header.jsp"></jsp:include>
 						</div>
 						<div id="container" class="clfix">
 							<div id="lnb">
@@ -68,13 +68,29 @@
 										<li><a href="beCard5.jsp"><h5>
 													<img src="../images/benefit/beCard/tab_beCard5_on.gif"
 														alt="청구서차감">
-												</h5></a></li>
+												</h5></a><ul class="bill clfix">
+										<li><img src="../images/benefit/beCard/img_billbank01.png" alt="비씨카드"></li>
+										<li><img src="/images/benefit/beCard/img_billbank02.png" alt="광주은행"></li>									
+										<li><img src="/images/benefit/beCard/img_billbank03.png" alt="제주은행"></li>
+										<li><img src="/images/benefit/beCard/img_billbank04.png" alt="하나카드"></li>
+										<li class="last"><img src="/images/benefit/beCard/img_billbank05.png" alt="우리카드"></li>
+										<li><img src="/images/benefit/beCard/img_billbank06.png" alt="기업은행"></li>
+										<li><img src="/images/benefit/beCard/img_billbank07.png" alt="NH카드"></li>
+										<li><img src="/images/benefit/beCard/img_billbank08.png" alt="신한카드"></li>
+										<li><img src="/images/benefit/beCard/img_billbank09.png" alt="KB국민카드"></li>
+										<li class="last"><img src="/images/benefit/beCard/img_billbank10.png" alt="씨티은행"></li>
+										<li><img src="/images/benefit/beCard/img_billbank11.png" alt="현대카드"></li>
+										<li><img src="/images/benefit/beCard/img_billbank12.png" alt="삼성카드"></li>
+										<li></li>
+										<li></li>
+										<li class="last"></li>
+									</ul></li>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="footer"></div>
-					<jsp:include page="/vipsCloneCoding/bottomt.jsp"></jsp:include>
+					<jsp:include page="../vipsCloneCoding/bottomt.jsp"></jsp:include>
 				</div>
 			</div>
 		</div>

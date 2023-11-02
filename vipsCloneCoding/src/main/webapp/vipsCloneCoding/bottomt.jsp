@@ -44,9 +44,7 @@
 					src="../images/main/foot-ethics.png" alt="윤리신고센터"
 					class="foot-menu-icon" />
 			</div>
-
 			<div class="foot-text-area">
-
 				<img src="../images/main/foot-text-address.png" alt="주소"
 					class="foot-text" /> <img
 					src="../images/main/foot-text-representative.png" alt="대표이사"
