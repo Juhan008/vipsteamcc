@@ -51,22 +51,16 @@ public class HomeController {
     return "vipsCloneCoding/story/storyBrandStory";
   }
 
-  @RequestMapping(value = "/story/storyNewsQ", method = RequestMethod.GET)
-  public String storyNewsQ(Locale locale, Model model) {
+  @RequestMapping(value = "/steak/premiumSteak", method = RequestMethod.GET)
+  public String premiumSteak(Locale locale, Model model) {
 
-    return "vipsCloneCoding/story/storyNewsQ";
+    return "vipsCloneCoding/steak/premiumSteak";
   }
 
-   @RequestMapping(value = "/steak/premiumSteak", method = RequestMethod.GET)
-   public String premiumSteak(Locale locale, Model model) {
-  
-   return "vipsCloneCoding/steak/premiumSteak";
-   }
-   
-   @RequestMapping(value = "/store/storeFirstBirthdayQ", method = RequestMethod.GET)
-   public String storeFirstBirthdayQ(Locale locale, Model model) {
-  
-   return "vipsCloneCoding/store/storeFirstBirthdayQ";
-   }
+  @RequestMapping(value = "/store/storeFirstBirthdayQ", method = RequestMethod.GET)
+  public String storeFirstBirthdayQ(Locale locale, Model model) {
+
+    return "vipsCloneCoding/store/storeFirstBirthdayQ";
+  }
 
 }

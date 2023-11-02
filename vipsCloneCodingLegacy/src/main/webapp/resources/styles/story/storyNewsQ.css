@@ -104,3 +104,8 @@
 .table-total {
 	font-size: 12px;
 }
+
+.table-text-area{
+	display: flex;
+	flex-wrap: wrap;
+}
