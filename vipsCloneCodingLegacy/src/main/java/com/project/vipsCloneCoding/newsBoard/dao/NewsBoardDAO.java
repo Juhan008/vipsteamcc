@@ -2,7 +2,6 @@ package com.project.vipsCloneCoding.newsBoard.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -27,7 +26,6 @@ public class NewsBoardDAO {
     jdbcTemplate.update("drop table newsboard");
   }
 
-  @Test
   public void createNewsBoardTable() throws Exception {
     jdbcTemplate.update("create table newsboard(id number(10,0) generated as identity primary key, "
         + "user_id varchar2(20) not null, " + "title varchar2(200) not null, "
