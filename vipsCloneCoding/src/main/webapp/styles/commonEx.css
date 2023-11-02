@@ -5,15 +5,55 @@
 	margin: 0;
 }
 
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+.clfix:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+#container {
+	height: 100%;
+}
+
 body {
 	background-image: url('../images/main/background.gif');
 	background-repeat: repeat-y;
 	background-position: top;
 	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, AppleGothic, sans-serif;
-    font-size: 12px;
+	font-size: 12px;
 }
 
 #root {}
+
+.header {
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+}
 
 .padding-box {
 	width: 100%;
@@ -34,12 +74,6 @@ body {
 	width: 1032px;
 	background: url('/images/common/bg_allwrap.gif') no-repeat left top;
 }
-#content-wrap .visual-sub {
-    height: 247px;
-    font-size: 0;
-    line-height: 0;
-    position: relative;
-}
 
 
 
@@ -50,6 +84,10 @@ body {
 
 #container {
 	background: #f0ebdd url(../images/common/bg_contents.gif) repeat-y;
+	top: 151px;
+	position: relative;
+	z-index: 1;
+	margin: auto;
 }
 
 #lnb {
@@ -77,28 +115,41 @@ li {
 	width: 785px;
 	background: url(../images/event/bg_contents_top.gif) no-repeat;
 }
+
 #content-wrap .path {
-    position: absolute;
-    left: 0;
-    top: 40px;
-    height: 14px;
-    vertical-align: bottom;
-    line-height: 1.1;
-    z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	height: 14px;
+	vertical-align: bottom;
+	line-height: 1.1;
+	z-index: 1;
 }
+
 #content-wrap .path a.home {
-    background: url(../images/event/ico_home.png) no-repeat left top;
-    padding-left: 23px;
+	background: url(../images/event/ico_home.png) no-repeat left top;
+	padding-left: 23px;
 }
-#content-wrap .path a, .path strong {
-    display: inline;
-    color: #765a3a;
-    font-size: 11px;
-    margin-right: 7px;
-    padding-left: 11px;
-    background: url(/images/ico/ico_arr.png) no-repeat left 4px;
+
+#content-wrap .path a,
+.path strong {
+	display: inline;
+	color: #765a3a;
+	font-size: 11px;
+	margin-right: 7px;
+	padding-left: 11px;
+	background: url(../images/event/ico_arr.png) no-repeat left 4px;
 }
-a:visited, a:focus, a:link, a:active {
-    text-decoration: none;
-    color: #555;
+
+a:visited,
+a:focus,
+a:link,
+a:active {
+	text-decoration: none;
+	color: #555;
+}
+
+.footer {
+	margin: 151px 0 0 0;
+
 }

@@ -12,9 +12,17 @@
 	background-position: center top;
 }
 
+
+.background-shadow {
+	background-image: url('../../images/story/storyBrandStory/backgroundShadow.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
 .padding-box {
 	height: 100%;
-	padding: 151px 0px 0px 0px;
+	padding: 151px 0px 0px 8px;
 	position: relative;
 	width: 1017px;
 	margin: auto;
@@ -22,6 +30,8 @@
 }
 
 .wrap {
+	position: relative;
+	left: 1px;
 	width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
@@ -50,6 +60,7 @@
 .info-area {
 	width: 78.5%;
 	background-image: url('../../images/story/storyBrandStory/infoBackground.gif');
+	background-repeat: no-repeat;
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -59,6 +70,64 @@
 	color: #765a3a;
 }
 
-.path img{
+.path img {
 	margin: 0px 3px 0px 2px;
+}
+
+.big-title {
+	position: relative;
+	height: 90px;
+}
+
+.big-title h4 {
+	position: absolute;
+	top: 19px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+.big-title img {
+	position: relative;
+	left: 385px;
+	top: -55px;
+}
+
+.contents {
+	position: relative;
+	top: -29px;
+}
+
+.contents-title-first {
+	font-family: 'Nanum Gothic', serif;
+	padding-top: 30px;
+	font-size: 18px;
+	color: #3a2b1f;
+	font-weight: 700;
+}
+
+.contents-title {
+	border-top: 1px solid #d0c4b2;
+	font-family: 'Nanum Gothic', serif;
+	padding-top: 30px;
+	font-size: 18px;
+	color: #3a2b1f;
+	font-weight: 700;
+}
+
+.contents-inner {
+	font-family: 'Nanum Gothic', serif;
+	padding: 15px 0 30px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #555555;
+	font-weight: 400;
+}
+
+.contents img-area {}
+
+.img-area img {
+	width: 243px;
+	height: 170px;
+
 }

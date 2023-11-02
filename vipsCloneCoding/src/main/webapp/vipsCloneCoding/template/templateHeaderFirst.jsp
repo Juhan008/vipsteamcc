@@ -4,10 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>위 템플릿</title>
 <script src='/vipsCloneCoding/template/templatejs.js'></script>
-<link rel='stylesheet' href='/vipsCloneCoding/template/includetemplate.css' />
+<link rel='stylesheet'
+	href='/vipsCloneCoding/template/includetemplate.css' />
 </head>
 <body>
 
@@ -37,18 +36,25 @@
 
 						<div class="template-move-menu-area"
 							onmouseleave="close_hidden_menu()">
+
 							<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">VIPS STORY</div>
 							</a>
-							<div class="template-move-menu-button"
-								onmouseover="open_hidden_menu()">STEAK</div>
+
+							<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
+								<div class="template-move-menu-button"
+									onmouseover="open_hidden_menu()">STEAK</div>
+							</a>
 
 							<div class="template-move-menu-button"
 								onmouseover="open_hidden_menu()">SALAD BAR</div>
 
-							<div class="template-move-menu-button"
-								onmouseover="open_hidden_menu()">STORE</div>
+							<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+								<div class="template-move-menu-button"
+									onmouseover="open_hidden_menu()">STORE</div>
+							</a>
+
 
 							<div class="template-move-menu-button"
 								onmouseover="open_hidden_menu()">EVENT</div>
@@ -66,10 +72,15 @@
 										<div>브랜드 스토리</div>
 									</a>
 									<br>
-									<div>새소식</div>
+									<a href="/vipsCloneCoding/story/storyNewsQ.jsp">
+										<div>새소식</div>
+									</a>
 								</div>
 
-								<div class="template-hidden-move-button">Premium Steak</div>
+								<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
+									<div class="template-hidden-move-button">Premium Steak</div>
+								</a>
+
 								<div class="template-hidden-move-button">
 									<div>Salad Bar</div>
 									<br>
@@ -88,9 +99,9 @@
 									</div>
 								</div>
 								<div class="template-hidden-move-button">
-									<div>매장안내</div>
-									<br>
-									<div>돌잔치</div>
+									<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+										<div>돌잔치</div>
+									</a>
 								</div>
 								<div class="template-hidden-move-button">HOT 이벤트</div>
 								<div class="template-hidden-move-button">
