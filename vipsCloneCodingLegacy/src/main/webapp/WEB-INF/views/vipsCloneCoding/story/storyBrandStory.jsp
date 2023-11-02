@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>about VIPS | 브랜드 스토리 - VIPS</title>
-<link rel='stylesheet' href='../../styles/story/storyBrandStory.css' />
+<link rel='stylesheet' href='/resources/styles/story/storyBrandStory.css' />
 </head>
 <body>
 	<div id="root">
@@ -14,17 +14,17 @@
 			<div class="padding-box">
 				<div class="wrap">
 					<div class="side-menu-area">
-						<img src="../../images/story/storyBrandStory/VIPS_STORY.gif"
+						<img src="/resources/images/story/storyBrandStory/VIPS_STORY.gif"
 							alt="VIPS" class="VIPSSTORY" />
 
 						<div class="side-button-area">
-							<a href="./storyBrandStory.jsp">
+							<a href="./storyBrandStory">
 								<img
-									src="../../images/story/storyBrandStory/brandStorySideButton.gif"
+									src="/resources/images/story/storyBrandStory/brandStorySideButton.gif"
 									alt="VIPS" class="VIPS-story" />
 							</a>
-							<a href="./storyNewsQ.jsp">
-								<img src="../../images/story/storyBrandStory/storyNewButton.gif"
+							<a href="./storyNewsQ">
+								<img src="/resources/images/story/storyBrandStory/storyNewButton.gif"
 									alt="새소식" class="new-story" />
 							</a>
 						</div>
@@ -33,21 +33,21 @@
 					<div class="info-area">
 						<div class="path">
 							<span>
-								<a href="/vipsCloneCoding/intro.jsp">
-									<img src="../../images/story/storyBrandStory/homeIcon.png"
+								<a href="/intro">
+									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
 										alt="홈으로" />
 									Home
 								</a>
 							</span>
 							<span>
-								<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
-									<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								<a href="/story/storyBrandStory">
+									<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
 									VIPS STORY
 								</a>
 							</span>
 							<span>
-								<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
 									alt="화살표" />
 								<strong> 브랜드 스토리</strong>
 							</span>
@@ -56,7 +56,7 @@
 						<div class="big-title">
 							<h4>VIPS</h4>
 							<img
-								src="../../images/story/storyBrandStory/bigTitleBackground.png"
+								src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
 								alt="타이틀그림" />
 						</div>
 
@@ -108,11 +108,11 @@
 
 							<div class="img-area">
 
-								<img src="../../images/story/storyBrandStory/vips-place01.png"
+								<img src="/resources/images/story/storyBrandStory/vips-place01.png"
 									alt="스테이크" />
-								<img src="../../images/story/storyBrandStory/vips-place02.png"
+								<img src="/resources/images/story/storyBrandStory/vips-place02.png"
 									alt="스테이크" />
-								<img src="../../images/story/storyBrandStory/vips-place03.png"
+								<img src="/resources/images/story/storyBrandStory/vips-place03.png"
 									alt="스테이크" />
 
 							</div>

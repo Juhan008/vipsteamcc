@@ -13,7 +13,7 @@ a {
 }
 
 body {
-	background-image: url('../../images/main/background.gif');
+	background-image: url('/resources/images/main/background.gif');
 	background-repeat: repeat-y;
 	background-position: top;
 }
@@ -36,7 +36,7 @@ body {
 
 .template-top-head {
 	position: absolute;
-	background-image: url('../../images/main/top-main-bar.png');
+	background-image: url('/resources/images/main/top-main-bar.png');
 	width: 1000px;
 	height: 151px;
 	z-index: 3;
@@ -55,7 +55,7 @@ body {
 	border-radius: 13px;
 	font-size: 12px;
 	color: #9c806b;
-	background: url('../../images/main/english-right-button.png') no-repeat right 13px top 8px;
+	background: url('/resources/images/main/english-right-button.png') no-repeat right 13px top 8px;
 }
 
 .template-VIPS-logo-area {
@@ -75,7 +75,7 @@ body {
 .template-head-menu {
 	float: left;
 	padding-right: 11px;
-	background: url('../../images/main/head-vertical-line.png') no-repeat right 3px;
+	background: url('/resources/images/main/head-vertical-line.png') no-repeat right 3px;
 	margin-right: 8px;
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 .template-foot-site {
-	background-image: url('../../images/main/foot-site-background.gif');
+	background-image: url('/resources/images/main/foot-site-background.gif');
 }
 
 .template-foot-site-icon-area {
@@ -163,7 +163,7 @@ body {
 
 
 .template-foot-menu {
-	background-image: url('../../images/main/foot-menu-background.gif');
+	background-image: url('/resources/images/main/foot-menu-background.gif');
 	background-repeat: no-repeat;
 }
 
@@ -173,7 +173,7 @@ body {
 
 .template-foot-menu-icon {
 	padding: 11px 11px 1px 5px;
-	background: url('../../images/main/foot-menu-vertical.gif') no-repeat right 12px;
+	background: url('/resources/images/main/foot-menu-vertical.gif') no-repeat right 12px;
 }
 
 .template-foot-text-area {
@@ -184,7 +184,7 @@ body {
 
 .template-foot-text {
 	padding: 0px 6px 1px 0px;
-	background: url('../../images/main/foot-menu-vertical.gif') no-repeat right 0px;
+	background: url('/resources/images/main/foot-menu-vertical.gif') no-repeat right 0px;
 }
 
 .template-foot-text-finish {

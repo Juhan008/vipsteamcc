@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>My No.1 스테이크하우스 빕스 - VIPS</title>
 <link rel='stylesheet'
-	href='../../styles/premiumSteak/premiumSteak.css' />
+	href='/resources/styles/premiumSteak/premiumSteak.css' />
 </head>
 <body>
 
@@ -18,13 +18,13 @@
 				<div class="wrap">
 
 					<div class="side-menu-area">
-						<img src="../../images/premiumSteak/sideSteak.gif"
+						<img src="/resources/images/premiumSteak/sideSteak.gif"
 							alt="스테이크" class="VIPSSTORY" />
 
 						<div class="side-button-area">
-							<a href="./premiumSteak.jsp">
+							<a href="./premiumSteak">
 								<img
-									src="../../images/premiumSteak/premiumSteakSideButton.gif"
+									src="/resources/images/premiumSteak/premiumSteakSideButton.gif"
 									alt="프리미엄 스테이크" class="VIPS-story" />
 							</a>
 						</div>
@@ -33,28 +33,28 @@
 					<div class="info-area">
 						<div class="path">
 							<span>
-								<a href="/vipsCloneCoding/intro.jsp">
-									<img src="../../images/story/storyBrandStory/homeIcon.png"
+								<a href="/intro">
+									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
 										alt="홈으로" />
 									Home
 								</a>
 							</span>
 							<span>
-								<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
-									<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								<a href="./premiumSteak">
+									<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
 									STEAK
 								</a>
 							</span>
 							<span>
-								<img src="../../images/story/storyBrandStory/arrowIcon.png"
+								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
 									alt="화살표" />
 								<strong> Premium Steak</strong>
 							</span>
 						</div>
 						
 						<div class="preminum-steak-info">
-						<img src="../../images/premiumSteak/premiumSteakInfo.jpg"
+						<img src="/resources/images/premiumSteak/premiumSteakInfo.jpg"
 									alt="스테이크 소개" />
 						</div>
 						

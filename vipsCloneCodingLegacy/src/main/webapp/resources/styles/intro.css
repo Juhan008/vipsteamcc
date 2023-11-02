@@ -12,7 +12,7 @@
 .main-img {
 	position: relative;
 	left: -8.6px;
-	background-image: url('../images/intro/background_intro.png');
+	background-image: url('/resources/images/intro/background_intro.png');
 	width: 1920px;
 	height: 1085px;
 	background-repeat: no-repeat;
@@ -89,7 +89,7 @@
 	top: 10px;
 	display: inline-block;
 	padding: 0 6px 0 12px;
-	background: url(../images/intro/line.png) no-repeat 0 1px;
+	background: url(/resources/images/intro/line.png) no-repeat 0 1px;
 }
 
 .address {

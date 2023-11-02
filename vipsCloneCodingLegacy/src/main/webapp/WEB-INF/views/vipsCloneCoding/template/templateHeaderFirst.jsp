@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src='/resources/template/templatejs.js'></script>
+<script src='/resources/scripts/templatejs.js'></script>
 <link rel='stylesheet'
-	href='/resources/template/includetemplate.css' />
+	href='/resources/styles/template/includetemplate.css' />
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 
 						<div class="template-VIPS-logo-area">
 							<div class="template-VIPS-logo">
-								<a href="intro">
+								<a href="/intro">
 									<img src="/resources/images/main/VIPS.png" alt="VIPS"
 										class="template-VIPS-logo" />
 								</a>
@@ -37,12 +37,12 @@
 						<div class="template-move-menu-area"
 							onmouseleave="close_hidden_menu()">
 
-							<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
+							<a href="/story/storyBrandStory">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">VIPS STORY</div>
 							</a>
 
-							<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
+							<a href="/steak/premiumSteak">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">STEAK</div>
 							</a>
@@ -50,7 +50,7 @@
 							<div class="template-move-menu-button"
 								onmouseover="open_hidden_menu()">SALAD BAR</div>
 
-							<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+							<a href="/store/storeFirstBirthdayQ">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">STORE</div>
 							</a>
@@ -68,16 +68,16 @@
 							<div class="template-hidden-move-area"
 								id="template-hidden-move-area">
 								<div class="template-hidden-move-button">
-									<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
+									<a href="/story/storyBrandStory">
 										<div>브랜드 스토리</div>
 									</a>
 									<br>
-									<a href="/vipsCloneCoding/story/storyNewsQ.jsp">
+									<a href="/story/storyNewsQ">
 										<div>새소식</div>
 									</a>
 								</div>
 
-								<a href="/vipsCloneCoding/steak/premiumSteak.jsp">
+								<a href="/steak/premiumSteak">
 									<div class="template-hidden-move-button">Premium Steak</div>
 								</a>
 
@@ -99,7 +99,7 @@
 									</div>
 								</div>
 								<div class="template-hidden-move-button">
-									<a href="/vipsCloneCoding/store/storeFirstBirthdayQ.jsp">
+									<a href="/store/storeFirstBirthdayQ">
 										<div>돌잔치</div>
 									</a>
 								</div>
@@ -117,7 +117,6 @@
 									<div>빕스 매니아</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
