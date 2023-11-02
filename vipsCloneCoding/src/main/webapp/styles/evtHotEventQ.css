@@ -1,39 +1,5 @@
 @charset "UTF-8";
 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-p,
-button,
-input {
-	margin: 0;
-	padding: 0;
-}
-
-.clfix:after {
-	content: ".";
-	display: block;
-	height: 0px;
-	clear: both;
-	visibility: hidden;
-}
-
-#container {
-	height: 100%;
-}
 
 #content-wrap .event-visual {
 	background: url(../images/event/bg_visual.png) no-repeat right top;
@@ -41,7 +7,12 @@ input {
 	color: #3a2b1f;
 	font-weight: bold;
 }
-
+#content-wrap .visual-sub {
+	height: 247px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+}
 #content-wrap .visual-sub h4 {
 	position: absolute;
 	top: 80px;
