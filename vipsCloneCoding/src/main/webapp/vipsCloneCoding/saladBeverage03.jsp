@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>픽업&딜리버리</title>
-<link rel='stylesheet' href='../styles/togomenu.css' />
+<title>Beverage | Beers</title>
+<link rel='stylesheet' href='../styles/beverage03.css' />
 </head>
 <body>
 	<div class="root">
@@ -27,12 +27,12 @@
 							</li>
 							<li>
 								<a href="saladBeverage01.jsp">
-									<img src="../images/templet/templet_barList03_02.gif">
+									<img src="../images/templet_beverage/templet_beverage_mainBeverage.gif">
 								</a>
 							</li>
 							<li>
 								<a href="">
-									<img src="../images/templet_togomenu/픽업&딜리버리.gif">
+									<img src="../images/templet/templet_barList03_03.gif">
 								</a>
 							</li>
 							<li>
@@ -70,14 +70,14 @@
 							</div>
 							<div class="contentText">
 								<div class="text01">								
-									<img src="../images/templet_togomenu/픽업&딜리버리 메뉴.png">
+									<img src="../images/templet_beverage/text01.png">
 								</div>
 								<div class="text02">
-									<img src="../images/templet_togomenu/text02.png">
+									<img src="../images/templet_beverage/text02.png">
 								</div>
 							</div>
 							<div class="contentImage">
-								<img src="../images/templet_togomenu/bg_visual08.png">
+								<img src="../images/templet_salad/templet_salad_bgmain.png">
 							</div>
 							<div class="sns-Link">
 								<a href="">
@@ -89,23 +89,26 @@
 							<ul class="content03-menus">
 								<li>
 									<a href="saladBeverage01.jsp">
-										<img src="../images/templet_togomenu/빕스 얌 딜리버리.gif">
+										<img src="../images/templet_beverage/Special Drinks (1).gif">
 									</a>
 								</li>
 								<li>
 									<a href="saladBeverage02.jsp">
-										<img src="../images/templet_togomenu/빕스 레스토랑 간편식.gif">
+										<img src="../images/templet_beverage/Wine.gif">
+									</a>
+								</li>
+								<li>
+									<a href="saladBeverage03.jsp">
+										<img src="../images/templet_beverage/Beers (1).gif">
 									</a>
 								</li>								
 							</ul>
 							<hr class="line">
 							<div class="mainContent01">
 								<div class="menu01">
-									<img src="../images/templet_beverage/자몽 에이드.jpeg">
+									<img src="../images/templet_beverage/생맥주.jpeg">
 								</div>
-								<div class="menu01">
-									<img src="../images/templet_beverage/애플 망고 에이드.jpeg">
-								</div>
+								
 							</div>
 						</div>
 						<div class="caution">
