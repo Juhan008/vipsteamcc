@@ -34,7 +34,7 @@
 	background: url(../images/templet/bg-mainContents1.gif);
 	position: relative;
 	top: 151px;
-	height: 738px;
+	height: 1246px;
 }
 
 .sidebar02 {
@@ -114,7 +114,7 @@
 
 .contentFinish img {
 	position: absolute;
-    top: 819px;
+    top: 1328px;
 }
 
 .footerLocation {
@@ -123,96 +123,18 @@
     right: 8px;
 }
 
-.text01 {
-	position: absolute;
-	top: 77px;
-}
-
-.text02 {
-	position: absolute;
-	top: 135px;
-}
-
-.contentImage {
-	position: absolute;
-	left: 457px;
-    top: 34px;
-}
-
-.sns-Link {
-	position: absolute;
-	top: 265px;
-    left: 2px;
-}
-
-.content-bottom02 {
-	width: 751px;
-	min-height: 175px;
-	margin-top: 28px;
-}
-
-.content03-menus {
-	list-style: none;
-	position: relative;
-}
-
-.content03-menus li {	
-    float: left;  
-}
-
-.line {
-	position: absolute;
-    width: 751px;
-    top: 329px;
-    border: 1.5px solid #815523;
-}
 
 
-.mainContent01 {
-	height: 164px;
-    border-bottom: 1px solid #aa9781;
-    border-top: 1px solid #aa9781;
-    position: relative;
-    top: 34px;
-}
 
-.menu01 {
-	float: left;
-	position: relative;
-    bottom: 15px;
-    left: 10px;
-}
 
-.caution {
-	position: relative;
-	background: url(../images/templet/bg-caution1.png);
-	width: 750px;
-    height: 110px;
-    margin-top: 51px;
-    padding: 20px;
-    z-index: 2;
-}
 
-.cautionList {
-	width: 707px;
-    height: 117px;
-}
 
-.listImage {
-	float: left;
-    margin-left: 5.5px;
-}
 
-.listImage img {
-	margin-bottom: 3px;
-}
 
-.listText {
-	font-size: 12px;
-    margin-left: 7px;
-    margin-top: 4px;
-    color: #555;
-    float: left;
-    width: 682px;
-    line-height: 1.6;
-}
+
+
+
+
+
+
+
