@@ -135,20 +135,20 @@
 
 .contentImage {
 	position: absolute;
-	left: 457px;
-    top: 34px;
+	left: 385px;
+    bottom: -6px;
 }
 
 .sns-Link {
 	position: absolute;
-	top: 265px;
+	top: 224px;
     left: 2px;
 }
 
 .content-bottom02 {
 	width: 751px;
 	min-height: 175px;
-	margin-top: 28px;
+	margin-top: 20px;
 }
 
 .content03-menus {
@@ -163,7 +163,7 @@
 .line {
 	position: absolute;
     width: 751px;
-    top: 329px;
+    top: 321px;
     border: 1.5px solid #815523;
 }
 
