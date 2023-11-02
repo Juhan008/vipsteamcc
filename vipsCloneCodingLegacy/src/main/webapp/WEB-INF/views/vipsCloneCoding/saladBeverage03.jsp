@@ -4,9 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>SALAD BAR SALAD</title>
-<link rel='stylesheet' href='../styles/common02.css' />
-<link rel='stylesheet' href='../styles/saladbar.css' />
+<title>Beverage | Beers</title>
+<link rel='stylesheet' href='../styles/beverage03.css' />
 </head>
 <body>
 	<div class="root">
@@ -23,12 +22,12 @@
 						<ul class="sidebarList">
 							<li>
 								<a href="saladbar.jsp">
-									<img src="../images/templet/templet_mainBarList03_01.gif">
+									<img src="../images/templet/templet_barList03_01.gif">
 								</a>
 							</li>
 							<li>
 								<a href="saladBeverage01.jsp">
-									<img src="../images/templet/templet_barList03_02.gif">
+									<img src="../images/templet_beverage/templet_beverage_mainBeverage.gif">
 								</a>
 							</li>
 							<li>
@@ -71,10 +70,10 @@
 							</div>
 							<div class="contentText">
 								<div class="text01">								
-									<img src="../images/templet_salad/templet_salad_contentText01.png">
+									<img src="../images/templet_beverage/text01.png">
 								</div>
 								<div class="text02">
-									<img src="../images/templet_salad/templet_salad_contentText02.png">
+									<img src="../images/templet_beverage/text02.png">
 								</div>
 							</div>
 							<div class="contentImage">
@@ -87,35 +86,30 @@
 							</div>
 						</div>
 						<div class="content-bottom02">
-							<ul class="content02-menus">
+							<ul class="content03-menus">
 								<li>
-									<img src="../images/templet_salad/templet_salad_menu01.jpeg">
+									<a href="saladBeverage01.jsp">
+										<img src="../images/templet_beverage/Special Drinks (1).gif">
+									</a>
 								</li>
 								<li>
-									<img src="../images/templet_salad/templet_salad_menu02.jpeg">
+									<a href="saladBeverage02.jsp">
+										<img src="../images/templet_beverage/Wine.gif">
+									</a>
 								</li>
 								<li>
-									<img src="../images/templet_salad/templet_salad_menu03.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu04.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu05.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu06.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu07.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu08.jpeg">
-								</li>
-								<li>
-									<img src="../images/templet_salad/templet_salad_menu09.jpeg">
-								</li>
+									<a href="saladBeverage03.jsp">
+										<img src="../images/templet_beverage/Beers (1).gif">
+									</a>
+								</li>								
 							</ul>
+							<hr class="line">
+							<div class="mainContent01">
+								<div class="menu01">
+									<img src="../images/templet_beverage/생맥주.jpeg">
+								</div>
+								
+							</div>
 						</div>
 						<div class="caution">
 							<div class="lookList">
@@ -126,27 +120,14 @@
 									<img src="../images/templet/listStyle1.png">
 								</div>
 								<div class="listText">
-									상기 메뉴는 VIPS TASTE UP PLUS와 PREMIER 기준입니다.
+									모든 메뉴 가격은 부가세 포함된 가격입니다.
 								</div>
 								<div class="listImage">
 									<img src="../images/templet/listStyle1.png">
 								</div>
 								<div class="listText">
-									상기 이미지는 실제와 다를 수 있습니다.
-								</div>
-								<div class="listImage">
-									<img src="../images/templet/listStyle1.png">
-								</div>
-								<div class="listText">
-									매장별 메뉴는 다를 수 있으며, 최상의 샐러드 바를 위하여 삭제 또는 메뉴는 변경될 수 있습니다.
-								</div>
-								<div class="listImage">
-									<img src="../images/templet/listStyle1.png">
-								</div>
-								<div class="listText">
-									평일 런치와 평일디너/주말/공휴일에 제공되는 메뉴는 다를 수 있습니다.
-								</div>
-								
+									만 19세 미만의 청소년에게는 주류판매가 불가능합니다.
+								</div>															
 							</div>
 						</div>
 					</div>

@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>HOT 이벤트 - VIPS</title>
-<script src='/scripts/main.js'></script>
 <link rel='stylesheet' href='../styles/commonEx.css' />
 <link rel='stylesheet' href='../styles/evtHotEventQ.css' />
 </head>
@@ -19,7 +18,8 @@
 
 					<div class="wrapall">
 						<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
-						<div class="header"><jsp:include page="/vipsCloneCoding/header.jsp"></jsp:include>
+						<div class="header"><jsp:include
+								page="/vipsCloneCoding/header.jsp"></jsp:include>
 						</div>
 						<div id="container" class="clfix">
 							<div id="lnb">
@@ -176,9 +176,9 @@
 					</div>
 					<div class="footer"></div>
 					<jsp:include page="/vipsCloneCoding/bottomt.jsp"></jsp:include>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</body>
 </html>

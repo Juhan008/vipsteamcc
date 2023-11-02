@@ -11,38 +11,38 @@
 	<div id="lnb">
 		<h3>
 			<a href="">
-				<img src="../images/templet/SaladBarIg1.gif" alt="SALAD BAR">
+				<img src="../images/templet/templet_SaladBarIg.gif" alt="SALAD_BAR">
 			</a>
 		</h3>
 		<ul>
 			<li class="active">
 				<a href="">
-					<img src="../images/salad/saladbar/Salad bar (1).gif" alt="Salad bar">
+					<img src="../images/templet/templet_barList03_01.gif" alt="Salad_bar">
 				</a>				
 			</li>
 			<li>
 				<a href="">
-					<img src="../images/salad/saladbar/Beverage.gif" alt="Beverage">
+					<img src="../images/templet/templet_barList03_02.gif" alt="Beverage">
 				</a>
 			</li>
 			<li>
 				<a href="">
-					<img src="../images/salad/saladbar/픽업&딜리버리.gif" alt="픽업&딜리버리">
+					<img src="../images/templet/templet_barList03_03.gif" alt="픽업&딜리버리">
 				</a>
 			</li>
 			<li>
 				<a href="">
-					<img src="../images/salad/saladbar/원산지 정보.gif" alt="원산지 정보">
+					<img src="../images/templet/templet_barList03_04.gif" alt="원산지정보">
 				</a>
 			</li>
 			<li>
 				<a href="">
-					<img src="../images/salad/saladbar/알레르기 정보.gif" alt="알레르기 정보">
+					<img src="../images/templet/templet_barList03_05.gif" alt="알레르기정보">
 				</a>
 			</li>
 			<li>
 				<a href="">
-					<img src="../images/salad/saladbar/알레르기 정보(딜리버리).gif" alt="알레르기 정보(딜리버리)">
+					<img src="../images/templet/templet_barList03_06.gif" alt="알레르기정보(딜리버리)">
 				</a>
 			</li>
 		</ul>
