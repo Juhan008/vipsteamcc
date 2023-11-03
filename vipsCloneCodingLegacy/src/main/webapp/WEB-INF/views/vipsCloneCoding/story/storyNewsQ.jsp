@@ -76,10 +76,14 @@
 							<div class="table-total">
 								<img src="/resources/images/story/storyNewsQ/tableTotalIcon.png"
 									alt="" class="" />
-								전체건수 -
-
-
-								<div>
+								전체건수 - ${newsBoardService.tableFinish()}건
+								<div class="search-area">
+									<form class="search">
+										<input type="text" />
+										<button>검색</button>
+									</form>
+								</div>
+								<div class="table-list-area">
 									<c:forEach var="i" begin="0" end="9">
 										<c:if
 											test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
