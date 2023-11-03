@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>10~30% 할인 | 제휴/할인카드 - VIPS</title>
 <link rel='stylesheet' href='/resources/styles/commonEx.css' />
-<link rel='stylesheet' href='/resources/styles/becard.css' />
+<link rel='stylesheet' href='/resources/styles/msmaniaq.css' />
 </head>
 <body>
 	<div id="root">
@@ -21,19 +21,16 @@
 						<div id="container" class="clfix">
 							<div id="lnb">
 								<h3>
-									<img src="/resources/images/benefit/beCard/BENEFIT.gif"
-										alt="BENEFIT">
+									<img src="../images/benefit/beCard/BENEFIT.gif" alt="BENEFIT">
 								</h3>
 								<ul style="min-height: 1000px;">
-									<li class="active"><a href="beCard"><img
-											src="/resources/images/benefit/beCard/affiliatediscountcard.gif"
+									<li class="active"><a href="beCard.jsp"><img
+											src="../images/benefit/beCard/affiliatediscountcard.gif"
 											alt="제휴할인"></a></li>
 									<li class="active"><a href="beGiftCard"><img
-											src="/resources/images/benefit/beCard/beGiftCard.gif"
-											alt="상품권"></a></li>
-									<li class="active"><a href="giftCard"><img
-											src="/resources/images/benefit/beCard/GiftCard.gif"
-											alt="기프트카드"></a></li>
+											src="../images/benefit/beCard/beGiftCard.gif" alt="상품권"></a></li>
+									<li class="active"><a href="giftCard.jsp"><img
+											src="../images/benefit/beCard/GiftCard.gif" alt="기프트카드"></a></li>
 								</ul>
 							</div>
 							<div id="content-wrap" class="clfix">
@@ -43,27 +40,24 @@
 								</div>
 								<div class="visual-sub benefit-visual">
 									<h4>
-										<img
-											src="/resources/images/benefit/beCard/discountcard_top.png"
+										<img src="../images/benefit/beCard/discountcard_top.png"
 											alt="제휴할인카드">
 									</h4>
 									<p>
-										<img
-											src="/resources/images/benefit/beCard/beCard_top_text.png">
+										<img src="../images/benefit/beCard/beCard_top_text.png">
 									</p>
 								</div>
 								<div id="content">
 									<ul class="discount-tab clfix" style="height: 1500px">
-										<li><a href="beCard">
+										<li><a href="beCard.jsp">
 												<h5>
-													<img
-														src="/resources/images/benefit/beCard/tab_beCard1_on.gif"
+													<img src="../images/benefit/beCard/tab_beCard1_on.gif"
 														alt="10~30% 할인">
 												</h5>
 										</a>
 											<div class="contents-box">
 												<h6 class="benefit01">
-													<img src="/resources/images/benefit/beCard/CJ_ONE.png">
+													<img src="../images/benefit/beCard/CJ_ONE.png">
 												</h6>
 												<table class="benefit01-tbl" border="1">
 													<colgroup>
@@ -74,17 +68,17 @@
 													<thead>
 														<tr class="last">
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/card-kind.gif"></th>
+																src="../images/benefit/beCard/card-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-kind.gif"></th>
+																src="../images/benefit/beCard/dis-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-scale.gif"></th>
+																src="../images/benefit/beCard/dis-scale.gif"></th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<th scope="row"><img
-																src="/resources/images/benefit/beCard/img_card02.png">
+																src="../images/benefit/beCard/img_card02.png">
 																<p class="mt10">CJ ONE 삼성카드</p></th>
 															<td class="mid-txt line">최대30%할인<br>+1%적립<br>
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
@@ -108,8 +102,7 @@
 													</tbody>
 												</table>
 												<h6 class="benefit01">
-													<img
-														src="/resources/images/benefit/beCard/discount2025.png">
+													<img src="../images/benefit/beCard/discount2025.png">
 												</h6>
 												<table class="benefit01-tbl" border="1">
 													<colgroup>
@@ -120,17 +113,17 @@
 													<thead>
 														<tr class="last">
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/card-kind.gif"></th>
+																src="../images/benefit/beCard/card-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-kind.gif"></th>
+																src="../images/benefit/beCard/dis-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-scale.gif"></th>
+																src="../images/benefit/beCard/dis-scale.gif"></th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<th scope="row"><img
-																src="/resources/images/benefit/beCard/img_card02.png">
+																src="../images/benefit/beCard/img_card02.png">
 																<p class="mt10">CJ ONE 삼성카드</p></th>
 															<td class="mid-txt line">최대25%할인<br>+1%적립<br>
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
@@ -154,8 +147,7 @@
 													</tbody>
 												</table>
 												<h6 class="benefit01">
-													<img
-														src="/resources/images/benefit/beCard/discount1015.png">
+													<img src="../images/benefit/beCard/discount1015.png">
 												</h6>
 												<table class="benefit01-tbl" border="1">
 													<colgroup>
@@ -166,17 +158,17 @@
 													<thead>
 														<tr class="last">
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/card-kind.gif"></th>
+																src="../images/benefit/beCard/card-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-kind.gif"></th>
+																src="../images/benefit/beCard/dis-kind.gif"></th>
 															<th scope="col"><img
-																src="/resources/images/benefit/beCard/dis-scale.gif"></th>
+																src="../images/benefit/beCard/dis-scale.gif"></th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<th scope="row"><img
-																src="/resources/images/benefit/beCard/img_card02.png">
+																src="../images/benefit/beCard/img_card02.png">
 																<p class="mt10">CJ ONE 삼성카드</p></th>
 															<td class="mid-txt line">최대15%할인<br>+1%적립<br>
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
@@ -201,7 +193,8 @@
 												</table>
 												<dl class="caution">
 													<dt>
-														<img src="/resources/images/benefit/beCard/tit_look.png">
+														<img src="../images/benefit/beCard/tit_look.png"
+															>
 													</dt>
 													<dd>
 														<ul class="contents-txt">
@@ -224,20 +217,20 @@
 													</dd>
 												</dl>
 											</div></li>
-										<li><a href="beCard2"><h5>
-													<img src="/resources/images/benefit/beCard/tab_beCard2.gif"
+										<li><a href="beCard2.jsp"><h5>
+													<img src="../images/benefit/beCard/tab_beCard2.gif"
 														alt="매장별제휴할인">
 												</h5></a></li>
-										<li><a href="beCard3"><h5>
-													<img src="/resources/images/benefit/beCard/tab_beCard3.gif"
+										<li><a href="beCard3.jsp"><h5>
+													<img src="../images/benefit/beCard/tab_beCard3.gif"
 														alt="통신사할인">
 												</h5></a></li>
-										<li><a href="beCard4"><h5>
-													<img src="/resources/images/benefit/beCard/tab_beCard4.gif"
+										<li><a href="beCard4.jsp"><h5>
+													<img src="../images/benefit/beCard/tab_beCard4.gif"
 														alt="포인트결제">
 												</h5></a></li>
-										<li><a href="beCard5"><h5>
-													<img src="/resources/images/benefit/beCard/tab_beCard5.gif"
+										<li><a href="beCard5.jsp"><h5>
+													<img src="../images/benefit/beCard/tab_beCard5.gif"
 														alt="청구서차감">
 												</h5></a></li>
 								</div>

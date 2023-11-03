@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10~30% 할인 | 제휴/할인카드 - VIPS</title>
+<title>기프트카드 - VIPS</title>
 <link rel='stylesheet' href='/resources/styles/commonEx.css' />
-<link rel='stylesheet' href='/resources/styles/becard.css' />
+<link rel='stylesheet' href='/resources/styles/giftcard.css' />
 </head>
 <body>
 	<div id="root">
@@ -21,43 +21,37 @@
 						<div id="container" class="clfix">
 							<div id="lnb">
 								<h3>
-									<img src="/resources/images/benefit/beCard/BENEFIT.gif"
-										alt="BENEFIT">
+									<img src="/resources/images/benefit/beCard/BENEFIT.gif" alt="BENEFIT">
 								</h3>
 								<ul style="min-height: 1000px;">
 									<li class="active"><a href="beCard"><img
 											src="/resources/images/benefit/beCard/affiliatediscountcard.gif"
 											alt="제휴할인"></a></li>
 									<li class="active"><a href="beGiftCard"><img
-											src="/resources/images/benefit/beCard/beGiftCard.gif"
-											alt="상품권"></a></li>
+											src="/resources/images/benefit/beCard/beGiftCard.gif" alt="상품권"></a></li>
 									<li class="active"><a href="giftCard"><img
-											src="/resources/images/benefit/beCard/GiftCard.gif"
-											alt="기프트카드"></a></li>
+											src="/resources/images/benefit/beCard/GiftCard.gif" alt="기프트카드"></a></li>
 								</ul>
 							</div>
 							<div id="content-wrap" class="clfix">
 								<div class="path">
-									<a href="#" class="home">Home</a><a href="#">BENEFIT</a><strong>제휴/할인
+									<a href="#" class="home">Home</a><a href="#">BENEFIT</a><strong>상품권
 										카드</strong>
 								</div>
 								<div class="visual-sub benefit-visual">
 									<h4>
-										<img
-											src="/resources/images/benefit/beCard/discountcard_top.png"
+										<img src="/resources/images/benefit/beCard/discountcard_top.png"
 											alt="제휴할인카드">
 									</h4>
 									<p>
-										<img
-											src="/resources/images/benefit/beCard/beCard_top_text.png">
+										<img src="/resources/images/benefit/beCard/beCard_top_text.png">
 									</p>
 								</div>
 								<div id="content">
 									<ul class="discount-tab clfix" style="height: 1500px">
 										<li><a href="beCard">
 												<h5>
-													<img
-														src="/resources/images/benefit/beCard/tab_beCard1_on.gif"
+													<img src="/resources/images/benefit/beCard/tab_beCard1_on.gif"
 														alt="10~30% 할인">
 												</h5>
 										</a>
@@ -108,8 +102,7 @@
 													</tbody>
 												</table>
 												<h6 class="benefit01">
-													<img
-														src="/resources/images/benefit/beCard/discount2025.png">
+													<img src="/resources/images/benefit/beCard/discount2025.png">
 												</h6>
 												<table class="benefit01-tbl" border="1">
 													<colgroup>
@@ -154,8 +147,7 @@
 													</tbody>
 												</table>
 												<h6 class="benefit01">
-													<img
-														src="/resources/images/benefit/beCard/discount1015.png">
+													<img src="/resources/images/benefit/beCard/discount1015.png">
 												</h6>
 												<table class="benefit01-tbl" border="1">
 													<colgroup>
@@ -201,7 +193,8 @@
 												</table>
 												<dl class="caution">
 													<dt>
-														<img src="/resources/images/benefit/beCard/tit_look.png">
+														<img src="/resources/images/benefit/beCard/tit_look.png"
+															>
 													</dt>
 													<dd>
 														<ul class="contents-txt">
