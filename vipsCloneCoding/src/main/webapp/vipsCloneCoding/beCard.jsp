@@ -238,7 +238,7 @@
 						</div>
 					</div>
 					<div class="footer"></div>
-					<jsp:include page="/vipsCloneCoding/bottomt.jsp"></jsp:include>
+					<jsp:include page="../vipsCloneCoding/bottomt.jsp"></jsp:include>
 				</div>
 			</div>
 		</div>
