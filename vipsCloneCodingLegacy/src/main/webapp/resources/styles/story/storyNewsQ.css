@@ -104,3 +104,26 @@
 .table-total {
 	font-size: 12px;
 }
+
+.table-list-area {
+	width: 95.3%;
+	/* background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.table-text-area {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.search-area {
+	float: right;
+}
+
+.search {
+}
+
+
+.search button {
+	width: 47px;
+	height: 24px;
+}
