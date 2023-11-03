@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#root {
+	background-image: url('/resources/images/template/background-logo.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.background-shadow {
+	background-image: url('/resources/images/story/storyBrandStory/backgroundShadow.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.padding-box {
+	height: 100%;
+	padding: 151px 0px 0px 0px;
+	position: relative;
+	width: 1000px;
+	margin: auto;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.wrap {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url('/resources/images/story/storyBrandStory/backgroundInfo.gif');
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.side-menu-area {
+	width: 215px;
+	background-image: url('/resources/images/story/storyBrandStory/sidemenuBackground.gif');
+	background-repeat: no-repeat;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.side-button-area {
+	position: relative;
+	top: -4px;
+}
+
+.new-story {
+	position: relative;
+	top: -4px;
+}
+
+.info-area {
+	width: 78.5%;
+	background-image: url('/resources/images/story/storyBrandStory/infoBackground.gif');
+	background-repeat: no-repeat;
+	/*background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.path {
+	margin: 39px 0px 0px 0px;
+	font-size: 11px;
+	color: #765a3a;
+}
+
+.path img {
+	margin: 0px 3px 0px 2px;
+}
+
+.info-area-title {
+	width: 70%;
+	margin: 23px 0px 0px 0px;
+}
+.infoTitleBackground{
+	position: absolute;
+	top: 150px;
+	right: 0px;
+}
+
+.firstBirthdayMessage {
+	margin: 20px 0px 0px 0px;
+}

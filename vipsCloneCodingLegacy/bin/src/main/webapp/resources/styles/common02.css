@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+
+.root {
+	background: url(../images/templet/backImage1.gif) no-repeat center top;
+	position: relative;
+}
+
+.background-ImageArea {
+	background: url(../images/templet/wrapperImage1.gif) no-repeat;
+	margin: 0 auto;
+	width: 1032px;
+	position: relative;
+}
+
+.background-area {
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+	position: relative;
+}
+
+.headerLocation {
+	position: relative;
+	right: 16px;
+}
+
+.mainContent02 {
+	background: url(../images/templet/bg-mainContents1.gif);
+	position: relative;
+	top: 151px;
+	height: 1246px;
+}
+
+.sidebar02 {
+	float: left;
+	width: 215px;
+	background: url(../images/templet/templet_bg_sidebar.gif) no-repeat;
+	min-height: 375px
+}
+
+.sidebarList {
+	list-style: none;
+	position: absolute;
+    top: 82px;
+}
+
+.sidebarList li {
+	height: 38px;
+}
+
+.content02 {
+	float: left;
+	width: 785px;
+	height: 500px;
+	background: url(../images/templet/bg-rightContents.gif) no-repeat;
+	position: relative;		
+}
+
+.content-top02 {
+	position: relative;
+	width: 785px;
+	height: 270px;
+}
+
+.path02 {
+	position: relative;
+	top: 35px;
+}
+
+.path02 a {
+	color: #765a3a;	
+}
+
+.link01 {
+	font-size: 11px;
+	position: absolute;
+	left: 25px;
+    top: 2px;
+}
+
+.link02 {
+	font-size: 11px;
+	position: absolute;
+	left: 73px;
+    top: 2px;
+}
+
+.link03 {
+	font-size: 11px;
+	font-weight: 600;
+	position: absolute;
+	left: 149px;
+    top: 2px;
+    color: #765a3a;
+}
+
+.arrow01{
+	position: absolute;
+	left: 61px;
+    bottom: 3px;
+}
+
+.arrow02 {
+	position: absolute;
+	left: 137px;
+    bottom: 3px;
+}
+
+.contentFinish img {
+	position: absolute;
+    top: 1328px;
+}
+
+.footerLocation {
+	position: relative;
+    top: 151px;
+    right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
