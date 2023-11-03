@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, AppleGothic, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	*line-height: 1.1;
+	color: #555;
+}
+
+#content-wrap .benefit-visual {
+	background: url(../images/benefit/beCard/bg_benefit_v.png) no-repeat right top;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+#content-wrap .visual-sub {
+	height: 247px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+}
+
+#content-wrap .visual-sub h4 {
+	position: absolute;
+	top: 80px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+
+#content-wrap .visual-sub>p {
+	position: absolute;
+	top: 138px;
+}
+
+.clfix {
+	display: block;
+}
+
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+
+.discount-tab {
+	position: relative;
+	background: url(../images/benefit/beCard/under_line.png) left 31px no-repeat;
+	height: 35px;
+	width: 96%;
+}
+
+.discount-tab>li {
+	list-style: none;
+	float: left !important;
+}
+
+.discount-tab>li>.contents-box {
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	width: 100%;
+}
+
+.giftcard {
+	margin-top: 30px;
+}
+
+.giftcard dd {
+	padding-left: 36px;
+}
+
+.giftcard01 {
+	margin-top: 30px;
+}
+
+table {
+	border-collapse: separate;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-collapse: collapse;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.contents-txt li {
+	background: url(../images/benefit/beCard/bul_4dot.png) no-repeat left 5px;
+	padding-left: 11px;
+	margin-top: 5px;
+	line-height: 16px;
+	word-break: keep-all;
+	float: none;
+}
+
+u {
+	text-decoration: underline;
+}
+
+.mid-txt {
+	padding-left: 0;
+	text-align: center;
+}
+
+.caution {
+	margin-top: 30px;
+	padding: 20px;
+	background: url(../images/benefit/beCard/bg_caution.png) repeat 0 0;
+	word-break: keep-all;
+}
+
+.benefit01-tbl tbody td {
+	border: 0 none;
+	border-top: 1px solid #aa9781;
+	line-height: 16px;
+	padding: 16px 0px 15px 10px;
+	text-align: center;
+	border-left: 1px solid #6d4e34;
+	font-size: 14px;
+}
+
+.sub-info {
+	font-size: 11px;
+}
+
+.contents-box>h6>a>img {
+	margin: -4px 0px 0px 14px;
+}
+
+.img01 {
+	padding-top: 274px;
+	background: url(../images/benefit/beGiftCard/img_giftcard01.png) no-repeat;
+}
+
+.giftcard dd {
+	padding-left: 36px;
+}
+
+.notice01 {
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #8b6c4f;
+}
+
+.notice01 p {
+	padding-bottom: 10px;
+}
+
+.notice01 ul li {
+	float: left;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+.notice01 ul li img {
+	border: 1px solid #beaf9b;
+}
+
+.notice02_top {
+	padding-top: 20px;
+}
+.notice02{padding-left: 36px;
+padding-bottom: 20px;
+border-bottom: 1px solid #aa9781;}

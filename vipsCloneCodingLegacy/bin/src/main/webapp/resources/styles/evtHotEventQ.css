@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+
+#content-wrap .event-visual {
+	background: url(../images/event/bg_visual.png) no-repeat right top;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+#content-wrap .visual-sub {
+	height: 247px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+}
+#content-wrap .visual-sub h4 {
+	position: absolute;
+	top: 80px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+
+#content-wrap .visual-sub>p {
+	position: absolute;
+	top: 138px;
+}
+
+.clfix {
+	display: block;
+}
+
+.event-list {
+	padding-top: 4px;
+	background: url() no-repeat;
+	background: url(../images/event/line.png) no-repeat;
+}
+
+dl {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.event-list>li {
+	border-bottom: 1px solid #aa9781;
+}
+
+.event-list li dl {
+	padding-bottom: 10px;
+}
+
+.event-list li dl dt {
+	float: left;
+	width: 367px;
+}
+
+event-list li dl dt a {
+	display: inline-block;
+	margin: 7px 0 0 27px;
+}
+
+.event-list li dl dd {
+	float: left;
+	width: 383px;
+}
+
+.event-list li dl dd>strong {
+	color: #332418;
+	display: block;
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.event-list li dl dd>span {
+	display: block;
+	line-height: 1.5;
+	padding-top: 9px;
+}
+
+.event-list li dl dt a {
+	display: inline-block;
+	margin: 7px 0 0 27px;
+}
+
+#content-wrap #content img {
+	max-width: 750px;
+}
+
+.event-list li dl dt a img {
+	padding: 3px;
+}
+
+a:-webkit-any-link {
+	color: -webkit-link;
+	cursor: pointer;
+}
+
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+.list01 li {
+	background: url(../images/event/bul_4dot.png) no-repeat left 5px;
+	padding-left: 11px;
+	margin-top: 5px;
+	line-height: 16px;
+	word-break: keep-all;
+}
+
+.paginate {
+	padding: 20px 0 50px 0;
+	line-height: normal;
+	text-align: center;
+	width: 100%;
+}
+
+.event-list>li.last {
+	border-bottom: 1px solid #6d4e34;
+}
+
+
+
+.paginate .direction {
+	z-index: 1;
+	border: 0 none;
+	padding: 0;
+	background: none;
+	margin: 0 0px;
+}
+.paginate a,
+.paginate strong {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	margin: 0 -1px;
+	padding: 1px 10px;
+	color: #555;
+	text-decoration: none;
+	vertical-align: middle;
+}

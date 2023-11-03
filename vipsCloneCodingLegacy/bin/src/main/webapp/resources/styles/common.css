@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+	margin: 0;
+ 	padding: 0;
+ 	/*box-sizing: border-box;*/
+}
+
+/*a {
+	text-decoration: none;
+	color: inherit;
+}
+*/
+body {
+	font-family: 'Noto Sans KR', sans-serif; 
+}
+
+#wrapAll {
+    background: url(../images/templet/backImage1.gif) no-repeat center top;
+    width: 1922px;
+    height: 2000px;
+}
+
+#wrapper {
+    margin: auto;
+    width: 1032px;
+    background: url(../images/templet/wrapperImage1.gif) no-repeat left top;
+    height: 1000px;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+#container {
+    background: #f0ebdd url(../images/templet/bg-mainContents1.gif) repeat-y;
+    width: 999px;
+    height: 1740px;
+    position: absolute;
+    top: 151px;
+    z-index: 1;
+}
+
+#lnb {
+	float: left;
+    width: 213px;
+    font-size: 0;
+    line-height: 0;
+    background: url(../images/main/bg_lnb.gif) no-repeat;
+    min-height: 375px;
+}
+
+#content-wrap {
+    position: relative;
+    float: left;
+    width: 786px;
+    height: 1600px;
+    background: url(../images/templet/bg-rightContents.gif) no-repeat;
+}
+
+#content-wrap .path {
+	position: absolute;
+    left: 0;
+    top: 40px;
+    height: 14px;
+}
+
+#content-wrap .path a {
+	display: inline;
+    color: #765a3a;
+    font-size: 11px;
+    margin-right: 7px;
+    text-decoration: none;
+}
+
+#content-wrap .path a.home {
+	background: url(../images/templet/homeImage1.png) no-repeat left top;
+    padding-left: 23px;
+}
+
+.path strong {
+	display: inline;
+    color: #765a3a;
+    font-size: 11px;
+    margin-right: 7px;
+    padding-left: 11px;
+    background: url(../images/templet/rightArrowImage1.png) no-repeat left 4px;
+}
+
