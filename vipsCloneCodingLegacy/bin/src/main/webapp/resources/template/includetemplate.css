@@ -20,14 +20,6 @@ body {
 
 #template-root {}
 
-.template-padding-box {
-	width: 100%;
-	height: 100%;
-	/*background-color: rgba(0, 255, 0, 0.5);*/
-	padding: 0px 0px 0px 0px;
-	position: relative;
-}
-
 .template-background-inner-area {
 	margin: auto;
 	width: 1032px;
