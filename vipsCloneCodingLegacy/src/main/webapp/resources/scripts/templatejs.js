@@ -1,7 +1,7 @@
 /**
- *메인 페이지의 함수입니다. 
+ *템플릿 페이지의 함수입니다. 
  **/
-
+/*
 function open_hidden_menu() {
 
 	const menu = document.getElementById("template-top-head");
@@ -12,9 +12,9 @@ function open_hidden_menu() {
 
 	text.setAttribute('style', 'visibility:visible');
 
-}
+}*/
 
-
+/*
 function close_hidden_menu() {
 
 	const menu = document.getElementById("template-top-head");
@@ -24,4 +24,4 @@ function close_hidden_menu() {
 	const text = document.getElementById("template-hidden-move-area");
 
 	text.setAttribute('style', 'visibility:hidden');
-}
+}*/
