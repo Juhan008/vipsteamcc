@@ -6,15 +6,15 @@
 }
 
 #root {
-	/*background: #060403;*/
+	width: 1920px;
+	height: 1085px;
 }
 
 .main-img {
 	position: relative;
-	left: -8.6px;
 	background-image: url('/resources/images/intro/background_intro.png');
-	width: 1920px;
-	height: 1085px;
+	width: 100%;
+	height: 100%;
 	background-repeat: no-repeat;
 }
 
@@ -25,15 +25,15 @@
 }
 
 .tasty-autumn {
-	position: absolute;
-	left: 340.1px;
-	top: 130px;
+	position: relative;
+	left: 18%;
+	top: 8%;
 }
 
 .new-menu {
-	position: absolute;
-	left: 471px;
-	top: 400px;
+	position: relative;
+	left: 25%;
+	top: 10%;
 	animation: button-animation 3s infinite;
 }
 
@@ -52,19 +52,18 @@
 }
 
 .homepage-button {
-	position: absolute;
-	left: 1419px;
-	top: 42px;
+	position: relative;
+	top: -46%;
+	left: 74%;
 }
 
 .main-img-text {
-	position: absolute;
-	left: 533px;
-	top: 989px;
+	position: relative;
+	left: 28%;
+	top: 37%;
 }
 
 .footer {
-	height: 170px;
 	background-color: #191919;
 }
 
