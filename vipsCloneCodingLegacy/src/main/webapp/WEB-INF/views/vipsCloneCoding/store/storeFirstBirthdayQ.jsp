@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>빕스 돌잔치 소개 | 돌잔치 - VIPS</title>
-<link rel='stylesheet' href='/resources/styles/store/storeFirstBirthdayQ.css' />
+<link rel='stylesheet'
+	href='/resources/styles/store/storeFirstBirthdayQ.css' />
 </head>
 <body>
 
@@ -22,8 +23,8 @@
 
 						<div class="side-button-area">
 							<a href="./storeFirstBirthdayQ">
-								<img src="/resources/images/store/firstBirthdayParty.gif" alt="돌잔치"
-									class="VIPS-story" />
+								<img src="/resources/images/store/firstBirthdayParty.gif"
+									alt="돌잔치" class="VIPS-story" />
 							</a>
 						</div>
 					</div>
@@ -39,7 +40,8 @@
 							</span>
 							<span>
 								<a href="./storeFirstBirthdayQ">
-									<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
+									<img
+										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
 									STORE
 								</a>
@@ -52,15 +54,17 @@
 						</div>
 
 						<div class="info-area-title">
-
-							<img src="/resources/images/store/happyBirthday1stParty.png"
-								alt="생일축하" />
-							<img src="/resources/images/store/firstBirthdayMessage.png" alt="생일축하"
-								class="firstBirthdayMessage" />
-
-							<img src="/resources/images/store/infoTitleBackground.png"
-								class="infoTitleBackground">
-
+							<div class="happyBirthdayMessage">
+								<img src="/resources/images/store/happyBirthday1stParty.png"
+									alt="생일축하" />
+							</div>
+							<div class="firstBirthdayMessage">
+								<img src="/resources/images/store/firstBirthdayMessage.png"
+									alt="생일축하" />
+							</div>
+							<div class="infoTitleBackground">
+								<img src="/resources/images/store/infoTitleBackground.png">
+							</div>
 						</div>
 						<!-- 여기서부턴 db -->
 						<div>예약관련 내용이 들어갈곳</div>

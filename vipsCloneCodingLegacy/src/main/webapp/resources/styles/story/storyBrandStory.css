@@ -7,32 +7,23 @@
 }
 
 #root {
-	background-image: url('/resources/images/template/background-logo.gif');
-	background-repeat: no-repeat;
-	background-position: center top;
+	width: 1000px;
+	margin: auto;
 }
-
 
 .background-shadow {
-	background-image: url('/resources/images/story/storyBrandStory/backgroundShadow.gif');
-	background-repeat: no-repeat;
-	background-position: center top;
+	box-shadow: 0px 0px 20px 5px;
 }
-
 
 .padding-box {
 	height: 100%;
-	padding: 151px 0px 0px 8px;
 	position: relative;
-	width: 1017px;
 	margin: auto;
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
 .wrap {
-	position: relative;
-	left: 1px;
-	width: 1000px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url('/resources/images/story/storyBrandStory/backgroundInfo.gif');
@@ -40,7 +31,7 @@
 }
 
 .side-menu-area {
-	width: 215px;
+	width: 21.5%;
 	background-image: url('/resources/images/story/storyBrandStory/sidemenuBackground.gif');
 	background-repeat: no-repeat;
 	/*background-color: rgba(0, 255, 0, 0.5);*/
@@ -76,11 +67,11 @@
 
 .big-title {
 	position: relative;
-	height: 90px;
+	height: 8.5%;
 }
 
 .big-title h4 {
-	position: absolute;
+	position: relative;
 	top: 19px;
 	font-size: 38px;
 	color: #3a2b1f;
@@ -90,7 +81,7 @@
 .big-title img {
 	position: relative;
 	left: 385px;
-	top: -55px;
+	top: -105px;
 }
 
 .contents {

@@ -61,10 +61,10 @@
 								<img src="/resources/images/story/storyNewsQ/newTitle.png"
 									alt="새소식" class="new-title" />
 							</h4>
-
-							<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
-								alt="설명" class="new-title-info" />
-
+							<div>
+								<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
+									alt="설명" class="new-title-info" />
+							</div>
 							<img
 								src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
 								alt="그림" class="big-title-background" />
