@@ -35,7 +35,7 @@
 	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;
 	top: 151px;
-	height: 2045px;
+	height: 2106px;
 }
 
 .sidebar02 {
@@ -115,7 +115,7 @@
 
 .contentFinish img {
 	position: absolute;
-    top: 2127px;
+    top: 2188px;
 }
 
 .footerLocation {
@@ -126,12 +126,12 @@
 
 .text01 {
 	position: absolute;
-	top: 77px;
+	top: 80px;
 }
 
 .text02 {
 	position: absolute;
-	top: 135px;
+	top: 138px;
 }
 
 .contentImage {
@@ -147,9 +147,12 @@
 }
 
 .content-bottom02 {
-	width: 751px;
-	min-height: 175px;
-	margin-top: 28px;
+	position: relative;
+    width: 751px;
+    min-height: 175px;
+    margin-top: -7px;
+    z-index: 2;
+    bottom: 21px;
 }
 
 .mainContent01 {
@@ -183,31 +186,78 @@
 }
 
 .line {
-	
+	position: relative;
+    z-index: 1;
+    bottom: 21px;
+}
+
+.line img {
+	width: 751px;
 }
 
 .ingredientList {
 	width: 100%;
     text-align: center;
     word-break: keep-all;
-    border-collapse: collapse;
+    border-collapse: collapse;       
+    font-size: 13px;
+    line-height: 1;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #3b3838;
 }
 
 .listHead {
 	background-color: #dfd7c8;
+    border-bottom: 1px solid #6d4e34;
+    padding: 11px 0px;
+    border-right: 1px solid #aa9781;
+}
+
+.listLast {
 	border-bottom: 1px solid #6d4e34;
+}
+
+.bottomLine {
+	width: 751px;
+    border-top: 1px solid #6d4e34;
+    position: relative;
+    bottom: 22px;
+    z-index: 2;
 }
 
 .ingredientList tbody td {
 	border: 1px solid #aa9781;
+	padding: 10px 0px;
+}
+
+.ingredientList th:last-child {
+	border-right: 0;
+}
+
+.ingredientList td:last-child {
+	border-right: 0;
+}
+
+.addInfo {
+	width: 751px;
+    text-align: center;
+    font-weight: bold;
+    color: #555555;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.lastInfo {
+	margin-top: 7px;
 }
 
 .caution {
 	position: relative;
 	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
-    height: 153px;
-    margin-top: 49px;
+    height: 105px;
+    margin-top: 32px;
     padding: 20px;
     z-index: 2;
 }
