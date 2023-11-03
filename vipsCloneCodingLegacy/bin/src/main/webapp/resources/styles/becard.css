@@ -178,4 +178,24 @@ u {
 
 .sub-info {
 	font-size: 11px;
+<<<<<<< HEAD
+=======
+}
+.bill {
+    border-top: 1px solid #beaf9b;
+    border-left: 1px solid #beaf9b;
+}
+.bill li {
+    float: left;
+    width: 149px;
+    border-right: 1px solid #beaf9b;
+    border-bottom: 1px solid #beaf9b;
+    padding-top: 18px;
+    padding-bottom: 44px;
+    height: 41px;
+    text-align: center;
+}
+.contents-box>h6>a>img{
+	margin: -4px 0px 0px 14px;
+>>>>>>> refs/heads/front-membership
 }

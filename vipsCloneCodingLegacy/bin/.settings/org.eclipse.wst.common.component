@@ -11,6 +11,7 @@
         
         
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+<<<<<<< HEAD
                         		
         
         
@@ -22,6 +23,8 @@
                         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+=======
+>>>>>>> refs/heads/front-membership
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/"/>
                         		
         
