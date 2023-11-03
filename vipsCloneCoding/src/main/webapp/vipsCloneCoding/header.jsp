@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<script src='/vipsCloneCoding/template/templatejs.js'></script>
-<link rel="stylesheet" href="/styles/header.css">
+<script src='../vipsCloneCoding/template/templatejs.js'></script>
+<link rel="stylesheet" href="../styles/header.css">
 </head>
 <body>
 	<div id="template-root">
@@ -17,16 +17,14 @@
 						<div class="template-english-button-area">
 							<div class="template-english-button">ENGLISH</div>
 						</div>
-
 						<div class="template-VIPS-logo-area">
 							<div class="template-VIPS-logo">
 								<a href="/vipsCloneCoding/intro.jsp">
-									<img src="/images/main/VIPS.png" alt="VIPS"
+									<img src="../images/main/VIPS.png" alt="VIPS"
 										class="template-VIPS-logo" />
 								</a>
 							</div>
 						</div>
-
 						<div class="template-head-menu-area">
 							<div class="template-head-menu">로그인</div>
 							<div class="template-head-menu">회원가입</div>

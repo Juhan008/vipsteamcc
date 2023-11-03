@@ -16,7 +16,7 @@
 					<div class="wrapall">
 						<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
 						<div class="header"><jsp:include
-								page="/vipsCloneCoding/header.jsp"></jsp:include>
+								page="../vipsCloneCoding/header.jsp"></jsp:include>
 						</div>
 						<div id="container" class="clfix">
 							<div id="lnb">
@@ -143,7 +143,7 @@
 						</div>
 					</div>
 					<div class="footer"></div>
-					<jsp:include page="/vipsCloneCoding/bottomt.jsp"></jsp:include>
+					<jsp:include page="../vipsCloneCoding/bottomt.jsp"></jsp:include>
 				</div>
 			</div>
 		</div>

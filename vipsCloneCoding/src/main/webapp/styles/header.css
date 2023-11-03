@@ -11,7 +11,7 @@ a {
 }
 
 body {
-	background-image: url('../../images/main/background.gif');
+	background-image: url('../images/main/background.gif');
 	background-repeat: repeat-y;
 	background-position: top;
 }
@@ -34,7 +34,7 @@ body {
 
 .template-top-head {
 	position: absolute;
-	background-image: url('../../images/main/top-main-bar.png');
+	background-image: url('../images/main/top-main-bar.png');
 	width: 1000px;
 	height: 151px;
 	z-index: 3;
@@ -53,7 +53,7 @@ body {
 	border-radius: 13px;
 	font-size: 12px;
 	color: #9c806b;
-	background: url('../../images/main/english-right-button.png') no-repeat right 13px top 8px;
+	background: url('../images/main/english-right-button.png') no-repeat right 13px top 8px;
 }
 
 .template-VIPS-logo-area {
@@ -73,7 +73,7 @@ body {
 .template-head-menu {
 	float: left;
 	padding-right: 11px;
-	background: url('../../images/main/head-vertical-line.png') no-repeat right 3px;
+	background: url('../images/main/head-vertical-line.png') no-repeat right 3px;
 	margin-right: 8px;
 }
 
