@@ -34,35 +34,36 @@
 
 				<div class="template-move-menu-area"
 					onmouseleave="close_hidden_menu()">
+					<div>
 
-					<a href="/story/storyBrandStory">
+						<a href="/story/storyBrandStory">
+							<div class="template-move-menu-button"
+								onmouseover="open_hidden_menu()">VIPS STORY</div>
+						</a>
+
+						<a href="/steak/premiumSteak">
+							<div class="template-move-menu-button"
+								onmouseover="open_hidden_menu()">STEAK</div>
+						</a>
+
 						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">VIPS STORY</div>
-					</a>
+							onmouseover="open_hidden_menu()">SALAD BAR</div>
 
-					<a href="/steak/premiumSteak">
+						<a href="/store/storeFirstBirthdayQ">
+							<div class="template-move-menu-button"
+								onmouseover="open_hidden_menu()">STORE</div>
+						</a>
+
+
 						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">STEAK</div>
-					</a>
+							onmouseover="open_hidden_menu()">EVENT</div>
 
-					<div class="template-move-menu-button"
-						onmouseover="open_hidden_menu()">SALAD BAR</div>
-
-					<a href="/store/storeFirstBirthdayQ">
 						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">STORE</div>
-					</a>
+							onmouseover="open_hidden_menu()">BENEFIT</div>
 
-
-					<div class="template-move-menu-button"
-						onmouseover="open_hidden_menu()">EVENT</div>
-
-					<div class="template-move-menu-button"
-						onmouseover="open_hidden_menu()">BENEFIT</div>
-
-					<div class="template-move-menu-button"
-						onmouseover="open_hidden_menu()">MEMBERSHIP</div>
-
+						<div class="template-move-menu-button"
+							onmouseover="open_hidden_menu()">MEMBERSHIP</div>
+					</div>
 					<div class="template-hidden-move-area"
 						id="template-hidden-move-area">
 						<div class="template-hidden-move-button">
