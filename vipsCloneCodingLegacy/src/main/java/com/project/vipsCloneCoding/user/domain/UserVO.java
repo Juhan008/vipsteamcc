@@ -1,4 +1,4 @@
-package main.java.com.user;
+package com.project.vipsCloneCoding.user.domain;
 
 import java.util.Date;
 
