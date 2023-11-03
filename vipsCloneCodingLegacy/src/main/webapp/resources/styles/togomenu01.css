@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 * {
 	margin: 0;
@@ -7,12 +8,12 @@
 }
 
 .root {
-	background: url(../images/templet/backImage1.gif) no-repeat center top;
+	background: url(../images/templet_saladMain/bg_body.gif) no-repeat center top;
 	position: relative;
 }
 
 .background-ImageArea {
-	background: url(../images/templet/wrapperImage1.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_allwrap.gif) no-repeat;
 	margin: 0 auto;
 	width: 1032px;
 	position: relative;
@@ -27,27 +28,27 @@
 
 .headerLocation {
 	position: relative;
-	right: 8px;
+	right: 16px;
 }
 
 .mainContent02 {
-	background: url(../images/templet/bg-mainContents1.gif);
+	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;
 	top: 151px;
-	height: 738px;
+	height: 2045px;
 }
 
 .sidebar02 {
 	float: left;
 	width: 215px;
-	background: url(../images/templet/templet_bg_sidebar.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_lnb.gif) no-repeat;
 	min-height: 375px
 }
 
 .sidebarList {
 	list-style: none;
 	position: absolute;
-    top: 81px;
+    top: 82px;
 }
 
 .sidebarList li {
@@ -58,7 +59,7 @@
 	float: left;
 	width: 785px;
 	height: 500px;
-	background: url(../images/templet/bg-rightContents.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_contents_top.gif) no-repeat;
 	position: relative;		
 }
 
@@ -114,13 +115,13 @@
 
 .contentFinish img {
 	position: absolute;
-    top: 819px;
+    top: 2127px;
 }
 
 .footerLocation {
 	position: relative;
     top: 151px;
-    right: 8px;
+    right: 16px;
 }
 
 .text01 {
@@ -169,26 +170,41 @@
 
 
 .mainContent01 {
-	height: 164px;
-    border-bottom: 1px solid #aa9781;
+	height: 1401px;    
     border-top: 1px solid #aa9781;
     position: relative;
     top: 34px;
 }
 
-.menu01 {
-	float: left;
+.deliveryTxt {
+	margin-left: 28px;
+}
+
+.deliveryTxt img {
 	position: relative;
-    bottom: 15px;
-    left: 10px;
+	bottom: 5px;
+}
+
+.deliveryMenu {
+	float: left;
+	margin-left: 28px;
+    margin-top: 21px;
+}
+
+.priceCaution {
+	text-align: center;
+    font-size: 13px;
+    margin-top: 31px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .caution {
 	position: relative;
-	background: url(../images/templet/bg-caution1.png);
+	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
-    height: 110px;
-    margin-top: 51px;
+    height: 153px;
+    margin-top: 49px;
     padding: 20px;
     z-index: 2;
 }
@@ -208,11 +224,12 @@
 }
 
 .listText {
-	font-size: 12px;
+	font-size: 13px;
     margin-left: 7px;
-    margin-top: 4px;
+    margin-top: 2px;
     color: #555;
     float: left;
     width: 682px;
     line-height: 1.6;
+    font-family: 'Noto Sans KR', sans-serif;
 }

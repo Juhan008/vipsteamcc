@@ -1,49 +1,248 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+
+.root {
+	background: url(../images/templet_saladMain/bg_body.gif) no-repeat center top;
+	position: relative;
+}
+
+.background-ImageArea {
+	background: url(../images/templet_saladMain/bg_allwrap.gif) no-repeat;
+	margin: 0 auto;
+	width: 1032px;
+	position: relative;
+}
+
+.background-area {
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+	position: relative;
+}
+
+.headerLocation {
+	position: relative;
+	right: 16px;
+}
+
+.mainContent02 {
+	background: url(../images/templet_saladMain/bg_contents.gif);
+	position: relative;
+	top: 151px;
+	height: 1226px;
+}
+
+.sidebar02 {
+	float: left;
+	width: 215px;
+	background: url(../images/templet_saladMain/bg_lnb.gif) no-repeat;
+	min-height: 375px
+}
+
+.sidebarList {
+	list-style: none;
+	position: absolute;
+    top: 82px;
+}
+
+.sidebarList li {
+	height: 38px;
+}
+
+.content02 {
+	float: left;
+	width: 785px;
+	height: 1000px;
+	background: url(../images/templet_saladMain/bg_contents_top.gif) no-repeat;
+	position: relative;		
+}
+
+.content-top02 {
+	position: relative;
+	width: 785px;
+	height: 270px;
+}
+
+.path02 {
+	position: relative;
+	top: 35px;
+}
+
+.path02 a {
+	color: #765a3a;	
+}
+
+.link01 {
+	font-size: 11px;
+	position: absolute;
+	left: 25px;
+    top: 2px;
+}
+
+.link02 {
+	font-size: 11px;
+	position: absolute;
+	left: 73px;
+    top: 3px;
+}
+
+.link03 {
+	font-size: 11px;
+	font-weight: 600;
+	position: absolute;
+	left: 149px;
+    top: 3px;
+    color: #765a3a;
+}
+
+.arrow01{
+	position: absolute;
+	left: 61px;
+    bottom: 3px;
+}
+
+.arrow02 {
+	position: absolute;
+	left: 139px;
+    bottom: 3px;
+}
+
+.contentFinish img {
+	position: absolute;
+    top: 1307px;
+}
+
+.footerLocation {
+	position: relative;
+    top: 151px;
+    right: 16px;
+}
 
 .text01 {
 	position: absolute;
-	top: 77px;
+	top: 80px;
 }
 
 .text02 {
 	position: absolute;
-	top: 135px;
+	top: 138px;
 }
 
 .contentImage {
 	position: absolute;
 	left: 385px;
-    bottom: 5px;
+    bottom: -6px;
 }
 
 .sns-Link {
 	position: absolute;
-	top: 250px;
-    left: 730px;
+	top: 247px;
+    left: 728px;
 }
 
 .content-bottom02 {
-	width: 785px;
-	min-height: 696px;
+	width: 775px;
+	min-height: 707px;
 	margin-top: 20px;
 }
 
 .content02-menus {
 	list-style: none;
+	position: relative;
+    bottom: 3px;
 }
 
 .content02-menus li {
-	width: 385px;
-    float: left;
-    margin-bottom: 16px;
+	float: left;
+	margin-bottom: 12px;
+}
+
+.secondList {
+	margin-left: 15px;
+}
+
+.menuImg {
+	position: relative;
+    bottom: 43px;
+}
+
+.menuTextbg {
+	position: relative;
+    bottom: 47px;
+    height: 440px
+}
+/*
+.menuTextbg img {
+	width: 750px;
+	height: 457px;
+}*/
+
+.line {
+	position: absolute;
+    width: 601px;
+    top: 65px;
+    left: 75px;
+    border: 1.5px solid #815523;
+}
+
+.priceList {
+	position: absolute;
+    bottom: 393px;
+    border-collapse: collapse;
+    left: 75px;
+    width: 601px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    top: 68px;
+}
+
+.listInfo .firstList td {
+	background-color: #dfd7c8;
+}
+
+.listInfo td {
+	border: 1px solid #6d4e34;
+	padding: 8px 0px 8px;
+}
+
+.listInfo td span {
+	display: block;
+}
+
+table td:first-child {
+	border-left: 0;
+}
+
+table td:last-child {
+	border-right: 0;
+}
+
+.finishBg img {
+	width: 750px;
+    height: 77px;
+    position: absolute;
+    top: 394px;
+}
+
+
+.checkMenu {
+	text-align: center;
+    position: relative;
+    bottom: 5px;
 }
 
 .caution {
 	position: relative;
-	background: url(../images/templet/bg-caution1.png);
-	width: 750px;
-    height: 155px;
-    margin-top: 51px;
+    background: url(../images/templet_saladMain/bg_caution.png) repeat;
+    width: 750px;
+    height: 156px;
+    margin-top: 20px;
     padding: 20px;
     z-index: 2;
 }
@@ -71,13 +270,3 @@
     width: 682px;
     line-height: 1.6;
 }
-
-
-
-
-
-
-
-
-
-

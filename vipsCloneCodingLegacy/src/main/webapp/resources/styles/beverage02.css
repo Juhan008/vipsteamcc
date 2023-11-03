@@ -8,12 +8,12 @@
 }
 
 .root {
-	background: url(../images/templet/backImage1.gif) no-repeat center top;
+	background: url(../images/templet_saladMain/bg_body.gif) no-repeat center top;
 	position: relative;
 }
 
 .background-ImageArea {
-	background: url(../images/templet/wrapperImage1.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_allwrap.gif) no-repeat;
 	margin: 0 auto;
 	width: 1032px;
 	position: relative;
@@ -28,11 +28,11 @@
 
 .headerLocation {
 	position: relative;
-	right: 8px;
+	right: 16px;
 }
 
 .mainContent02 {
-	background: url(../images/templet/bg-mainContents1.gif);
+	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;
 	top: 151px;
 	height: 2457px;
@@ -41,14 +41,14 @@
 .sidebar02 {
 	float: left;
 	width: 215px;
-	background: url(../images/templet/templet_bg_sidebar.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_lnb.gif) no-repeat;
 	min-height: 375px
 }
 
 .sidebarList {
 	list-style: none;
 	position: absolute;
-    top: 81px;
+    top: 82px;
 }
 
 .sidebarList li {
@@ -59,7 +59,7 @@
 	float: left;
 	width: 785px;
 	height: 500px;
-	background: url(../images/templet/bg-rightContents.gif) no-repeat;
+	background: url(../images/templet_saladMain/bg_contents_top.gif) no-repeat;
 	position: relative;		
 }
 
@@ -121,7 +121,7 @@
 .footerLocation {
 	position: relative;
     top: 151px;
-    right: 8px;
+    right: 16px;
 }
 
 .text01 {
@@ -329,7 +329,7 @@
 
 .caution {
 	position: relative;
-	background: url(../images/templet/bg-caution1.png);
+	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
     height: 134px;
     margin-top: 20px;

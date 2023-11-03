@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>SALAD BAR SALAD</title>
-<link rel='stylesheet' href='/resources/styles/saladbar.css' />
+<title>픽업&딜리버리</title>
+<link rel='stylesheet' href='/resources/styles/togomenu01.css' />
 </head>
 <body>
 	<div class="root">
@@ -22,7 +22,7 @@
 						<ul class="sidebarList">
 							<li>
 								<a href="/saladbar">
-									<img src="/resources/images/templet_salad/Salad bar (1).gif">
+									<img src="/resources/images/templet_saladMain/lnb03_01.gif">
 								</a>
 							</li>
 							<li>
@@ -32,7 +32,7 @@
 							</li>
 							<li>
 								<a href="/togomenu01">
-									<img src="/resources/images/templet_saladMain/lnb03_06.gif">
+									<img src="/resources/images/templet_togomenu/픽업&딜리버리.gif">
 								</a>
 							</li>
 							<li>
@@ -70,14 +70,14 @@
 							</div>
 							<div class="contentText">
 								<div class="text01">								
-									<img src="/resources/images/templet_salad/templet_salad_contentText01.png">
+									<img src="/resources/images/templet_togomenu/픽업&딜리버리 메뉴.png">
 								</div>
 								<div class="text02">
-									<img src="/resources/images/templet_salad/templet_salad_contentText02.png">
+									<img src="/resources/images/templet_togomenu/text02.png">
 								</div>
 							</div>
 							<div class="contentImage">
-								<img src="/resources/images/templet_salad/templet_salad_bgmain.png">
+								<img src="/resources/images/templet_togomenu/bg_visual08.png">
 							</div>
 							<div class="sns-Link">
 								<a href="">
@@ -86,35 +86,42 @@
 							</div>
 						</div>
 						<div class="content-bottom02">
-							<ul class="content02-menus">
+							<ul class="content03-menus">
 								<li>
-									<img src="/resources/images/templet_salad/templet_salad_menu01.jpeg">
-								</li>
-								<li class="secondList">
-									<img src="/resources/images/templet_salad/templet_salad_menu02.jpeg">
-								</li>
-								<li>
-									<img src="/resources/images/templet_salad/templet_salad_menu03.jpeg">
-								</li>
-								<li class="secondList">
-									<img src="/resources/images/templet_salad/templet_salad_menu04.jpeg">
+									<a href="/togomenu01">
+										<img src="/resources/images/templet_togomenu/빕스 얌 딜리버리.gif">
+									</a>
 								</li>
 								<li>
-									<img src="/resources/images/templet_salad/templet_salad_menu05.jpeg">
-								</li>
-								<li class="secondList">
-									<img src="/resources/images/templet_salad/templet_salad_menu06.jpeg">
-								</li>
-								<li>
-									<img src="/resources/images/templet_salad/templet_salad_menu07.jpeg">
-								</li>
-								<li class="secondList">
-									<img src="/resources/images/templet_salad/templet_salad_menu08.jpeg">
-								</li>
-								<li>
-									<img src="/resources/images/templet_salad/templet_salad_menu09.jpeg">
-								</li>
+									<a href="/togomenu02">
+										<img src="/resources/images/templet_togomenu/빕스 레스토랑 간편식.gif">
+									</a>
+								</li>								
 							</ul>
+							<hr class="line">
+							<div class="mainContent01">
+								<div class="deliveryTxt">
+									<img src="/resources/images/templet_togomenu/빕스 얌 딜리버리txt.png">
+								</div>
+								<div class="deliveryMenu">
+									<img src="/resources/images/templet_togomenu/빕스 안심 스테이크.png">
+								</div>
+								<div class="deliveryMenu">
+									<img src="/resources/images/templet_togomenu/시그니처 훈제 연어 샐러드.png">
+								</div>
+								<div class="deliveryMenu">
+									<img src="/resources/images/templet_togomenu/파스타.png">
+								</div>
+								<div class="deliveryMenu">
+									<img src="/resources/images/templet_togomenu/피자.png">
+								</div>
+								<div class="deliveryMenu">
+									<img src="/resources/images/templet_togomenu/얌 딜리버리 세트메뉴.jpeg">
+								</div>
+							</div>
+							<div class="priceCaution">
+								*세트 메뉴는 파스타 선택에 따라 추가 요금이 발생할 수 있습니다.
+							</div>
 						</div>
 						<div class="caution">
 							<div class="lookList">
@@ -125,27 +132,26 @@
 									<img src="/resources/images/templet_saladMain/bul_4dot.png">
 								</div>
 								<div class="listText">
-									상기 메뉴는 VIPS TASTE UP PLUS와 PREMIER 기준입니다.
+									배달앱에서 빕스 또는 빕스 얌 딜리버리를 검색하면 더 많은 메뉴를 확인하실 수 있습니다.
 								</div>
 								<div class="listImage">
 									<img src="/resources/images/templet_saladMain/bul_4dot.png">
 								</div>
 								<div class="listText">
-									상기 이미지는 실제와 다를 수 있습니다.
+									단체 주문 문의는 매장으로 연락 부탁드립니다.
 								</div>
 								<div class="listImage">
 									<img src="/resources/images/templet_saladMain/bul_4dot.png">
 								</div>
 								<div class="listText">
-									매장별 메뉴는 다를 수 있으며, 최상의 샐러드 바를 위하여 삭제 또는 메뉴는 변경될 수 있습니다.
+									상기 이미지는 실제 제공되는 제품과 다를 수 있습니다.
 								</div>
 								<div class="listImage">
 									<img src="/resources/images/templet_saladMain/bul_4dot.png">
 								</div>
 								<div class="listText">
-									평일 런치와 평일디너/주말/공휴일에 제공되는 메뉴는 다를 수 있습니다.
+									매장 상황 및 식재 이슈에 따라 실제 메뉴 운영은 상이할 수 있습니다.
 								</div>
-								
 							</div>
 						</div>
 					</div>
