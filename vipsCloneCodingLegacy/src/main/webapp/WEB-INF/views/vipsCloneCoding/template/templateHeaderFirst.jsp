@@ -20,9 +20,8 @@
 
 				<div class="template-VIPS-logo-area">
 					<div class="template-VIPS-logo">
-						<a href="/intro">
-							<img src="/resources/images/main/VIPS.png" alt="VIPS"
-								class="template-VIPS-logo" />
+						<a href="/intro"> <img src="/resources/images/main/VIPS.png"
+								alt="VIPS" class="template-VIPS-logo" />
 						</a>
 					</div>
 				</div>
@@ -34,41 +33,37 @@
 				</div>
 			</div>
 			<div class="template-move-menu-area">
-				<div style="width:100%;">
+				<div style="width: 100%;">
 
 					<div class="template-sub-menu-title-area">
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">
+						<div class="template-move-menu-button">
 							<a href="/story/storyBrandStory">VIPS STORY</a>
 						</div>
 
-
-
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">
+						<div class="template-move-menu-button">
 							<a href="/steak/premiumSteak">STEAK</a>
 						</div>
 
 
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">SALAD BAR</div>
+						<div class="template-move-menu-button">
+							<a href="/mainSaladbar">SALAD BAR</a>
+						</div>
 
-
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">
+						<div class="template-move-menu-button">
 							<a href="/store/storeFirstBirthdayQ">STORE</a>
 						</div>
 
+						<div class="template-move-menu-button">
+							<a href="/event/evtHotEventQ">EVENT</a>
+						</div>
 
+						<div class="template-move-menu-button">
+							<a href="/benefit/beCard"> BENEFIT</a>
+						</div>
 
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">EVENT</div>
-
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">BENEFIT</div>
-
-						<div class="template-move-menu-button"
-							onmouseover="open_hidden_menu()">MEMBERSHIP</div>
+						<div class="template-move-menu-button">
+							<a href="/membership/msCjoneQ">MEMBERSHIP</a>
+						</div>
 					</div>
 					<div class="template-hidden-move-area"
 						id="template-hidden-move-area">
@@ -93,15 +88,25 @@
 
 
 						<div class="template-hidden-move-button3">
-							<div>Salad Bar</div>
+							<div>
+								<a href="/saladbar">Salad Bar</a>
+							</div>
 							<br>
-							<div>Beverage</div>
+							<div>
+								<a href="/saladBeverage01">Beverage</a>
+							</div>
 							<br>
-							<div>픽업&딜리버리</div>
+							<div>
+								<a href="/togomenu01">픽업&딜리버리</a>
+							</div>
 							<br>
-							<div>원산지 정보</div>
+							<div>
+								<a href="/ingredientInfo">원산지 정보</a>
+							</div>
 							<br>
-							<div>알레르기 정보</div>
+							<div>
+								<a href="/allergy">알레르기 정보</a>
+							</div>
 							<br>
 							<div>
 								알레르기 정보
@@ -116,13 +121,17 @@
 							</div>
 
 						</div>
-						<div class="template-hidden-move-button5">HOT 이벤트</div>
+						<div class="template-hidden-move-button5">
+							<a href="/event/evtHotEventQ">HOT 이벤트 </a>
+						</div>
 						<div class="template-hidden-move-button6">
-							<div>제휴/할인카드</div>
+							<div>
+								<a href="/benefit/beCard">제휴/할인카드</a>
+							</div>
 							<br>
-							<div>상품권</div>
+							<div><a href="/benefit/beGiftCard">상품권</a></div>
 							<br>
-							<div>기프트카드</div>
+							<div><a href="/benefit/giftCard">기프트카드</a></div>
 						</div>
 						<div class="template-hidden-move-button7">
 							<div>CJ ONE</div>
