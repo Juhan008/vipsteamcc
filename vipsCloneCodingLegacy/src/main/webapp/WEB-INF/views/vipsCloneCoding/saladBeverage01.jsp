@@ -36,17 +36,17 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/ingredientInfo">
 									<img src="/resources/images/templet_saladMain/lnb03_04.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergy">
 									<img src="/resources/images/templet_saladMain/lnb03_05.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergyDelivery">
 									<img src="/resources/images/templet_saladMain/lnb03_07.gif">
 								</a>
 							</li>
@@ -66,7 +66,7 @@
 								<span class="arrow02">
 									<img src="/resources/images/templet_saladMain/ico_arr.png">
 								</span>
-								<span class="link03">SALAD BAR</span>
+								<span class="link03">Beverage</span>
 							</div>
 							<div class="contentText">
 								<div class="text01">								

@@ -8,9 +8,10 @@
 <link rel='stylesheet' href='/resources/styles/ingredientInfo.css' />
 </head>
 <body>
-	<div class="root">
-		<div class="background-ImageArea">
-			<div class="background-area">
+	<div id="template-root">
+		<div class="template-padding-box">
+			<div class="template-background-area">
+				<div class="template-background-inner-area">
 				<div class="headerLocation"><jsp:include page="template/templateHeaderFirst.jsp"></jsp:include></div>
 				<div class="mainContent02">
 					<div class="sidebar02">
@@ -41,12 +42,12 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergy">
 									<img src="/resources/images/templet_saladMain/lnb03_05.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergyDelivery">
 									<img src="/resources/images/templet_saladMain/lnb03_07.gif">
 								</a>
 							</li>
@@ -66,7 +67,7 @@
 								<span class="arrow02">
 									<img src="/resources/images/templet_saladMain/ico_arr.png">
 								</span>
-								<span class="link03">SALAD BAR</span>
+								<span class="link03">원산지 정보</span>
 							</div>
 							<div class="contentText">
 								<div class="text01">								
@@ -353,8 +354,7 @@
 								<div class="listText">
 									식재 수급 상황에 따라 원산지는 변경될 수 있으며, 원산지 정보는 배달 App,
 									셰프고 또는 영수증 내 원산지 확인 부탁드립니다.
-								</div>
-								
+								</div>								
 							</div>
 						</div>
 					</div>
@@ -363,8 +363,7 @@
 					<img src="/resources/images/templet_saladMain/bg_contents_bottom.gif">
 				</div>
 				<div class="footerLocation"><jsp:include page="template/templateFooterFirst.jsp"></jsp:include></div>
-				
-				
+				</div>								
 			</div>
 		</div>
 	</div>
