@@ -8,9 +8,10 @@
 <link rel='stylesheet' href='/resources/styles/beverage01.css' />
 </head>
 <body>
-	<div class="root">
-		<div class="background-ImageArea">
-			<div class="background-area">
+	<div id="template-root">
+		<div class="template-padding-box">
+			<div class="template-background-area">
+				<div class="template-background-inner-area">
 				<div class="headerLocation"><jsp:include page="template/templateHeaderFirst.jsp"></jsp:include></div>
 				<div class="mainContent02">
 					<div class="sidebar02">
@@ -138,8 +139,7 @@
 					<img src="/resources/images/templet_saladMain/bg_contents_bottom.gif">
 				</div>
 				<div class="footerLocation"><jsp:include page="template/templateFooterFirst.jsp"></jsp:include></div>
-				
-				
+				</div>								
 			</div>
 		</div>
 	</div>

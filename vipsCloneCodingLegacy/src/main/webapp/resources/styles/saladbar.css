@@ -171,6 +171,8 @@ body {
 	list-style: none;
 	position: relative;
     bottom: 3px;
+    right: 40px;
+    width: 815px;
 }
 
 .content02-menus li {

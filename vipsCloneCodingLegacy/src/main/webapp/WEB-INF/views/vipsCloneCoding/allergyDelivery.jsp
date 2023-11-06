@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>알레르기 정보 (딜리버리)</title>
-<link rel='stylesheet' href='styles/allergyDelivery.css' />
+<link rel='stylesheet' href='/resources/styles/allergyDelivery.css' />
 </head>
 <body>
 	<div id="template-root">
@@ -389,7 +389,7 @@
 					</div>
 				</div>
 				<div class="contentFinish">
-					<img src="images/templet_saladMain/bg_contents_bottom.gif">
+					<img src="/resources/images/templet_saladMain/bg_contents_bottom.gif">
 				</div>
 				<div class="footerLocation"><jsp:include page="template/templateFooterFirst.jsp"></jsp:include></div>
 				</div>

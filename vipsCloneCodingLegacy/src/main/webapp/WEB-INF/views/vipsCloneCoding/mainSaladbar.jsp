@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Beverage | Special Drinks</title>
+<title>Salad Table</title>
 <link rel='stylesheet' href='/resources/styles/mainSaladbar.css' />
 </head>
 <body>

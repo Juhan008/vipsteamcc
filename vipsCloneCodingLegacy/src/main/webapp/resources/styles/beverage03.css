@@ -170,6 +170,7 @@ body {
 .content03-menus {
 	list-style: none;
 	position: relative;
+	right: 40px;
 }
 
 .content03-menus li {	
