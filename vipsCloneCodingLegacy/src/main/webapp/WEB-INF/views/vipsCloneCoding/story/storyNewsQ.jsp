@@ -84,17 +84,19 @@
 									</form>
 								</div>
 								<div class="table-list-area">
-									<c:forEach var="i" begin="0" end="9">
-										<c:if
-											test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
-											<div class="table-text-area">
-												<div>${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
-												<div>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
-												<div>${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
-											</div>
-											<hr>
-										</c:if>
-									</c:forEach>
+									<c:if test="${newsBoardService!=null}">
+										<c:forEach var="i" begin="0" end="9">
+											<c:if
+												test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
+												<div class="table-text-area">
+													<div>${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
+													<div>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
+													<div>${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
+												</div>
+												<hr>
+											</c:if>
+										</c:forEach>
+									</c:if>
 								</div>
 							</div>
 						</div>
