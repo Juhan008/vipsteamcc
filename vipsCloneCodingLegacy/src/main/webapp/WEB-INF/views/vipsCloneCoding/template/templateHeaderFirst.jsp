@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,15 +21,29 @@
 
 				<div class="template-VIPS-logo-area">
 					<div class="template-VIPS-logo">
-						<a href="/intro"> <img src="/resources/images/main/VIPS.png"
-								alt="VIPS" class="template-VIPS-logo" />
+						<a href="/intro">
+							<img src="/resources/images/main/VIPS.png" alt="VIPS"
+								class="template-VIPS-logo" />
 						</a>
 					</div>
 				</div>
 
 				<div class="template-head-menu-area">
-					<div class="template-head-menu">로그인</div>
-					<div class="template-head-menu">회원가입</div>
+					<c:choose>
+						<c:when test="${isLogin==null}">
+							<div class="template-head-menu">
+								<a href="/member/login">로그인</a>
+							</div>
+							<div class="template-head-menu">
+								<a href="/member/join">회원가입</a>
+							</div>
+						</c:when>
+						<c:otherwise>
+						<div class="template-head-menu"><a href="/member/logout">로그아웃</a></div>
+						</c:otherwise>
+					</c:choose>
+
+
 					<div class="template-head-menu-finish">고객센터</div>
 				</div>
 			</div>
@@ -129,9 +144,13 @@
 								<a href="/benefit/beCard">제휴/할인카드</a>
 							</div>
 							<br>
-							<div><a href="/benefit/beGiftCard">상품권</a></div>
+							<div>
+								<a href="/benefit/beGiftCard">상품권</a>
+							</div>
 							<br>
-							<div><a href="/benefit/giftCard">기프트카드</a></div>
+							<div>
+								<a href="/benefit/giftCard">기프트카드</a>
+							</div>
 						</div>
 						<div class="template-hidden-move-button7">
 							<div>CJ ONE</div>

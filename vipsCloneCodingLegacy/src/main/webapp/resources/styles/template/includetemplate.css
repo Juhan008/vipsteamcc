@@ -13,7 +13,7 @@ a {
 }
 
 body {
-	background-image: url('/resources/images/main/background.gif');
+	background-image: url('/resources/images/main/background-logo.gif');
 	background-repeat: repeat-y;
 	background-position: top;
 }
@@ -126,7 +126,7 @@ body {
 	color: white;
 	text-align: center;
 	z-index: 5;
-	background-image: url('/resources/images/template/top-main-bar.png');
+	background-image: url('/resources/images/template/hidden-area.png');
 }
 
 .template-hidden-move-button1 {
@@ -139,6 +139,7 @@ body {
 
 .template-hidden-move-button3 {
 	margin: 0% 3% 0% 0%;
+	padding: 0px 0px 8px 0px;
 }
 
 .template-hidden-move-button4 {
