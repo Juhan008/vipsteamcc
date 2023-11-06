@@ -10,65 +10,63 @@
 </head>
 <body>
 	<div id="root">
-		<div class="padding-box">
-			<div class="background-area">
-				<div class="wrapall">
-					<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
-					<div class="header"><jsp:include
-							page="../vipsCloneCoding/template/templateHeaderFirst.jsp"></jsp:include>
+		<div class="background-area">
+			<div class="wrapall">
+				<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
+				<div class="header"><jsp:include
+						page="../vipsCloneCoding/template/templateHeaderFirst.jsp"></jsp:include>
+				</div>
+				<div id="container" class="clfix">
+					<div id="lnb">
+						<h3>
+							<img src="/resources/images/benefit/beCard/BENEFIT.gif"
+								alt="BENEFIT">
+						</h3>
+						<ul style="min-height: 1000px;">
+							<li class="active"><a href="beCard"><img
+									src="/resources/images/benefit/giftcard/affiliatediscountcard_in.gif"
+									alt="제휴할인"></a></li>
+							<li class="active"><a href="beGiftCard"><img
+									src="/resources/images/benefit/giftcard/beGiftCard.gif"
+									alt="상품권"></a></li>
+							<li class="active"><a href="giftCard"><img
+									src="/resources/images/benefit/giftcard/GiftCard_on.gif"
+									alt="기프트카드"></a></li>
+						</ul>
 					</div>
-					<div id="container" class="clfix">
-						<div id="lnb">
-							<h3>
-								<img src="/resources/images/benefit/beCard/BENEFIT.gif"
-									alt="BENEFIT">
-							</h3>
-							<ul style="min-height: 1000px;">
-								<li class="active"><a href="beCard"><img
-										src="/resources/images/benefit/giftcard/affiliatediscountcard_in.gif"
-										alt="제휴할인"></a></li>
-								<li class="active"><a href="beGiftCard"><img
-										src="/resources/images/benefit/giftcard/beGiftCard.gif"
-										alt="상품권"></a></li>
-								<li class="active"><a href="giftCard"><img
-										src="/resources/images/benefit/giftcard/GiftCard_on.gif"
-										alt="기프트카드"></a></li>
-							</ul>
+					<div id="content-wrap" class="clfix">
+						<div class="path">
+							<a href="#" class="home">Home</a><a href="#">BENEFIT</a><strong>기프티
+								카드</strong>
 						</div>
-						<div id="content-wrap" class="clfix">
-							<div class="path">
-								<a href="#" class="home">Home</a><a href="#">BENEFIT</a><strong>기프티
-									카드</strong>
-							</div>
-							<div class="visual-sub benefit-visual">
-								<h4>
-									<img src="/resources/images/benefit/giftcard/gift_banner.png"
-										alt="제휴할인카드">
-								</h4>
-								<p>
-									<img src="/resources/images/benefit/giftcard/gift_top_text.png">
-								</p>
-							</div>
-							<div id="content">
-								<div class="discount-tab clfix" style="height: 1100px">
-									<div class="contents-box">
-										<div class="gift-card-intro">
-											<img
-												src="/resources/images/benefit/giftcard/txt_giftcard.png">
+						<div class="visual-sub benefit-visual">
+							<h4>
+								<img src="/resources/images/benefit/giftcard/gift_banner.png"
+									alt="제휴할인카드">
+							</h4>
+							<p>
+								<img src="/resources/images/benefit/giftcard/gift_top_text.png">
+							</p>
+						</div>
+						<div id="content">
+							<div class="discount-tab clfix" style="height: 1100px">
+								<div class="contents-box">
+									<div class="gift-card-intro">
+										<img src="/resources/images/benefit/giftcard/txt_giftcard.png">
 
-											<p class="sub">
-												<img
-													src="/resources/images/benefit/giftcard/subtxt_giftcard.png">
-											</p>
-											<p class="img-card">
-												<img
-													src="/resources/images/benefit/giftcard/img_giftcard.png">
-											</p>
-										</div>
-										<h5 class="info">
-											<img src="/resources/images/benefit/giftcard/tit_gift1.png">
-										</h5>
-										<div class="giftcard-list kind">
+										<p class="sub">
+											<img
+												src="/resources/images/benefit/giftcard/subtxt_giftcard.png">
+										</p>
+										<p class="img-card">
+											<img
+												src="/resources/images/benefit/giftcard/img_giftcard.png">
+										</p>
+									</div>
+									<h5 class="info">
+										<img src="/resources/images/benefit/giftcard/tit_gift1.png">
+									</h5>
+									<div class="giftcard-list kind">
 										<ul>
 											<li class="vips">
 												<p class="description">
@@ -96,7 +94,8 @@
 												</p>
 											</li>
 										</ul>
-									</div><div class="bottom_bar"></div>
+									</div>
+									<div class="bottom_bar"></div>
 								</div>
 								<dl class="caution">
 									<dt>
@@ -141,7 +140,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 </body>
 </html>
