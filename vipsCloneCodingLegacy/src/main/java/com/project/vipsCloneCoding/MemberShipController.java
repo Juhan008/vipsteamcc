@@ -34,37 +34,37 @@ public class MemberShipController {
 
   @RequestMapping(value = "/benefit/beCard", method = RequestMethod.GET)
   public String beCard(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard";
+    return "vipsCloneCoding/beCard/beCard";
   }
 
   @RequestMapping(value = "/benefit/beCard2", method = RequestMethod.GET)
   public String beCard2(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard2";
+    return "vipsCloneCoding/beCard/beCard2";
   }
 
   @RequestMapping(value = "/benefit/beCard3", method = RequestMethod.GET)
   public String beCard3(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard3";
+    return "vipsCloneCoding/beCard/beCard3";
   }
 
   @RequestMapping(value = "/benefit/beCard4", method = RequestMethod.GET)
   public String beCard4(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard4";
+    return "vipsCloneCoding/beCard/beCard4";
   }
 
   @RequestMapping(value = "/benefit/beCard5", method = RequestMethod.GET)
   public String beCard5(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard5";
+    return "vipsCloneCoding/beCard/beCard5";
   }
 
   @RequestMapping(value = "/benefit/beGiftCard", method = RequestMethod.GET)
   public String beGiftCard(Locale locale, Model model) {
-    return "vipsCloneCoding/beGiftCard";
+    return "vipsCloneCoding/beGiftCard/beGiftCard";
   }
 
   @RequestMapping(value = "/benefit/beGiftCard2", method = RequestMethod.GET)
   public String beGiftCard2(Locale locale, Model model) {
-    return "vipsCloneCoding/beGiftCard2";
+    return "vipsCloneCoding/beGiftCard/beGiftCard2";
   }
 
   @RequestMapping(value = "/benefit/giftCard", method = RequestMethod.GET)
@@ -79,21 +79,21 @@ public class MemberShipController {
 
   @RequestMapping(value = "/membership/msManiaQ", method = RequestMethod.GET)
   public String msManiaQ(Locale locale, Model model) {
-    return "vipsCloneCoding/msManiaQ";
+    return "vipsCloneCoding/msManiaQ/msManiaQ";
   }
 
   @RequestMapping(value = "/membership/msManiaQ2", method = RequestMethod.GET)
   public String msManiaQ2(Locale locale, Model model) {
-    return "vipsCloneCoding/msManiaQ2";
+    return "vipsCloneCoding/msManiaQ/msManiaQ2";
   }
 
   @RequestMapping(value = "/membership/msManiaQ3", method = RequestMethod.GET)
   public String msManiaQ3(Locale locale, Model model) {
-    return "vipsCloneCoding/msManiaQ3";
+    return "vipsCloneCoding/msManiaQ/msManiaQ3";
   }
 
   @RequestMapping(value = "/membership/msManiaQ4", method = RequestMethod.GET)
   public String msManiaQ4(Locale locale, Model model) {
-    return "vipsCloneCoding/msManiaQ4";
+    return "vipsCloneCoding/msManiaQ/msManiaQ4";
   }
 }

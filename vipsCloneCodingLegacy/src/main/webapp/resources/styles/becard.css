@@ -2,15 +2,7 @@
 
 
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-button {
+#container {
 	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, AppleGothic, sans-serif;
 	font-size: 12px;
 	line-height: 1;
