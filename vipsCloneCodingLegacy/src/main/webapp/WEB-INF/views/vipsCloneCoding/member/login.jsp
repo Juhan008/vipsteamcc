@@ -56,13 +56,25 @@
 						</div>
 
 						<div class="login-area">
-							<form action="login" method="post">
-								<div>아이디 <input type="text" name="user_id" /> </div>
-								<div>비밀번호 <input type="password" name="pw" /></div>
-								<button>로그인</button>
+							<form action="login" method="post" class="login-box">
+								<div>
+									<div class="id-area">
+										아이디
+										<input type="text" name="user_id" class="user-id" />
+									</div>
+									<div class="pw-area">
+										비밀번호
+										<input type="password" name="pw" class="pw"/>
+									</div>
+								</div>
+								<div class="login-button-area">
+									<button class="login-button">로그인</button>
+								</div>
 							</form>
 						</div>
-						<div>회원가입</div>
+						<div>
+							<a href="join">회원가입</a>
+						</div>
 					</div>
 				</div>
 			</div>
