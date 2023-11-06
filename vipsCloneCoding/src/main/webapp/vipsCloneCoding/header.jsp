@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title></title>
-<script src='../vipsCloneCoding/template/templatejs.js'></script>
-<link rel="stylesheet" href="../styles/header.css">
+<script src='/resources/vipsCloneCoding/template/header.js'></script>
+<link rel="stylesheet" href="/resources/styles/header.css">
 </head>
 <body>
 	<div id="template-root">
@@ -19,8 +19,8 @@
 						</div>
 						<div class="template-VIPS-logo-area">
 							<div class="template-VIPS-logo">
-								<a href="/vipsCloneCoding/intro.jsp">
-									<img src="../images/main/VIPS.png" alt="VIPS"
+								<a href="/vipsCloneCoding/intro">
+									<img src="/resources/images/main/VIPS.png" alt="VIPS"
 										class="template-VIPS-logo" />
 								</a>
 							</div>
@@ -33,7 +33,7 @@
 
 						<div class="template-move-menu-area"
 							onmouseleave="close_hidden_menu()">
-							<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
+							<a href="/vipsCloneCoding/story/storyBrandStory">
 								<div class="template-move-menu-button"
 									onmouseover="open_hidden_menu()">VIPS STORY</div>
 							</a>
@@ -58,7 +58,7 @@
 							<div class="template-hidden-move-area"
 								id="template-hidden-move-area">
 								<div class="template-hidden-move-button">
-									<a href="/vipsCloneCoding/story/storyBrandStory.jsp">
+									<a href="/vipsCloneCoding/story/storyBrandStory">
 										<div>브랜드 스토리</div>
 									</a>
 									<br>

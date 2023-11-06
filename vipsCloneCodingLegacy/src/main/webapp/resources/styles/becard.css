@@ -86,7 +86,7 @@ img {
 .benefit01-tbl {
 	margin-top: 10px;
 	border-left: 0;
-	border-right:0;
+	border-right: 0;
 
 }
 
@@ -142,12 +142,18 @@ tr {
 }
 
 .contents-txt li {
-	background: url(../images/benefit/beCard/bul_4dot.png) no-repeat left 5px;
+
 	padding-left: 11px;
 	margin-top: 5px;
 	line-height: 16px;
 	word-break: keep-all;
 	float: none;
+}
+
+.dot {
+	background: url(../images/benefit/beCard/bul_4dot.png) no-repeat left 5px;
+	margin: 1px;
+	padding: 5px;
 }
 
 u {
@@ -173,26 +179,29 @@ u {
 	padding: 16px 0px 15px 10px;
 	text-align: center;
 	border-left: 1px solid #6d4e34;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .sub-info {
 	font-size: 11px;
 }
+
 .bill {
-    border-top: 1px solid #beaf9b;
-    border-left: 1px solid #beaf9b;
+	border-top: 1px solid #beaf9b;
+	border-left: 1px solid #beaf9b;
 }
+
 .bill li {
-    float: left;
-    width: 149px;
-    border-right: 1px solid #beaf9b;
-    border-bottom: 1px solid #beaf9b;
-    padding-top: 18px;
-    padding-bottom: 44px;
-    height: 41px;
-    text-align: center;
+	float: left;
+	width: 149px;
+	border-right: 1px solid #beaf9b;
+	border-bottom: 1px solid #beaf9b;
+	padding-top: 18px;
+	padding-bottom: 44px;
+	height: 41px;
+	text-align: center;
 }
-.contents-box>h6>a>img{
+
+.contents-box>h6>a>img {
 	margin: -4px 0px 0px 14px;
 }

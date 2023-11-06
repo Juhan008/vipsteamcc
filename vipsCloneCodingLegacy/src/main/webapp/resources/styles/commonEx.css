@@ -69,22 +69,16 @@ body {
 	background-position: center top;
 }
 
-.background-inner-area {
-	margin: auto;
-	width: 1032px;
-	background: url('/images/common/bg_allwrap.gif') no-repeat left top;
-}
-
 
 
 .wrapall {
 	width: 1000px;
 	margin: auto;
+	box-shadow: 0px 0px 10px 6px black;
 }
 
 #container {
 	background: #f0ebdd url(../images/common/bg_contents.gif) repeat-y;
-	top: 151px;
 	position: relative;
 	z-index: 1;
 	margin: auto;
@@ -92,11 +86,11 @@ body {
 
 #lnb {
 	float: left;
-	width: 215px;
+	width: 21.5%;
 	font-size: 0;
 	line-height: 0;
 	background: url(../images/event/bg_lnb.gif) no-repeat;
-	min-height: 375px;
+	height: 100%;
 }
 
 ul {
@@ -112,15 +106,12 @@ li {
 #content-wrap {
 	position: relative;
 	float: left;
-	width: 785px;
+	width: 78.5%;
 	background: url(../images/event/bg_contents_top.gif) no-repeat;
 }
 
 #content-wrap .path {
-	position: absolute;
-	left: 0;
-	top: 40px;
-	height: 14px;
+	margin-top: 4%;
 	vertical-align: bottom;
 	line-height: 1.1;
 	z-index: 1;
@@ -146,10 +137,5 @@ a:focus,
 a:link,
 a:active {
 	text-decoration: none;
-	color: #555;
-}
-
-.footer {
-	margin: 151px 0 0 0;
-
+	
 }
