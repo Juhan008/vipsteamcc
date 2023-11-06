@@ -108,4 +108,12 @@ public class SaladController {
 
     return "/vipsCloneCoding/allergyDelivery";
   }
+
+  @RequestMapping(value = "/adminPage", method = RequestMethod.GET)
+  public String adminPage(Locale locale, Model model) {
+
+
+
+    return "/vipsCloneCoding/adminPage";
+  }
 }

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>원산지 정보</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/ingredientInfo.css' />
 </head>
 <body>

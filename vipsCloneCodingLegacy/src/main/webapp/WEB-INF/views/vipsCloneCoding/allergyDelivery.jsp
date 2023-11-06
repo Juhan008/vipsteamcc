@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>알레르기 정보 (딜리버리)</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/allergyDelivery.css' />
 </head>
 <body>

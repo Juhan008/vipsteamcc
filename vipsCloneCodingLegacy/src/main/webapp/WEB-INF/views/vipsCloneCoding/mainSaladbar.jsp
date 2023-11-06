@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Salad Table</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/mainSaladbar.css' />
 </head>
 <body>
@@ -73,10 +74,8 @@
 									<img src="/resources/images/templet_saladMain/h4_txt_salladbar.png">
 								</div>
 							</div>							
-							<div class="sns-Link">
-								<a href="">
-									<img src="/resources/images/templet_saladMain/ico_link.png">
-								</a>
+							<div class="sns-Link" onclick="snsLink_1()">
+								<img src="/resources/images/templet_saladMain/ico_link.png">								
 							</div>
 						</div>
 						<div class="content-bottom02">

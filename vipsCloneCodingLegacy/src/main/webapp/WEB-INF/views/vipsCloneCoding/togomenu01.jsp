@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>픽업&딜리버리</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/togomenu01.css' />
 </head>
 <body>
@@ -80,10 +81,8 @@
 							<div class="contentImage">
 								<img src="/resources/images/templet_togomenu/bg_visual08.png">
 							</div>
-							<div class="sns-Link">
-								<a href="">
-									<img src="/resources/images/templet_saladMain/ico_link.png">
-								</a>
+							<div class="sns-Link" onclick="snsLink_6()">								
+								<img src="/resources/images/templet_saladMain/ico_link.png">				
 							</div>
 						</div>
 						<div class="content-bottom02">
