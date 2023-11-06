@@ -5,12 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>SALAD BAR SALAD</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/saladbar.css' />
 </head>
 <body>
-	<div class="root">
-		<div class="background-ImageArea">
-			<div class="background-area">
+	<div id="template-root">
+		<div class="template-padding-box">
+			<div class="template-background-area">
+				<div class="template-background-inner-area">
 				<div class="headerLocation"><jsp:include page="template/templateHeaderFirst.jsp"></jsp:include></div>
 				<div class="mainContent02">
 					<div class="sidebar02">
@@ -36,17 +38,17 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/ingredientInfo">
 									<img src="/resources/images/templet_saladMain/lnb03_04.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergy">
 									<img src="/resources/images/templet_saladMain/lnb03_05.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergyDelivery">
 									<img src="/resources/images/templet_saladMain/lnb03_07.gif">
 								</a>
 							</li>
@@ -79,10 +81,8 @@
 							<div class="contentImage">
 								<img src="/resources/images/templet_salad/templet_salad_bgmain.png">
 							</div>
-							<div class="sns-Link">
-								<a href="">
-									<img src="/resources/images/templet_saladMain/ico_link.png">
-								</a>
+							<div class="sns-Link" onclick="snsLink_2()">							
+								<img src="/resources/images/templet_saladMain/ico_link.png">								
 							</div>
 						</div>
 						<div class="content-bottom02">
@@ -154,8 +154,7 @@
 					<img src="/resources/images/templet_saladMain/bg_contents_bottom.gif">
 				</div>
 				<div class="footerLocation"><jsp:include page="template/templateFooterFirst.jsp"></jsp:include></div>
-				
-				
+				</div>								
 			</div>
 		</div>
 	</div>

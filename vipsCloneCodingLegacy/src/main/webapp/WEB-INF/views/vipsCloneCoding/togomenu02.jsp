@@ -5,12 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>픽업&딜리버리</title>
+<script src='/resources/scripts/tempCommon.js'></script>
 <link rel='stylesheet' href='/resources/styles/togomenu02.css' />
 </head>
 <body>
-	<div class="root">
-		<div class="background-ImageArea">
-			<div class="background-area">
+	<div id="template-root">
+		<div class="template-padding-box">
+			<div class="template-background-area">
+				<div class="template-background-inner-area">
 				<div class="headerLocation"><jsp:include page="template/templateHeaderFirst.jsp"></jsp:include></div>
 				<div class="mainContent02">
 					<div class="sidebar02">
@@ -36,17 +38,17 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/ingredientInfo">
 									<img src="/resources/images/templet_saladMain/lnb03_04.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergy">
 									<img src="/resources/images/templet_saladMain/lnb03_05.gif">
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/allergyDelivery">
 									<img src="/resources/images/templet_saladMain/lnb03_07.gif">
 								</a>
 							</li>
@@ -66,7 +68,7 @@
 								<span class="arrow02">
 									<img src="/resources/images/templet_saladMain/ico_arr.png">
 								</span>
-								<span class="link03">SALAD BAR</span>
+								<span class="link03">픽업&딜리버리</span>
 							</div>
 							<div class="contentText">
 								<div class="text01">								
@@ -79,10 +81,8 @@
 							<div class="contentImage">
 								<img src="/resources/images/templet_togomenu/bg_visual08.png">
 							</div>
-							<div class="sns-Link">
-								<a href="">
-									<img src="/resources/images/templet_saladMain/ico_link.png">
-								</a>
+							<div class="sns-Link" onclick="snsLink_7()">								
+								<img src="/resources/images/templet_saladMain/ico_link.png">				
 							</div>
 						</div>
 						<div class="content-bottom02">
@@ -93,7 +93,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="togomenu02.jsp">
+									<a href="/togomenu02">
 										<img src="/resources/images/templet_togomenu/빕스 레스토랑 간편식 (1).gif">
 									</a>
 								</li>								
@@ -234,8 +234,7 @@
 					<img src="/resources/images/templet_saladMain/bg_contents_bottom.gif">
 				</div>
 				<div class="footerLocation"><jsp:include page="template/templateFooterFirst.jsp"></jsp:include></div>
-				
-				
+				</div>
 			</div>
 		</div>
 	</div>
