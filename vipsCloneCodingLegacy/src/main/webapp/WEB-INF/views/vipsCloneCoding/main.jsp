@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +27,31 @@
 						<div class="bottom-info-area-inner">
 
 
-							<div class="bottom-info-area-inner-faceBook">페북연동</div>
+							<div class="bottom-info-area-inner-faceBook">
+								<a href="/event/evtHotEventQ">
+									<img src="/resources/images/main/bannerHotEvent.png" alt="핫이벤트"
+										class="bannerHotEvent" />
+								</a>
 
-							<div class="bottom-info-area-inner-news">db연동</div>
+
+							</div>
+
+							<div class="bottom-info-area-inner-news">
+
+								<c:if test="${newsBoardService!=null}">
+									<c:forEach var="i" begin="0" end="9">
+										<c:if
+											test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
+											<div class="table-text-area">
+												<div class="db-title">${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
+												<div class="db-created-at">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
+											</div>
+											<hr>
+										</c:if>
+									</c:forEach>
+								</c:if>
+
+							</div>
 
 							<div class="bottom-info-area-inner-steak">
 								<div class="bottom-info-area-move-steak">
@@ -48,8 +71,10 @@
 											alt="딜리버리배너" />
 									</div>
 									<div class="move-to-beGiftCard3">
-										<img src="/resources/images/main/vipsMobileBanner.gif"
-											alt="모바일식사권" />
+										<a href="/benefit/beGiftCard">
+											<img src="/resources/images/main/vipsMobileBanner.gif"
+												alt="모바일식사권" />
+										</a>
 									</div>
 
 									<div class="quick-link">

@@ -1,5 +1,6 @@
 package com.project.vipsCloneCoding.newsBoard.service;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,9 +23,11 @@ public class NewsBoardService {
     return null;
   }
 
-  public Date getCreatedAt(int i) {
+  public String getCreatedAt(int i) {
     try {
-      return newsBoardDAO.getNewsBoardTable(i).getCreatedAt();
+      Date temp = newsBoardDAO.getNewsBoardTable(i).getCreatedAt();
+      SimpleDateFormat simple = new SimpleDateFormat("yyyy.MM.dd");
+      return simple.format(temp);
     } catch (Exception e) {
       // TODO Auto-generated catch block
       e.printStackTrace();

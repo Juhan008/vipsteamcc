@@ -57,12 +57,12 @@
 }
 
 .bottom-info-area-inner-faceBook {
-	padding: 0px 0px 0px 0px;
+	padding: 13px 0px 0px 22px;
 	width: 33.3%;
 }
 
 .bottom-info-area-inner-news {
-	padding: 0px 0px 0px 0px;
+	padding: 14px 16px 0px 4px;
 	width: 33.3%;
 }
 
@@ -100,4 +100,16 @@
 	margin: 0px 0px 0px 12px;
 	left: 7px;
 	top: -8px;
+}
+
+.table-text-area {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.db-title{
+	
+}
+.db-created-at{
+	
 }

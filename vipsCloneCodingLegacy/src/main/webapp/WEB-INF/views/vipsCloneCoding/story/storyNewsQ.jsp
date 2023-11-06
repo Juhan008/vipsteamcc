@@ -91,6 +91,7 @@
 												<div class="table-text-area">
 													<div>${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
 													<div>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
+													<div>${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
 													<div>${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
 												</div>
 												<hr>
