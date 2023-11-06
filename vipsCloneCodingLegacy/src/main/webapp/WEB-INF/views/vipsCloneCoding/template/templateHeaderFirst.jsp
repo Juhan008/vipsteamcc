@@ -39,7 +39,9 @@
 							</div>
 						</c:when>
 						<c:otherwise>
-						<div class="template-head-menu"><a href="/member/logout">로그아웃</a></div>
+							<div class="template-head-menu">
+								<a href="/member/logout">로그아웃</a>
+							</div>
 						</c:otherwise>
 					</c:choose>
 
@@ -124,9 +126,11 @@
 							</div>
 							<br>
 							<div>
-								알레르기 정보
-								<br>
-								(딜리버리)
+								<a href="/allergyDelivery">
+									알레르기 정보
+									<br>
+									(딜리버리)
+								</a>
 							</div>
 						</div>
 						<div class="template-hidden-move-button4">
@@ -153,9 +157,13 @@
 							</div>
 						</div>
 						<div class="template-hidden-move-button7">
-							<div>CJ ONE</div>
+							<div>
+								<a href="/membership/msCjoneQ"> CJ ONE</a>
+							</div>
 							<br>
-							<div>빕스 매니아</div>
+							<div>
+								<a href="/membership/msManiaQ">빕스 매니아</a>
+							</div>
 						</div>
 					</div>
 				</div>
