@@ -37,12 +37,6 @@ public class HomeController {
     return "vipsCloneCoding/intro";
   }
 
-  @RequestMapping(value = "/main", method = RequestMethod.GET)
-  public String main() {
-
-    return "vipsCloneCoding/main";
-  }
-
   @RequestMapping(value = "/story/storyBrandStory", method = RequestMethod.GET)
   public String storyBrandStory() {
 
