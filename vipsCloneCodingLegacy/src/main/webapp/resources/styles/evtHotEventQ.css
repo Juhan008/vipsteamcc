@@ -1,5 +1,12 @@
 @charset "UTF-8";
-
+#lnb {
+	float: left;
+	width: 21.5%;
+	font-size: 0;
+	line-height: 0;
+	background: url(../images/event/bg_lnb.gif) no-repeat;
+	height: 100%;
+}
 
 #content-wrap .event-visual {
 	background: url(../images/event/bg_visual.png) no-repeat right top;
@@ -104,7 +111,6 @@ event-list li dl dt a {
 }
 
 a:-webkit-any-link {
-	color: -webkit-link;
 	cursor: pointer;
 }
 

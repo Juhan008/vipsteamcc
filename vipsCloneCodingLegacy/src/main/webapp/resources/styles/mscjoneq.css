@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, AppleGothic, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	*line-height: 1.1;
+	color: #555;
+}
+
+#content-wrap .benefit-visual {
+	background: url(../images/membership/msCjoneQ/bg_visual.png) no-repeat right top;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+#content-wrap .visual-sub {
+	height: 247px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+}
+
+#content-wrap .visual-sub h4 {
+	position: absolute;
+	top: 80px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+
+#content-wrap .visual-sub>p {
+	position: absolute;
+	top: 138px;
+}
+
+.clfix {
+	display: block;
+}
+
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+
+.discount-tab {
+	position: relative;
+	background: url(../images/benefit/beCard/under_line.png) left 31px no-repeat;
+	height: 35px;
+	width: 96%;
+}
+
+.discount-tab>li {
+	list-style: none;
+	float: left !important;
+}
+
+.discount-tab>li>.contents-box {
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	width: 100%;
+}
+
+.benefit01 {
+	margin-top: 30px;
+}
+
+.benefit01-tbl {
+	margin-top: 10px;
+	border-left: 0;
+	border-right: 0;
+
+}
+
+table {
+	border-collapse: separate;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-collapse: collapse;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.benefit01-tbl thead th {
+	border: 0 none;
+	padding: 16px 0 12px;
+	line-height: 1;
+	text-align: center;
+	background: #dfd7c8 url(../images/benefit/beCard/under_line.png) no-repeat;
+	border-left: 1px solid #6d4e34;
+	font-size: 15px;
+}
+
+.benefit01-tbl tbody th {
+	text-align: center;
+	border: 0 none;
+	border-top: 1px solid #aa9781;
+	line-height: 16px;
+	padding: 16px 0px 15px 0px;
+	color: #352712;
+	border-right: 1px solid #aa9781;
+}
+
+.benefit01-tbl tr.last th {
+	border-bottom: 1px solid #6d4e34;
+}
+
+.benefit01-tbl thead th:first-child {
+	border-left: 0;
+}
+
+.benefit01-tbl tbody td {
+	font-weight: 600;
+}
+
+.contents-txt li {
+	background: url(../images/benefit/beCard/bul_4dot.png) no-repeat left 5px;
+	padding-left: 11px;
+	margin-top: 5px;
+	line-height: 16px;
+	word-break: keep-all;
+	float: none;
+}
+
+u {
+	text-decoration: underline;
+}
+
+.cjone-benefit {
+	position: relative;
+	margin-top: 12px;
+	padding-top: 54px;
+	background: url(../images/event/line.png) no-repeat;
+	line-height: 1.4;
+}
+
+.cjone-benefit>ul>li {
+	float: left;
+	width: 250px;
+	height: 329px;
+}
+
+.cjone-benefit .cont-wrap {
+	position: relative;
+	padding-top: 87px;
+	background: no-repeat 0 0;
+}
+
+.cjone-benefit .cont-wrap .tit {
+	padding: 24px 0 11px;
+	text-align: center;
+}
+
+#content-wrap #content img {
+	max-width: 750px;
+}
+
+.cjone-benefit .cont-wrap .description {
+	min-height: 32px;
+	color: #694c34;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.cjone-benefit .bnf-btn {
+	margin-top: 12px;
+	text-align: center;
+}
+
+.cjone-benefit .bnf-btn span {
+	display: block;
+	margin-top: 4px;
+	text-align: center;
+}
+
+.cjone-benefit .cj-bnf1 .cont-wrap {
+	background-image: url(../images/membership/msCjoneQ/cjone_bnf01.png);
+}
+
+.cjone-benefit .cj-bnf2 .cont-wrap {
+	background-image: url(../images/membership/msCjoneQ/cjone_bnf02.png);
+}
+
+.cjone-benefit .cj-bnf3 .cont-wrap {
+	background-image: url(../images/membership/msCjoneQ/cjone_bnf03.png);
+}
+
+.cjone-benefit .cj-bnf4 .cont-wrap {
+	background-image: url(../images/membership/msCjoneQ/cjone_bnf04.png);
+}
+
+.cjone-benefit .cj-bnf5 .cont-wrap {
+	background-image: url(../images/membership/msCjoneQ/cjone_bnf05.png);
+}
+
+.notice-bot.cjone {
+	position: relative;
+	
+}
+
+.notice-box {
+	background: #5e3c21 url(../images/membership/msCjoneQ/bg_notice.gif) no-repeat right bottom;
+	min-height: 32px;
+	padding: 20px 20px;
+	vertical-align: middle;
+}
+
+.notice-bot.cjone dt {
+	color: #352712;
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.notice-bot {
+    border: 1px solid #5e3c21;
+    line-height: 1.5;
+    padding: 17px 20px;
+    word-break: keep-all;
+}
+.cjone-benefit>ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.btn-ac {
+	margin-top: 13px;
+	text-align: center;
+	font-size: 0;
+	line-height: 0;
+}
+
+.btn-ac a img {
+	padding: 2px;
+}
+
+.notice-box-div {
+	margin: 0% 5% 0% 0%;
+}

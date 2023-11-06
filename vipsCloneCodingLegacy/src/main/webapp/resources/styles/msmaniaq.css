@@ -1,0 +1,724 @@
+@charset "UTF-8";
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, AppleGothic, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	*line-height: 1.1;
+	color: #555;
+}
+
+#content-wrap .benefit-visual {
+	background: url(../images/membership/msCjoneQ/bg_visual.png) no-repeat right top;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+#content-wrap .visual-sub {
+	height: 247px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+}
+
+#content-wrap .visual-sub h4 {
+	position: absolute;
+	top: 80px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+img {
+	vertical-align: top;
+	border: 0 none;
+}
+
+#content-wrap .visual-sub>p {
+	position: absolute;
+	top: 138px;
+}
+
+.clfix {
+	display: block;
+}
+
+img {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+
+
+.discount-tab {
+	position: relative;
+	background: url(../images/benefit/beCard/under_line.png) left 31px no-repeat;
+	height: 35px;
+	width: 96%;
+}
+
+.discount-tab>li {
+	list-style: none;
+	float: left !important;
+}
+
+.discount-tab>li>.contents-box {
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	width: 100%;
+}
+
+.benefit01 {
+	margin-top: 30px;
+}
+
+.benefit01-tbl {
+	margin-top: 10px;
+	border-left: 0;
+	border-right: 0;
+
+}
+
+table {
+	border-collapse: separate;
+	text-indent: initial;
+	border-spacing: 2px;
+	border-collapse: collapse;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.benefit01-tbl thead th {
+	border: 0 none;
+	padding: 16px 0 12px;
+	line-height: 1;
+	text-align: center;
+	background: #dfd7c8 url(../images/benefit/beCard/under_line.png) no-repeat;
+	border-left: 1px solid #6d4e34;
+	font-size: 15px;
+}
+
+.benefit01-tbl tbody th {
+	text-align: center;
+	border: 0 none;
+	border-top: 1px solid #aa9781;
+	line-height: 16px;
+	padding: 16px 0px 15px 0px;
+	color: #352712;
+	border-right: 1px solid #aa9781;
+}
+
+.benefit01-tbl tr.last th {
+	border-bottom: 1px solid #6d4e34;
+}
+
+.benefit01-tbl thead th:first-child {
+	border-left: 0;
+}
+
+.benefit01-tbl tbody td {
+	font-weight: 600;
+}
+
+.contents-txt li {
+	background: url(../images/benefit/beCard/bul_4dot.png) no-repeat left 5px;
+	padding-left: 11px;
+	margin-top: 5px;
+	line-height: 16px;
+	word-break: keep-all;
+	float: none;
+}
+
+.caution {
+	margin-top: 30px;
+	padding: 20px;
+	background: url(../images/benefit/beCard/bg_caution.png) repeat 0 0;
+	word-break: keep-all;
+}
+
+.sub-info {
+	font-size: 11px;
+}
+
+.contents-box>h6>a>img {
+	margin: -4px 0px 0px 14px;
+}
+
+.mania-intro {
+	padding: 30px 25px 0;
+}
+
+.mania-cont .tit-area {
+	position: relative;
+	padding: 12px 0 36px;
+	text-align: center;
+}
+
+.discount-tab>li>div {
+	position: absolute;
+	left: 0px;
+	top: 65px;
+	width: 750px;
+}
+
+.cont-intro {
+	margin-bottom: 30px;
+}
+
+.list01 {
+	text-align: left;
+	margin: -8% 0% 0% 2%;
+}
+
+.list01 li {
+	font-size: 16px;
+	color: #3c2c1f;
+}
+
+.list01 li {
+	padding-left: 7px;
+	background: url(/resources/images/membership/msManiaQ/bul_circle2.png) no-repeat left 6px;
+	font-size: 14px;
+	color: #3c2c1f;
+}
+
+.btn-area {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.cont-sub-div {
+	margin-top: 30px;
+}
+
+.cont-sub {
+	padding-left: 10px;
+	color: #3c2c1f;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.period {
+	color: #3c2c1f;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.cont-sub-txt li {
+	float: left;
+	padding-left: 8px;
+	margin: 0 10px 0 0;
+	line-height: 22px;
+	background-position: left 9px;
+	background: url(/resources/images/membership/msManiaQ/bul_circle1.png) no-repeat left 6px;
+}
+
+
+element.style {}
+
+.mania-cont .list03.inline li {
+	float: left;
+	padding-left: 8px;
+	margin: 0 10px 0 0;
+	line-height: 22px;
+	background-position: left 9px;
+}
+
+.list03 li {
+	padding-left: 11px;
+	background: url(/resources/images/membership/msManiaQ/bul_circle1.png) no-repeat left 6px;
+}
+
+li {
+	list-style: none;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.cont-sub-txt {
+	color: #906d4f;
+	margin-bottom: 15px;
+}
+
+.cont-sub-txt li {
+	float: left;
+	padding-left: 8px;
+	margin: 0 10px 0 0;
+	line-height: 22px;
+	background-position: left 9px;
+}
+
+.cont-sub-txt:after {
+	content: '';
+	clear: both;
+	display: block;
+	margin-top: 15px;
+}
+
+.cont-sub-div .btn-performance,
+.cont-sub-div .btn-performance3 {
+	display: inline;
+	position: relative;
+
+}
+
+.pt10 {
+	margin: 15px 0px 0px 0px;
+}
+
+.reward-info {
+	padding: 30px 35px;
+	background: #d9cfbb url(/resources/images/membership/msManiaQ/bg_mania.png) no-repeat 466px 45px;
+}
+
+.reward-info .tit {
+	color: #3c2c1f;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.reward-info .highlight .txt {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	padding: 0 4px;
+}
+
+.reward-info .highlight {
+	display: inline-block;
+	position: relative;
+}
+
+.reward-info .highlight:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 11px;
+	background-color: #fff6c9;
+	z-index: 1;
+}
+
+.btn-s {
+	display: inline-block;
+	position: relative;
+	background-color: #694c34;
+	border-radius: 3px;
+	padding: 4px 25px 0 15px;
+	line-height: 16px;
+	color: #fff;
+	font-family: dotum, '돋움';
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.btn-s:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 4px;
+	height: 5px;
+	margin-top: -3px;
+	background: url(/resources/images/membership/msManiaQ/ico_arrow.png) no-repeat 0 0;
+}
+
+.reward-info .info {
+	margin-top: 25px;
+}
+
+.reward-info .underline {
+	display: inline-block;
+	padding: 0 3px 8px 1px;
+	color: #3c2c1f;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+.p-red {
+	color: #8c0902;
+}
+
+.reward-info .check-list li {
+	margin-top: 5px;
+	padding-left: 17px;
+	background: url(/resources/images/membership/msManiaQ/ico_check.png) no-repeat 0 0;
+	color: #3c2c1f;
+	font-size: 14px;
+}
+
+.reward-info .list04 {
+	margin-top: 18px;
+	color: #3c2c1f;
+}
+
+.list04 li {
+	padding-left: 7px;
+	background: url(/resources/images/membership/msManiaQ/bul_circle2.png) no-repeat left 6px;
+}
+
+.arrow {
+	background: url(/resources/images/membership/msManiaQ/btn_performance_arrow.png) no-repeat;
+	background-position: right;
+	margin: -23px 0px 0px 159px;
+	position: absolute;
+}
+
+.mt15 {
+	margin: 20px 0px 20px 0px;
+}
+
+.sub-tit.is-line {
+	position: relative;
+	padding-left: 10px;
+	color: #3c2c1f;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.sub-tit.is-line:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 3px;
+	height: 20px;
+	background-color: #352712;
+}
+
+.bul-tit03 {
+	padding-left: 11px;
+	background: url(/resources/images/membership/msManiaQ/bul_circle_red.png) no-repeat 0 6px;
+	line-height: 1.4;
+}
+
+.step-check>div {
+	float: left;
+}
+
+.card-issue-area .card-description {
+	margin-top: 10px;
+	line-height: 22px;
+}
+
+.card-issue-area .bul-tit03 {
+	margin: 0 0 10px 10px;
+}
+
+.step-check .have-no {
+	width: 412px;
+	padding-left: 15px;
+}
+
+.step-check .description ol li {
+	float: left;
+	min-width: 103px;
+	margin-left: 46px;
+	line-height: 14px;
+	color: #555;
+	font-size: 10px;
+	letter-spacing: -1px;
+}
+
+.step-check .have-no ol li+li {
+	min-width: 107px;
+	margin-left: 40px;
+}
+
+.step-check .retention ol {
+	background: url(/resources/images/membership/msManiaQ/bg_mania03.png) no-repeat 0 0;
+}
+
+.step-check .have-no ol {
+	background: url(/resources/images/membership/msManiaQ/bg_mania04.png) no-repeat 0 0;
+}
+
+.step-check .description ol li:first-child {
+	margin-left: 0;
+
+}
+
+.step-check .retention {
+	width: 269px;
+}
+
+.marketing-agree * {
+	text-align: center;
+}
+
+.marketing-agree {
+	min-height: 76px;
+	padding-top: 8px;
+}
+
+.marketing-agree {
+	width: 710px;
+	min-height: 74px;
+	padding-top: 15px;
+	background: url(/resources/images/membership/msManiaQ/bg_mania_agree.jpg) no-repeat 0 0;
+}
+
+.marketing-agree p {
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: -1px;
+	line-height: 1.3;
+}
+
+.mania-cont .btn-s {
+	display: inline-block;
+	position: relative;
+	background-color: #694c34;
+	border-radius: 3px;
+	padding: 4px 25px 0 15px;
+	line-height: 16px;
+	color: #fff;
+	font-family: dotum, '돋움';
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.marketing-agree .btn-s {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: 1px solid #523a24;
+	background-color: #583e27;
+	font-size: 12px;
+}
+
+.btn-s:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 4px;
+	height: 5px;
+	margin-top: -3px;
+	background: url(/resources/images/membership/msManiaQ/ico_arrow.png) no-repeat 0 0;
+}
+
+.step-check {
+	width: 708px;
+	border: 1px solid #b7a38d;
+	background-color: #e3dac8;
+}
+
+.step-check .description ol {
+	margin-top: 10px;
+	padding-top: 80px;
+}
+
+.step-check .description {
+	padding: 12px 0 12px 12px;
+	background: url(/resources/images/membership/msManiaQ/bg_mania_step_line.jpg) repeat-y right -3px;
+}
+
+.step-check:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.caution dt {
+	margin-bottom: 9px;
+}
+
+.caution dd {
+	padding-left: 6px;
+}
+
+.list05 li {
+	position: relative;
+	margin-top: 5px;
+	padding-left: 11px;
+	line-height: 1.4;
+}
+
+.caution .list05>li {
+	margin-top: 8px;
+}
+
+.list05>li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	background-color: #352712;
+}
+
+.txt-info {
+	color: #906d4f;
+	font-size: 13px;
+	letter-spacing: -1px;
+}
+
+.mania-first {
+	padding: 0 25px;
+	background: url(/resources/images/membership/msManiaQ/bg_mania07.png) no-repeat 560px 0;
+	background-position: 595px 0;
+}
+
+.mania-plus {
+	padding: 0 25px;
+	background: url(/resources/images/membership/msManiaQ/bg_mania05.png)no-repeat 560px 0;
+	background-position: 595px 0;
+}
+
+.mania-basic {
+	padding: 0 25px;
+	background: url(/resources/images/membership/msManiaQ/bg_mania06.png)no-repeat 560px 0;
+	background-position: 595px 0;
+}
+
+.list03.inline {
+	margin: 5px 0 10px 0;
+}
+
+.list03.inline li {
+	float: left;
+	padding-left: 8px;
+	margin: 0 10px 0 0;
+	line-height: 22px;
+	background-position: left 9px;
+}
+
+.cjone-list {
+	padding-top: 4px;
+	background: url(/resources/images/membership/msManiaQ/line.png) no-repeat;
+	border-bottom: 1px solid #aa9781;
+	margin-top: 40px;
+	line-height: 1.4;
+	word-break: keep-all;
+}
+
+.mania-list>li {
+	background: no-repeat 35px 20px;
+}
+
+.cjone-list>li {
+	min-height: 86px;
+	padding: 30px 0 35px 140px;
+	border-bottom: 1px dashed #8b6c4f;
+	border-top: 1px dashed #faf9f6;
+}
+
+.mania-list>li.benefit01 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit01.png);
+}
+
+.mania-list>li.benefit02 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit02.png);
+}
+
+.mania-list>li.benefit09 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit09.png);
+}
+
+.mania-list>li.benefit11 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit11.png);
+}
+
+.mania-list>li.benefit03 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit03.png);
+}
+
+.mania-list>li.benefit12 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit12.png);
+}
+
+.mania-list>li.benefit06 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit06.png);
+}
+
+.mania-list>li.benefit13 {
+	background-image: url(/resources/images/membership/msManiaQ/ico_benefit13.png);
+}
+
+.cjone-list>li>strong {
+	color: #8c0902;
+	text-decoration: underline;
+	font-size: 13px;
+	margin-bottom: 7px;
+	display: block;
+}
+
+.cjone-list>li>ul {
+	margin-left: 7px;
+}
+
+.mb5 {
+	margin-bottom: 5px !important;
+}
+
+.benefit01 {
+	margin-top: 0px;
+}
+
+.list06 li {
+	background: url(/resources/images/membership/msManiaQ/bul_4dot.png) no-repeat left 5px;
+	padding-left: 11px;
+	margin-top: 5px;
+	line-height: 16px;
+	word-break: keep-all;
+}
+.mt20 {
+    margin-top: 20px !important;
+}

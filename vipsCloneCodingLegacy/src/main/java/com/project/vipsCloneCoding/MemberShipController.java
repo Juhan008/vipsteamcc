@@ -67,6 +67,11 @@ public class MemberShipController {
     return "vipsCloneCoding/beGiftCard2";
   }
 
+  @RequestMapping(value = "/benefit/giftCard", method = RequestMethod.GET)
+  public String giftCard(Locale locale, Model model) {
+    return "vipsCloneCoding/giftCard";
+  }
+
   @RequestMapping(value = "/membership/msCjoneQ", method = RequestMethod.GET)
   public String msCjoneQ(Locale locale, Model model) {
     return "vipsCloneCoding/msCjoneQ";

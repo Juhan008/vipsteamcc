@@ -12,11 +12,11 @@
 	<div id="root">
 		<div class="padding-box">
 			<div class="background-area">
-				<div class="background-inner-area">
+				
 					<div class="wrapall">
 						<!-- 이 사이에 내용을 적으면 추가 됩니다. -->
 						<div class="header"><jsp:include
-								page="../vipsCloneCoding/header.jsp"></jsp:include>
+							page="../vipsCloneCoding/template/templateHeaderFirst.jsp"></jsp:include>
 						</div>
 						<div id="container" class="clfix">
 							<div id="lnb">
@@ -53,7 +53,7 @@
 									</p>
 								</div>
 								<div id="content">
-									<ul class="discount-tab clfix" style="height: 1500px">
+									<ul class="discount-tab clfix" style="height: 1300px">
 										<li><a href="beCard">
 												<h5>
 													<img
@@ -90,12 +90,12 @@
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
 															<td class="at-txt">
 																<ul class="contents-txt">
-																	<li><u><strong>CJ ONE 삼성카드 결제 시,
+																	<li><img class="dot"><u><strong>CJ ONE 삼성카드 결제 시,
 																				결제금액에 대해 현장할인</strong></u></li>
-																	<li>전월(1일~말일)실적 50만원 이상 결제회원 : 30%할인+1%적립</li>
-																	<li>전월(1일~말일)실적 20만원 이상 결제회원 : 20%할인+1%적립</li>
-																	<li>1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
-																	<li>할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원 : 30%할인+1%적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원 : 20%할인+1%적립</li>
+																	<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
+																	<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
 																</ul>
 																<div>
 																	<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
@@ -136,12 +136,12 @@
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
 															<td class="at-txt">
 																<ul class="contents-txt">
-																	<li><u><strong>CJ ONE 삼성카드 결제 시,
+																	<li><img class="dot"><u><strong>CJ ONE 삼성카드 결제 시,
 																				결제금액에 대해 현장할인</strong></u></li>
-																	<li>전월(1일~말일)실적 50만원 이상 결제회원 : 20%할인+1%적립</li>
-																	<li>전월(1일~말일)실적 20만원 이상 결제회원 : 20%할인+1%적립</li>
-																	<li>1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
-																	<li>할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원 : 20%할인+1%적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원 : 20%할인+1%적립</li>
+																	<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
+																	<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
 																</ul>
 																<div>
 																	<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
@@ -182,12 +182,12 @@
 																<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
 															<td class="at-txt">
 																<ul class="contents-txt">
-																	<li><u><strong>CJ ONE 삼성카드 결제 시,
+																	<li><img class="dot"><u><strong>CJ ONE 삼성카드 결제 시,
 																				결제금액에 대해 현장할인</strong></u></li>
-																	<li>전월(1일~말일)실적 50만원 이상 결제회원 : 10%할인+1%적립</li>
-																	<li>전월(1일~말일)실적 20만원 이상 결제회원 : 10%할인+1%적립</li>
-																	<li>1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
-																	<li>할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원 : 10%할인+1%적립</li>
+																	<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원 : 10%할인+1%적립</li>
+																	<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액 20만원 한도 내</li>
+																	<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
 																</ul>
 																<div>
 																	<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
@@ -243,9 +243,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="footer"></div>
-					<jsp:include page="../vipsCloneCoding/bottomt.jsp"></jsp:include>
+					
+					<div class="footer"><jsp:include
+					page="../vipsCloneCoding/template/templateFooterFirst.jsp"></jsp:include>
 				</div>
 			</div>
 		</div>
