@@ -46,7 +46,7 @@
 							</p>
 						</div>
 						<div id="content">
-							<ul class="discount-tab clfix" style="height: 3600px">
+							<ul class="discount-tab clfix" style="height: 2450px">
 								<li><a href="msManiaQ"><h5>
 											<img
 												src="/resources/images/membership/msManiaQ/tab_msManiaQ.gif"
