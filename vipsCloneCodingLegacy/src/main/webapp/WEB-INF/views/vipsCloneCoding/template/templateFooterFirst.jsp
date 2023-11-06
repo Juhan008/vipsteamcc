@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel='stylesheet' href='/resources/template/includetemplate.css' />
+<link rel='stylesheet' href='/resources/styles/template/includetemplate.css' />
 </head>
 <body>
 	<div id="template-root">
