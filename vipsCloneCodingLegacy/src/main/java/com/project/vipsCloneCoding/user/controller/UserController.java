@@ -1,7 +1,6 @@
 package com.project.vipsCloneCoding.user.controller;
 
 import java.util.Map;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,12 +27,11 @@ public class UserController {
   }
 
   @RequestMapping(value = "/member/join", method = RequestMethod.POST)
-  public String joinPost(@RequestParam Map<String, String> map, HttpSession sessoin,
-      HttpServletRequest request) {
+  public String joinPost(@RequestParam Map<String, String> map, HttpSession sessoin) {
     UserVO user = new UserVO(map.get("name"), map.get("phone_number"), map.get("user_id"),
         map.get("pw"), map.get("address"), map.get("birth"));
     userService.join(user);
-    return "vipsCloneCoding/member/login";
+    return "redirect:/member/login";
   }
 
   @RequestMapping(value = "/member/login", method = RequestMethod.GET)
@@ -43,8 +41,7 @@ public class UserController {
   }
 
   @RequestMapping(value = "/member/login", method = RequestMethod.POST)
-  public String loginPost(@RequestParam Map<String, String> map, HttpSession sessoin,
-      HttpServletRequest request) {
+  public String loginPost(@RequestParam Map<String, String> map, HttpSession sessoin) {
     UserVO user = new UserVO(map.get("user_id"), map.get("pw"));
     user = userService.login(user);
     sessoin.setAttribute("isLogin", user.getUserId());

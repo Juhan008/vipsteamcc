@@ -36,6 +36,11 @@
 	top: -4px;
 }
 
+.new-story {
+	position: relative;
+	top: -4px;
+}
+
 .info-area {
 	width: 78.5%;
 	background-image: url('/resources/images/story/storyBrandStory/infoBackground.gif');
@@ -50,6 +55,46 @@
 }
 
 .path img {
-	border-top: double;
 	margin: 0px 3px 0px 2px;
+}
+
+.big-title {
+	position: relative;
+	height: 8.5%;
+}
+
+.big-title h4 {
+	position: relative;
+	top: 19px;
+	font-size: 38px;
+	color: #3a2b1f;
+	font-weight: bold;
+}
+
+.big-title-background {
+	position: relative;
+	left: 49.1%;
+	bottom: 172px;
+}
+
+.new-title-info {
+	position: relative;
+	top: 36px;
+}
+
+.table-area-padding {
+	width: 100%;
+	position: relative;
+	margin: 135px 0px 0px 0px;
+	/* background-color: rgba(0, 255, 0, 0.5);*/
+}
+
+.table-print-area{
+	width: 95%;
+	border-top: double;	
+}
+.table-print-title{
+	padding: 7px 0px 7px 16px;
+	border-bottom: solid;
+	border-bottom-width: 1px;
 }

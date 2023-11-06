@@ -25,4 +25,10 @@ public class NewsBoardController {
     return "vipsCloneCoding/main";
   }
 
+  @RequestMapping(value = "/story/storyNewsPrt", method = RequestMethod.GET)
+  public String storyNewsPrt(HttpSession sessoin) {
+
+    return "vipsCloneCoding/story/storyNewsPrt";
+  }
+
 }
