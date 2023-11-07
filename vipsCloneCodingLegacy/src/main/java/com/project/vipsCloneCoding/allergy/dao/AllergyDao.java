@@ -26,15 +26,36 @@ public class AllergyDao {
   }
 
   public void createAllergyTable() throws Exception {
-    jdbcTemplate.update("create table Allergy(division varchar2(30),"
-        + "menu varchar2(30) not null, info varchar2(50) not null,"
-        + "material varchar2(10) not null)");
+    jdbcTemplate.update("create table Allergy(id number(10,0) generated as identity primary key, "
+        + "division varchar2(100), " + "menu varchar2(100) not null, "
+        + "info varchar2(300) not null, " + "material varchar2(30) not null)");
   }
 
-  public void add(Allergy allergy) {
-    jdbcTemplate.update(
-        "insert into Allergy (\"division\", \"menu\", \"info\", \"material\") values (?, ?, ?, ?)",
+  public void addAllergy(Allergy allergy) throws Exception {
+    jdbcTemplate.update("insert into Allergy (division, menu, info, material) values (?, ?, ?, ?)",
         allergy.getDivision(), allergy.getMenu(), allergy.getInfo(), allergy.getMaterial());
+  }
+
+  public Allergy getAllergy(String division) throws Exception {
+    return jdbcTemplate.queryForObject("select * from Allergy where division = ? ",
+        new Object[] {division}, mapper);
+  }
+
+  public Allergy getMaterial(String a, String b) throws Exception {
+    return jdbcTemplate.queryForObject("select * from Allergy where material = ? and division = ?",
+        new Object[] {a, b}, mapper);
+  }
+
+  public Allergy getDivision(String division) {
+    try {
+      System.out.println("1번오류");
+      return jdbcTemplate.queryForObject("select * from Allergy where ID = ?",
+          new Object[] {division}, mapper);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    System.out.println("2번오류");
+    return null;
   }
 
 

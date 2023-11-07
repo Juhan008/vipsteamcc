@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -191,6 +192,7 @@
 							<img src="/resources/images/templet_ingredientInfo/line.png">
 						</div>
 						<table class="material01-info">
+						
 							<colgroup>
 								<col style="width:20%;">
 								<col style="width:30%;">
@@ -205,7 +207,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<th rowspan="3">BAKERY</th>
+									<th rowspan="3"> ${allergyService.getTemp()}</th>
 									<td class="material-menu">브리오슈바게트</td>
 									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
 								</tr>
