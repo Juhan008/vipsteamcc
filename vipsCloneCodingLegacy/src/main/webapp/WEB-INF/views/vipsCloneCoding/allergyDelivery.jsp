@@ -85,102 +85,102 @@
 						<div class="content-bottom02">
 							<ul class="rawMaterial">
 								<li class="firstList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/txt_material01_on.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/우유.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/메밀.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/땅콩.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/대두.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href=/allergyDelivery>
 										<img src="/resources/images/templet_allergy/밀.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/고등어.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/게.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/새우.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/돼지고기.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/복숭아.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/토마토.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/아황산류.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/호두.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/쇠고기.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/닭고기.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/오징어.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/조개류.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/잣.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/txt_material20.gif">
 									</a>
 								</li>
