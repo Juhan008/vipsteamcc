@@ -31,6 +31,10 @@ public class UserService {
     userDAO.add(user);
   }
 
+  public void updateAdmin(int id, String member) {
+    userDAO.updateMember(id, member);
+  }
+
 
   public List<UserVO> getAllSubAdmin() {
     try {

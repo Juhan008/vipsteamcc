@@ -68,7 +68,7 @@ public class UserController {
     try {
 
       for (int i = 0; i < keys.length; i++) {
-        userService.deleteAdmin(keys[i]);
+        userService.updateAdmin(keys[i], "null");
       }
       sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
       sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
@@ -81,6 +81,17 @@ public class UserController {
   @RequestMapping(value = "/admin/addAdmin", method = RequestMethod.GET)
   public String adminPageAdd(@RequestParam Map<String, String> map, HttpSession sessoin) {
     sessoin.setAttribute("searchResult", userService.getUser(map.get("user_id")));
+    sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
+    sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
+
+    return "redirect:/admin/adminPage";
+  }
+
+  @RequestMapping(value = "/admin/addAdmin", method = RequestMethod.POST)
+  public String adminPageAddPost(@RequestParam Map<String, Integer> mapId,
+      @RequestParam Map<String, String> map, HttpSession sessoin) {
+    userService.updateAdmin(mapId.get("id"), map.get("member"));
+
     sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
     sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
 

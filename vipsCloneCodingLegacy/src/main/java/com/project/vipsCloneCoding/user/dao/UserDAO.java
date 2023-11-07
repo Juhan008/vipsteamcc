@@ -46,6 +46,10 @@ public class UserDAO {
         cryptoPassword(user.getPw(), "SHA-256"), user.getAddress(), user.getBirth());
   }
 
+  public void updateMember(int id, String member) {
+    jdbcTemplate.update("update users set member = '" + member + "' where id = " + id);
+  }
+
   public void delete(int id) throws Exception {
     jdbcTemplate.update("delete from users where id = " + id);
   }

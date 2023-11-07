@@ -22,28 +22,22 @@
 							상위 관리자
 
 							<c:forEach var="subAd" items="${subAdmin}">
-								<li>
-									<input type="checkBox" name="adminChoice"
-										value="${subAd.getId() }">
-									<label>
-										<c:out value="${subAd.getName() }" />
-										<c:out value="${subAd.getLotation() }" />
-									</label>
-								</li>
+								<li><input type="checkBox" name="adminChoice"
+										value="${subAd.getId() }"> <label> <c:out
+											value="${subAd.getName() }" /> <c:out
+											value="${subAd.getLotation() }" />
+								</label></li>
 							</c:forEach>
 
 						</div>
 						<div>
 							일반 관리자
 							<c:forEach var="lowAd" items="${lowAdmin}">
-								<li>
-									<input type="checkBox" name="adminChoice"
-										value="${lowAd.getId() }">
-									<label>
-										<c:out value="${lowAd.getName() }" />
-										<c:out value="${lowAd.getLotation() }" />
-									</label>
-								</li>
+								<li><input type="checkBox" name="adminChoice"
+										value="${lowAd.getId() }"> <label> <c:out
+											value="${lowAd.getName() }" /> <c:out
+											value="${lowAd.getLotation() }" />
+								</label></li>
 							</c:forEach>
 						</div>
 					</div>
@@ -62,23 +56,26 @@
 				</form>
 				<hr class="line02">
 				<div class="results">
-					<div class="adminAdd">추가</div>
-					<table class="searchResults">
-						<thead>
-							<tr>
-								<th>지역</th>
-								<th>이름</th>
-								<th>아이디</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>서울특별시 강남구</td>
-								<td>${searchResult.getName()}</td>
-								<td>abc1234@gmail.com</td>
-							</tr>
-						</tbody>
-					</table>
+					<form action="/admin/adminAdd" method="post">
+						<button class="adminAdd">추가/변경</button>
+						<input type="radio" name="member" value="sub_admin">상위 관리자
+						<input type="radio" name="member" value="low_admin">하위 관리자
+						<input type="hidden" name="id" value="${searchResult.getId()}">
+						<table class="searchResults">
+							<thead>
+								<tr>
+									<th>이름</th>
+									<th>아이디</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>${searchResult.getName()}</td>
+									<td>${searchResult.getUserId()}</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
 				</div>
 			</div>
 
