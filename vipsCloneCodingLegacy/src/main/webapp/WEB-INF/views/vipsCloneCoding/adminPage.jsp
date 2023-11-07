@@ -60,6 +60,7 @@
 						<button class="adminAdd">추가/변경</button>
 						<input type="radio" name="member" value="sub_admin">상위 관리자
 						<input type="radio" name="member" value="low_admin">하위 관리자
+						<input type="text" name="location" placeholder="지역을 입력해주세요.">
 						<input type="hidden" name="id" value="${searchResult.getId()}">
 						<table class="searchResults">
 							<thead>

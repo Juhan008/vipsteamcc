@@ -50,6 +50,10 @@ public class UserDAO {
     jdbcTemplate.update("update users set member = '" + member + "' where id = " + id);
   }
 
+  public void updateLocation(int id, String location) {
+    jdbcTemplate.update("update users set location = '" + location + "' where id = " + id);
+  }
+
   public void delete(int id) throws Exception {
     jdbcTemplate.update("delete from users where id = " + id);
   }

@@ -31,8 +31,9 @@ public class UserService {
     userDAO.add(user);
   }
 
-  public void updateAdmin(int id, String member) {
+  public void updateAdmin(int id, String member, String location) {
     userDAO.updateMember(id, member);
+    userDAO.updateLocation(id, location);
   }
 
 

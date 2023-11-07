@@ -22,9 +22,9 @@
 							class="VIPSSTORY" />
 
 						<div class="side-button-area">
-							<a href="./storeFirstBirthdayQ">
-								<img src="/resources/images/store/firstBirthdayParty.gif"
-									alt="돌잔치" class="VIPS-story" />
+							<a href="./storeFirstBirthdayQ"> <img
+									src="/resources/images/store/firstBirthdayParty.gif" alt="돌잔치"
+									class="VIPS-story" />
 							</a>
 						</div>
 					</div>
@@ -32,18 +32,15 @@
 					<div class="info-area">
 						<div class="path">
 							<span>
-								<a href="/intro">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
+								<a href="/intro"> <img
+										src="/resources/images/story/storyBrandStory/homeIcon.png"
+										alt="홈으로" /> Home
 								</a>
 							</span>
 							<span>
-								<a href="./storeFirstBirthdayQ">
-									<img
+								<a href="./storeFirstBirthdayQ"> <img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
-										alt="화살표" />
-									STORE
+										alt="화살표" /> STORE
 								</a>
 							</span>
 							<span>
@@ -67,7 +64,22 @@
 							</div>
 						</div>
 						<!-- 여기서부턴 db -->
-						<div>예약관련 내용이 들어갈곳</div>
+						<div>
+							성함
+							<input type="text">
+							연락처
+							<input type="text">
+							날짜/시간
+							<input type="text">
+							희망매장
+							<input type="text">
+							인원
+							<input type="text">
+							기타문의
+							<input type="text">
+							<button>상담 신청 완료</button>
+
+						</div>
 					</div>
 				</div>
 			</div>

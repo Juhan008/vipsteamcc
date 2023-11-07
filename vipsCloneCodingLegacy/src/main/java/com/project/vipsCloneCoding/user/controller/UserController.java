@@ -90,7 +90,7 @@ public class UserController {
   @RequestMapping(value = "/admin/addAdmin", method = RequestMethod.POST)
   public String adminPageAddPost(@RequestParam Map<String, Integer> mapId,
       @RequestParam Map<String, String> map, HttpSession sessoin) {
-    userService.updateAdmin(mapId.get("id"), map.get("member"));
+    userService.updateAdmin(mapId.get("id"), map.get("member"), map.get("location"));
 
     sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
     sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
