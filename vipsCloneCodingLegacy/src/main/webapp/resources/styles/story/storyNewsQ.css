@@ -74,7 +74,7 @@
 .big-title-background {
 	position: relative;
 	left: 49.1%;
-	bottom: 312%;
+	bottom: 177px;
 }
 
 .new-title-info {
@@ -85,7 +85,7 @@
 .table-area-padding {
 	width: 100%;
 	position: relative;
-	margin: 97px 0px 0px 0px;
+	margin: 125px 0px 0px 0px;
 	/* background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -95,16 +95,24 @@
 
 .table-list-area {
 	width: 95.3%;
+	text-align: center;
 	/* background-color: rgba(0, 255, 0, 0.5);*/
 }
 
 .table-text-area {
+	font-size: 14px;
+	padding: 5px 0px 5px 0px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.total-post-number {
+	display: inline-block;
+	width: 64%;
+}
+
 .search-area {
-	float: right;
+	display: inline-block;
 }
 
 .search {}
@@ -113,4 +121,56 @@
 .search button {
 	width: 47px;
 	height: 24px;
+}
+
+.table-list-sub {
+	font-size: 15px;
+	background-color: rgba(10, 10, 10, 0.1);
+	padding: 10px 0px 10px 0px;
+	border-top: double;
+	border-bottom: solid 1px;
+	display: flex;
+	font-weight: bold;
+	color: #6d4e34;
+}
+
+
+.table-list-id {
+	width: 10%;
+}
+
+.table-list-title {
+	width: 69%;
+}
+.table-list-title-2 {
+	width: 69%;
+	text-align: left;
+}
+
+.title-button {
+	cursor: pointer;
+	border: none;
+	background: none;
+	overflow: hidden;
+}
+
+.table-list-createdAt {
+	width: 10%;
+}
+
+.table-list-view {
+	width: 10%;
+}
+
+.write-button {
+	color: white;
+	font-size: 30px;
+	width: 17%;
+	height: 55px;
+	position: relative;
+	top: 253px;
+	left: 78%;
+	background-color: rgb(145, 24, 38);
+	border: none;
+	border-radius: 5px;
 }

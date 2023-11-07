@@ -7,6 +7,11 @@
 	margin: 0;
 }
 
+button {
+	border: none;
+	background: none;
+}
+
 #root {
 	width: 1000px;
 	margin: auto;
@@ -62,8 +67,9 @@
 }
 
 .bottom-info-area-inner-news {
-	padding: 14px 16px 0px 4px;
+	padding: 14px 16px 0px 14px;
 	width: 33.3%;
+	font-size: 12px;
 }
 
 .bottom-info-area-inner-steak {
@@ -103,13 +109,21 @@
 }
 
 .table-text-area {
-	display: flex;
-	flex-wrap: wrap;
+	overflow: hidden;
+	height: 20px;
 }
 
-.db-title{
-	
+.db-title {
+	display: inline-block;
+	width: 73%;
+	color: #3c2c1f;
 }
-.db-created-at{
-	
+
+.db-created-at {
+	display: inline-block;
+	color: #813c00;
+}
+
+.inner-ul {
+	padding: 7px 0px 0px 15px
 }

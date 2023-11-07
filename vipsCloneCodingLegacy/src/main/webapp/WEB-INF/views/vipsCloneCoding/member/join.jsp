@@ -43,30 +43,30 @@
 						<div class="join-area">
 							<form action="join" method="post">
 								<div>
-									이름
-									<input type="text" name="name" />
+									<input type="text" name="name" placeholder="이름"
+										class="text-box" maxlength="5" />
 								</div>
 								<div>
-									전화번호
-									<input type="text" name="phone_number" />
+									<input type="text" name="phone_number" placeholder="전화번호"
+										class="text-box" maxlength="12" />
 								</div>
 								<div>
-									아이디
-									<input type="text" name="user_id" />
+									<input type="text" name="user_id" placeholder="아이디"
+										class="text-box" maxlength="20" />
 								</div>
 								<div>
-									비밀번호
-									<input type="password" name="pw" />
+									<input type="password" name="pw" placeholder="비밀번호"
+										class="text-box" maxlength="20" />
 								</div>
 								<div>
-									주소
-									<input type="text" name="address" />
+									<input type="text" name="address" placeholder="주소"
+										class="text-box" />
 								</div>
 								<div>
-									생년월일
-									<input type="text" name="birth" />
+									<input type="text" name="birth" placeholder="생년월일"
+										class="text-box" maxlength="8" />
 								</div>
-								<button>회원가입</button>
+								<button class="join-button">회원가입</button>
 							</form>
 						</div>
 					</div>

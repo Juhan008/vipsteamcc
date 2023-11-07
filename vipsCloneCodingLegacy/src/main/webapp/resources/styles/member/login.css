@@ -75,7 +75,7 @@
 	width: 52%;
 }
 
-.login-area{
+.login-area {
 	display: flex;
 	justify-content: center;
 	width: 95%;
@@ -86,12 +86,40 @@
 	border-bottom-width: 1px;
 }
 
-.login-box{
+.login-box {
+	display: flex;
 	width: 45%;
 	color: #765a3a;
 	padding: 6% 0% 0% 0%;
 }
 
-.user-id{
-	margin : 0% 0% 0% 16px;
+.login-button {
+	border: none;
+	background: brown;
+	color: white;
+	border-radius: 10px;
+	margin: 0px 0px 0px 7px;
+	width: 128%;
+	height: 46%;
+}
+
+.user-id {
+	margin: 0% 0% 0% 16px;
+}
+
+.join-area {
+	top: 4%;
+	position: relative;
+	height: 0px;
+	text-align: right;
+	right: 20%;
+}
+
+.join-button {
+	width: 12%;
+	height: 40px;
+	border: none;
+	background: gray;
+	color: white;
+	border-radius: 10px;
 }

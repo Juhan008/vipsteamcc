@@ -37,22 +37,30 @@
 							</div>
 
 							<div class="bottom-info-area-inner-news">
-
-								<c:if test="${newsBoardService!=null}">
-									<c:forEach var="i" begin="0" end="9">
-										<c:if
-											test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
-											<div class="table-text-area">
-												<div class="db-title">${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
-												<div class="db-created-at">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
-											</div>
-											<hr>
-										</c:if>
-									</c:forEach>
-								</c:if>
-
+								<img src="/resources/images/main/vipsNewsLogo.png" alt="빕스 뉴스" />
+								<div class="inner-ul">
+									<c:if test="${newsBoardService!=null}">
+										<c:forEach var="i" begin="0" end="9">
+											<c:if
+												test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
+												<div class="table-text-area">
+													<div class="db-title">
+														<form action="/story/storyNewsPrt">
+															<input type="hidden" name="currentPost"
+																value=${newsBoardService.getId(newsBoardService.tableFinish()-i)}>
+															<button>
+																<strong>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</strong>
+															</button>
+														</form>
+													</div>
+													<div class="db-created-at">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
+												</div>
+												<hr>
+											</c:if>
+										</c:forEach>
+									</c:if>
+								</div>
 							</div>
-
 							<div class="bottom-info-area-inner-steak">
 								<div class="bottom-info-area-move-steak">
 									<div>
@@ -65,7 +73,6 @@
 												alt="스테이크페이지로" />
 										</a>
 									</div>
-
 									<div>
 										<img src="/resources/images/main/deliveryBanner.jpg"
 											alt="딜리버리배너" />
@@ -76,7 +83,6 @@
 												alt="모바일식사권" />
 										</a>
 									</div>
-
 									<div class="quick-link">
 										<div>
 											<img src="/resources/images/main/quickLinkBanner.png"
@@ -84,8 +90,10 @@
 										</div>
 										<div class="quick-link-icon-area">
 											<div>
-												<img src="/resources/images/main/quickiconbeCard.png"
-													alt="배너카드" />
+												<a href="/benefit/beCard">
+													<img src="/resources/images/main/quickiconbeCard.png"
+														alt="제휴카드" />
+												</a>
 											</div>
 											<div>
 												<a href="/store/storeFirstBirthdayQ">
@@ -95,32 +103,22 @@
 												</a>
 											</div>
 											<div>
-
 												<img src="/resources/images/main/quickiconmylogin.png"
 													alt="고객센터" />
-
 											</div>
 											<div>
 												<img src="/resources/images/main/quickiconFAQ.png" alt="FAQ" />
 											</div>
 										</div>
 									</div>
-
 								</div>
 							</div>
-
-
 						</div>
-
-
 					</div>
-
-
 				</div>
 			</div>
 			<jsp:include page="./template/templateFooterFirst.jsp"></jsp:include>
 		</div>
 	</div>
-
 </body>
 </html>

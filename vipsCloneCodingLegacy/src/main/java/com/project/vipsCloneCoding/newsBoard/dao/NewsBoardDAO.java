@@ -43,4 +43,9 @@ public class NewsBoardDAO {
         "select * from (select * from newsboard order by id desc) where rownum = 1", mapper);
   }
 
+  public void add(NewsBoardVO newsBoard) {
+    jdbcTemplate.update("insert into newsboard (user_id, title, board_contents) values (?,?,?)",
+        newsBoard.getUserId(), newsBoard.getTitle(), newsBoard.getContents());
+  }
+
 }

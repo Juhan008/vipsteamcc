@@ -30,7 +30,7 @@
 
 				<div class="template-head-menu-area">
 					<c:choose>
-						<c:when test="${isLogin==null}">
+						<c:when test="${userId==null}">
 							<div class="template-head-menu">
 								<a href="/member/login">로그인</a>
 							</div>

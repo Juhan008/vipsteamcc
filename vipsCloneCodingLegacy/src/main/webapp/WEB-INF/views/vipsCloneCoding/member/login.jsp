@@ -72,8 +72,9 @@
 								</div>
 							</form>
 						</div>
-						<div>
-							<a href="join">회원가입</a>
+						<div class="join-area">
+						<img src="/resources/images/member/login/joinText.png">
+							<a href="join"><button class="join-button">회원가입</button></a>
 						</div>
 					</div>
 				</div>

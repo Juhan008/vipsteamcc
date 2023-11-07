@@ -76,7 +76,8 @@
 							<div class="table-total">
 								<img src="/resources/images/story/storyNewsQ/tableTotalIcon.png"
 									alt="" class="" />
-								전체건수 - ${newsBoardService.tableFinish()}건
+								<div class="total-post-number">전체건수 -
+									${newsBoardService.tableFinish()}건</div>
 								<div class="search-area">
 									<form class="search">
 										<input type="text" />
@@ -84,22 +85,41 @@
 									</form>
 								</div>
 								<div class="table-list-area">
+									<div class="table-list-sub">
+										<div class="table-list-id">글번호</div>
+										<div class="table-list-title">제목</div>
+										<div class="table-list-createdAt">등록일</div>
+										<div class="table-list-view">조회수</div>
+									</div>
 									<c:if test="${newsBoardService!=null}">
 										<c:forEach var="i" begin="0" end="9">
 											<c:if
 												test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
-												<div class="table-text-area">
-													<div>${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
-													<div>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</div>
-													<div>${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
-													<div>${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
-												</div>
+
+												<form action="/story/storyNewsPrt" class="table-text-area">
+													<input type="hidden" name="currentPost"
+														value=${newsBoardService.getId(newsBoardService.tableFinish()-i)}>
+													<div class="table-list-id">${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
+													<div class="table-list-title-2">
+														<button class="title-button">${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</button>
+													</div>
+													<div class="table-list-createdAt">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
+													<div class="table-list-view">${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
+												</form>
+
 												<hr>
 											</c:if>
 										</c:forEach>
 									</c:if>
 								</div>
 							</div>
+							<c:if test="${member.equals('admin')||member.equals('subAdmin')}">
+								<div>
+									<a href="/story/storyNewsWrite">
+										<button class="write-button">글쓰기</button>
+									</a>
+								</div>
+							</c:if>
 						</div>
 					</div>
 				</div>

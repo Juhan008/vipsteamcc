@@ -44,14 +44,14 @@ public class UserController {
   public String loginPost(@RequestParam Map<String, String> map, HttpSession sessoin) {
     UserVO user = new UserVO(map.get("user_id"), map.get("pw"));
     user = userService.login(user);
-    sessoin.setAttribute("isLogin", user.getUserId());
+    sessoin.setAttribute("userId", user.getUserId());
     sessoin.setAttribute("member", user.getMember());
     return "vipsCloneCoding/main";
   }
 
   @RequestMapping(value = "/member/logout", method = RequestMethod.GET)
   public String logout(HttpSession sessoin) {
-    sessoin.setAttribute("isLogin", null);
+    sessoin.invalidate();
     return "vipsCloneCoding/main";
   }
 }

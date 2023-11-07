@@ -31,14 +31,13 @@ public class UserDAO {
 
   public void createTable() throws Exception {
     jdbcTemplate.update("create table users(id number(10,0) generated as identity primary key, "
-        + "name varChar2(20) not null, " + "phone_number varchar2(50) not null, "
+        + "name varChar2(30) not null, " + "phone_number varchar2(50) not null, "
         + "user_id varchar2(20) not null unique, " + "pw varchar2(500) not null, "
         + "address varchar2(300) not null, " + "birth varchar2(300) not null, "
         + "created_at Date default sysdate, " + "coupon varchar2(1000), " + "member varchar2(30))");
   }
 
   public void add(UserVO user) {
-
     jdbcTemplate.update(
         "insert into users (name, phone_number, user_id, pw, address, birth) values (?,?,?,?,?,?)",
         user.getName(), user.getPhoneNumber(), user.getUserId(),

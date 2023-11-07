@@ -21,6 +21,15 @@ public class NewsBoardVO {
     this.view = view;
   }
 
+  /**
+   * 입력용
+   **/
+  public NewsBoardVO(String userId, String title, String contents) {
+    this.userId = userId;
+    this.title = title;
+    this.contents = contents;
+  }
+
   public NewsBoardVO(String title, Date createdAt, int view) {
     this.title = title;
     this.createdAt = createdAt;

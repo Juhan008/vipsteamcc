@@ -55,6 +55,17 @@ public class NewsBoardService {
     return 0;
   }
 
+  public String getContents(int i) {
+    try {
+      return newsBoardDAO.getNewsBoardTable(i).getContents();
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+
   public String isDelete(int i) {
     try {
       return newsBoardDAO.getNewsBoardTable(i).getIsDelete();
