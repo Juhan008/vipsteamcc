@@ -54,4 +54,24 @@ public class UserController {
     sessoin.invalidate();
     return "vipsCloneCoding/main";
   }
+
+  @RequestMapping(value = "/admin/adminPage", method = RequestMethod.GET)
+  public String adminPage(HttpSession sessoin) {
+    sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
+    sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
+    return "/vipsCloneCoding/adminPage";
+  }
+
+  @RequestMapping(value = "/admin/deleteAdmin", method = RequestMethod.GET)
+  public String adminPageDelete(@RequestParam(value = "adminChoice") int[] keys,
+      HttpSession sessoin) {
+
+    for (int i = 0; i < keys.length; i++) {
+      userService.deleteAdmin(keys[i]);
+    }
+    sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
+    sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
+
+    return "redirect:/admin/adminPage";
+  }
 }

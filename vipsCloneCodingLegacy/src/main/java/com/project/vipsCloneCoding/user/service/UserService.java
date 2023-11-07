@@ -1,6 +1,7 @@
 package com.project.vipsCloneCoding.user.service;
 
 import java.security.MessageDigest;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.project.vipsCloneCoding.user.dao.UserDAO;
@@ -29,6 +30,37 @@ public class UserService {
   public void join(UserVO user) {
     userDAO.add(user);
   }
+
+
+  public List<UserVO> getAllSubAdmin() {
+    try {
+      return userDAO.getMember("sub_admin");
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public List<UserVO> getAllLowAdmin() {
+    try {
+      return userDAO.getMember("low_admin");
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public void deleteAdmin(int id) {
+    try {
+      userDAO.delete(id);
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+  }
+
 
   private String cryptoPassword(String password, String method) {
     try {

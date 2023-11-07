@@ -45,6 +45,12 @@
 						</c:otherwise>
 					</c:choose>
 
+					<c:if test="${member.equals('admin')}">
+						<div class="template-head-menu">
+							<a href="/admin/adminPage">관리페이지</a>
+						</div>
+					</c:if>
+
 
 					<div class="template-head-menu-finish">고객센터</div>
 				</div>
