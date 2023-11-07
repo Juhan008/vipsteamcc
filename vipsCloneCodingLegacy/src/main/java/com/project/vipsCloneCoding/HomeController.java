@@ -48,11 +48,4 @@ public class HomeController {
 
     return "vipsCloneCoding/steak/premiumSteak";
   }
-
-  @RequestMapping(value = "/store/storeFirstBirthdayQ", method = RequestMethod.GET)
-  public String storeFirstBirthdayQ() {
-
-    return "vipsCloneCoding/store/storeFirstBirthdayQ";
-  }
-
 }

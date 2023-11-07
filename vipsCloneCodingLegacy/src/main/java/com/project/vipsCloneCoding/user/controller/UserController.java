@@ -68,7 +68,7 @@ public class UserController {
     try {
 
       for (int i = 0; i < keys.length; i++) {
-        userService.updateAdmin(keys[i], "null");
+        userService.updateAdmin(keys[i], "null", "null");
       }
       sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
       sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
