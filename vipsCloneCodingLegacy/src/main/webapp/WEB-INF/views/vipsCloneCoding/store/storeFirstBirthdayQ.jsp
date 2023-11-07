@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,22 +65,31 @@
 							</div>
 						</div>
 						<!-- 여기서부턴 db -->
-						<div>
-							성함
-							<input type="text">
-							연락처
-							<input type="text">
-							날짜/시간
-							<input type="text">
-							희망매장
-							<input type="text">
-							인원
-							<input type="text">
-							기타문의
-							<input type="text">
-							<button>상담 신청 완료</button>
-
-						</div>
+						<c:choose>
+						<c:when test="${userId==null}">
+							<div>
+								<form action="/store/reservationAdd" method="get">
+									<input type="hidden" name="user_id" value="${userId}">
+									성함
+									<input type="text" name="name">
+									연락처
+									<input type="text" name="phone_number">
+									날짜/시간
+									<input type="text" name="">
+									희망매장
+									<input type="text" name="desired_store">
+									인원
+									<input type="text" name="how_many_people">
+									기타문의
+									<input type="text" name="question">
+									<button>상담 신청 완료</button>
+								</form>
+							</div>
+							</c:when>
+							<c:otherwise>
+							로그인 해주세요
+							</c:otherwise>
+						</c:choose>
 					</div>
 				</div>
 			</div>
