@@ -54,9 +54,9 @@
 				<div class="searchImage">
 					<img src="/resources/images/templet_admin/search.png">
 				</div>
-				<form action="">
+				<form action="/admin/addAdmin">
 					<div class="search">
-						<input type="text" name="search" value="">
+						<input type="text" name="user_id">
 						<button type="submit">검색</button>
 					</div>
 				</form>
@@ -64,15 +64,8 @@
 				<div class="results">
 					<div class="adminAdd">추가</div>
 					<table class="searchResults">
-						<colgroup>
-							<col style="width: 20%">
-							<col style="width: 20%">
-							<col style="width: 20%">
-							<col style="width: 40%">
-						</colgroup>
 						<thead>
 							<tr>
-								<th>등급</th>
 								<th>지역</th>
 								<th>이름</th>
 								<th>아이디</th>
@@ -80,9 +73,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>일반 관리자</td>
 								<td>서울특별시 강남구</td>
-								<td>홍길동</td>
+								<td>${searchResult.getName()}</td>
 								<td>abc1234@gmail.com</td>
 							</tr>
 						</tbody>

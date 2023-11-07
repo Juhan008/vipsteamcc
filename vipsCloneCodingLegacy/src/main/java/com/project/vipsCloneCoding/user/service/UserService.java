@@ -61,6 +61,17 @@ public class UserService {
     }
   }
 
+  public UserVO getUser(String user_id) {
+
+    try {
+      return userDAO.get(user_id);
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
 
   private String cryptoPassword(String password, String method) {
     try {

@@ -65,10 +65,22 @@ public class UserController {
   @RequestMapping(value = "/admin/deleteAdmin", method = RequestMethod.GET)
   public String adminPageDelete(@RequestParam(value = "adminChoice") int[] keys,
       HttpSession sessoin) {
+    try {
 
-    for (int i = 0; i < keys.length; i++) {
-      userService.deleteAdmin(keys[i]);
+      for (int i = 0; i < keys.length; i++) {
+        userService.deleteAdmin(keys[i]);
+      }
+      sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
+      sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
+    } catch (Exception e) {
+      e.printStackTrace();
     }
+    return "redirect:/admin/adminPage";
+  }
+
+  @RequestMapping(value = "/admin/addAdmin", method = RequestMethod.GET)
+  public String adminPageAdd(@RequestParam Map<String, String> map, HttpSession sessoin) {
+    sessoin.setAttribute("searchResult", userService.getUser(map.get("user_id")));
     sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
     sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
 
