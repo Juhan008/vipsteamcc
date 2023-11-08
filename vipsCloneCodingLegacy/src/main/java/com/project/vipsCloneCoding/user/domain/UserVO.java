@@ -13,12 +13,13 @@ public class UserVO {
   private Date createdAt;
   private String coupon;
   private String member;
+  private String location;
 
   /**
    * 전체호출용
    **/
   public UserVO(int id, String name, String phoneNumber, String userId, String pw, String address,
-      String birth, Date createdAt, String coupon, String member) {
+      String birth, Date createdAt, String coupon, String member, String location) {
     this.id = id;
     this.name = name;
     this.phoneNumber = phoneNumber;
@@ -29,6 +30,7 @@ public class UserVO {
     this.createdAt = createdAt;
     this.coupon = coupon;
     this.member = member;
+    this.location = location;
   }
 
   /**
@@ -91,6 +93,10 @@ public class UserVO {
 
   public String getMember() {
     return member;
+  }
+
+  public String getLocation() {
+    return location;
   }
 
 }

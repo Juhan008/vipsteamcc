@@ -71,6 +71,8 @@
 							<form action="" method="post">
 								<input type="hidden" name="userId" value="${userId}">
 								제목
+								<input type="file">
+								파일
 								<input type="text" name="title">
 								내용
 								<input type="text" name="boardContents">
