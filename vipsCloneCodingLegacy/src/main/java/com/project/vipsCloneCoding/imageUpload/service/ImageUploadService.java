@@ -19,7 +19,8 @@ public class ImageUploadService {
     try {
       if (!image.isEmpty()) {
         String filename = image.getOriginalFilename();
-        String directory = "/resources/images/Uploadfile/";
+        String directory =
+            "/Users/limjuhan/eclipse-workspace/git/Java4FirstProject/vipsCloneCodingLegacy/src/main/webapp/resources/images/Uploadfile/";
         String filepath = directory + filename;
         File dest = new File(filepath);
         image.transferTo(dest);

@@ -74,7 +74,6 @@
 											<label for="description2">Description 2:</label> <input
 												type="text" id="description2" name="description2">
 										</div>
-										<!-- 나머지 설명 입력 필드들을 추가합니다. -->
 										<div>
 											<label for="description3">Description 3:</label> <input
 												type="text" id="description3" name="description3">
