@@ -9,43 +9,46 @@ public class AllergyService {
   @Autowired
   private AllergyDao allergyDao;
 
-  public String getDivision(String d) {
+  public String getDivision() {
 
     try {
-      return allergyDao.getAllergy(d).getDivision();
+      for (int i = 1; i < 6; i++) {
+        if (i < 4) {
+          return allergyDao.getId1("1").getDivision();
+        }
+
+        if (i >= 4) {
+          return allergyDao.getId1("4").getDivision();
+        }
+      }
     } catch (Exception e) {
       e.printStackTrace();
     }
     return null;
   }
 
-  public String getMenu(String d) {
+  public String getMenu() {
+
     try {
-      return allergyDao.getAllergy(d).getMenu();
+      for (int id = 2; id < 4; id++) {
+        if (id == 2) {
+          return allergyDao.getId2("2").getMenu();
+        }
+
+        if (id == 3) {
+          return allergyDao.getId2("3").getMenu();
+        }
+      }
     } catch (Exception e) {
       e.printStackTrace();
     }
     return null;
   }
 
-  public String getInfo(String d) {
-    try {
-      return allergyDao.getAllergy(d).getInfo();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-    return null;
-  }
-
-  public String getTemp() {
+  public String getInfo() {
 
     try {
-      // return allergyDao.getMaterial("난류", "BAKERY");
-      System.out.println(allergyDao.getDivision("1").getMaterial() + "왜안나와");
-      return allergyDao.getDivision("1").getDivision();
-
-
-
+      return allergyDao.getId2("1").getInfo();
     } catch (Exception e) {
       e.printStackTrace();
     }

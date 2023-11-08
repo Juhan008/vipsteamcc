@@ -93,13 +93,13 @@ public class SaladController {
     return "/vipsCloneCoding/ingredientInfo";
   }
 
-  @RequestMapping(value = "/allergy", method = RequestMethod.GET)
-  public String allergy(Locale locale, Model model) {
-
-
-
-    return "/vipsCloneCoding/allergy";
-  }
+  // @RequestMapping(value = "/allergy", method = RequestMethod.GET)
+  // public String allergy(Locale locale, Model model) {
+  //
+  //
+  //
+  // return "/vipsCloneCoding/allergy";
+  // }
 
   @RequestMapping(value = "/allergyDelivery", method = RequestMethod.GET)
   public String allergyDelivery(Locale locale, Model model) {

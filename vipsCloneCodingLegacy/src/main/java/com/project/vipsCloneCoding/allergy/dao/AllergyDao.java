@@ -36,17 +36,8 @@ public class AllergyDao {
         allergy.getDivision(), allergy.getMenu(), allergy.getInfo(), allergy.getMaterial());
   }
 
-  public Allergy getAllergy(String division) throws Exception {
-    return jdbcTemplate.queryForObject("select * from Allergy where division = ? ",
-        new Object[] {division}, mapper);
-  }
 
-  public Allergy getMaterial(String a, String b) throws Exception {
-    return jdbcTemplate.queryForObject("select * from Allergy where material = ? and division = ?",
-        new Object[] {a, b}, mapper);
-  }
-
-  public Allergy getDivision(String division) {
+  public Allergy getId1(String division) {
     try {
       System.out.println("1번오류");
       return jdbcTemplate.queryForObject("select * from Allergy where ID = ?",
@@ -57,6 +48,27 @@ public class AllergyDao {
     System.out.println("2번오류");
     return null;
   }
+
+  public Allergy getId2(String menu) {
+    try {
+      return jdbcTemplate.queryForObject("select * from Allergy where ID = ?", new Object[] {menu},
+          mapper);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public Allergy getId3(String info) {
+    try {
+      return jdbcTemplate.queryForObject("select * from Allergy where ID = ?", new Object[] {info},
+          mapper);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
 
 
 }

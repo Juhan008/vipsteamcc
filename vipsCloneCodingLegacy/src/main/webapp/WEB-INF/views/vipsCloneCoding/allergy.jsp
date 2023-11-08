@@ -206,19 +206,24 @@
 								</tr>								
 							</thead>
 							<tbody>
+							
+								<tr>							
+									<th rowspan="3">${allergyService.getDivision()}</th>
+									<td class="material-menu">${allergyService.getMenu()}</td>
+									<td class="material-menuInfo">${allergyService.getInfo()}</td>
+								</tr>
+								<c:forEach var="i" begin="2" end="3">
 								<tr>
-									<th rowspan="3"> ${allergyService.getTemp()}</th>
-									<td class="material-menu">브리오슈바게트</td>
+									<td class="material-menu">${allergyService.getMenu()}</td>
 									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
 								</tr>
-								<tr>
-									<td class="material-menu">플래터가니쉬_모닝롤</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
+								</c:forEach>
+								<!--  
 								<tr>
 									<td class="material-menu">피치브루스케타</td>
 									<td class="material-menuInfo">난류, 우유, 대두, 밀, 복숭아, 호두</td>
 								</tr>
+								-->
 								<tr>
 									<th rowspan="8">DESSERT</th>
 									<td class="material-menu">마롱치즈케이크</td>

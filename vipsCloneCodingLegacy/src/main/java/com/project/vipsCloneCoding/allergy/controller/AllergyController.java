@@ -12,10 +12,12 @@ public class AllergyController {
   @Autowired
   private AllergyService allergyService;
 
-  @RequestMapping(value = "/resources/views/vipsCloneCoding/allergy", method = RequestMethod.GET)
-  public String allergy(HttpSession sessoin) {
+  @RequestMapping(value = "/allergy", method = RequestMethod.GET)
+  public String allergy(HttpSession session) {
 
-    sessoin.setAttribute("allergyService", allergyService);
+    session.setAttribute("allergyService", allergyService);
     return "vipsCloneCoding/allergy";
   }
+
+
 }
