@@ -26,7 +26,7 @@
 			<!-- 실제 사이트로 임시로 연결해둠 합칠 때 수정 -->
 			<div class="new-menu">
 				<a
-					href="https://www.ivips.co.kr/event/evtHotEventPrtTpl.asp?eventkey=632">
+					href="/event/evtHotEventQ">
 					<img src="/resources/images/intro/new-menu.png" alt="신메뉴 자세히 보기" />
 				</a>
 			</div>

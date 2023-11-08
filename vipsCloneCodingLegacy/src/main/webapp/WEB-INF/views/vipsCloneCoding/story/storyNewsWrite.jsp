@@ -68,10 +68,10 @@
 								alt="그림" class="big-title-background" />
 						</div>
 						<div class="table-area-padding">
-							<form action="" method="post">
+							<form action="" method="post" enctype="multipart/form-data">
 								<input type="hidden" name="userId" value="${userId}">
 								제목
-								<input type="file">
+								<input type="file" name="file">
 								파일
 								<input type="text" name="title">
 								내용
