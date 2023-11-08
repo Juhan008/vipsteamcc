@@ -21,19 +21,13 @@
 						<img src="/resources/images/main/mainBannerAd.jpg" alt="메인광고"
 							class="mainBannerAd" />
 					</div>
-
 					<div class="bottom-info-area">
-
 						<div class="bottom-info-area-inner">
-
-
 							<div class="bottom-info-area-inner-faceBook">
 								<a href="/event/evtHotEventQ">
 									<img src="/resources/images/main/bannerHotEvent.png" alt="핫이벤트"
 										class="bannerHotEvent" />
 								</a>
-
-
 							</div>
 
 							<div class="bottom-info-area-inner-news">
@@ -102,6 +96,7 @@
 														alt="돌잔치" />
 												</a>
 											</div>
+											<!-- 
 											<div>
 												<img src="/resources/images/main/quickiconmylogin.png"
 													alt="고객센터" />
@@ -109,6 +104,7 @@
 											<div>
 												<img src="/resources/images/main/quickiconFAQ.png" alt="FAQ" />
 											</div>
+											 -->
 										</div>
 									</div>
 								</div>

@@ -22,7 +22,7 @@ public class UserDAO {
       return new UserVO(rs.getInt("id"), rs.getString("name"), rs.getString("phone_number"),
           rs.getString("user_id"), rs.getString("pw"), rs.getString("address"),
           rs.getString("birth"), rs.getDate("created_at"), rs.getString("coupon"),
-          rs.getString("member"), rs.getString("lotation"));
+          rs.getString("member"), rs.getString("location"));
     }
   };
 
@@ -36,7 +36,7 @@ public class UserDAO {
         + "user_id varchar2(20) not null unique, " + "pw varchar2(500) not null, "
         + "address varchar2(300) not null, " + "birth varchar2(300) not null, "
         + "created_at Date default sysdate, " + "coupon varchar2(1000), " + "member varchar2(30), "
-        + "lotation varchar2(100))");
+        + "location varchar2(100))");
   }
 
   public void add(UserVO user) {

@@ -27,7 +27,7 @@ public class UserController {
   }
 
   @RequestMapping(value = "/member/join", method = RequestMethod.POST)
-  public String joinPost(@RequestParam Map<String, String> map, HttpSession sessoin) {
+  public String joinPost(@RequestParam Map<String, String> map) {
     UserVO user = new UserVO(map.get("name"), map.get("phone_number"), map.get("user_id"),
         map.get("pw"), map.get("address"), map.get("birth"));
     userService.join(user);
@@ -46,6 +46,7 @@ public class UserController {
     user = userService.login(user);
     sessoin.setAttribute("userId", user.getUserId());
     sessoin.setAttribute("member", user.getMember());
+    sessoin.setAttribute("location", user.getLocation());
     return "vipsCloneCoding/main";
   }
 
@@ -88,9 +89,8 @@ public class UserController {
   }
 
   @RequestMapping(value = "/admin/addAdmin", method = RequestMethod.POST)
-  public String adminPageAddPost(@RequestParam Map<String, Integer> mapId,
-      @RequestParam Map<String, String> map, HttpSession sessoin) {
-    userService.updateAdmin(mapId.get("id"), map.get("member"), map.get("location"));
+  public String adminPageAddPost(@RequestParam Map<String, String> map, HttpSession sessoin) {
+    userService.updateAdmin(Integer.valueOf(map.get("id")), map.get("member"), map.get("location"));
 
     sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
     sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());

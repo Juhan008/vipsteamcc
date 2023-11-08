@@ -34,7 +34,7 @@
 							<div class="template-head-menu">
 								<a href="/member/login">로그인</a>
 							</div>
-							<div class="template-head-menu">
+							<div class="template-head-menu-finish">
 								<a href="/member/join">회원가입</a>
 							</div>
 						</c:when>
@@ -42,17 +42,25 @@
 							<div class="template-head-menu">
 								<a href="/member/logout">로그아웃</a>
 							</div>
+							<c:if
+								test="${member.equals('admin')||member.equals('sub-admin')}">
+								<div class="template-head-menu">
+									<a href="/admin/adminPage">관리페이지</a>
+								</div>
+							</c:if>
+							
+							<c:if
+								test="${member.equals('admin')||member.equals('sub-admin')||member.equals('low-admin')}">
+								<div class="template-head-menu">
+									<a href="/store/storeReservationAdmin">예약관리페이지</a>
+								</div>
+							</c:if>
+							
+							<div class="template-head-menu-finish">
+								<a href="/store/storeCheckReservation">예약확인</a>
+							</div>
 						</c:otherwise>
 					</c:choose>
-
-					<c:if test="${member.equals('admin')}">
-						<div class="template-head-menu">
-							<a href="/admin/adminPage">관리페이지</a>
-						</div>
-					</c:if>
-
-
-					<div class="template-head-menu-finish">고객센터</div>
 				</div>
 			</div>
 			<div class="template-move-menu-area">

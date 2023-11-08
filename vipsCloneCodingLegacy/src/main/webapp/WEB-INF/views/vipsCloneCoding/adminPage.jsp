@@ -25,7 +25,7 @@
 								<li><input type="checkBox" name="adminChoice"
 										value="${subAd.getId() }"> <label> <c:out
 											value="${subAd.getName() }" /> <c:out
-											value="${subAd.getLotation() }" />
+											value="${subAd.getLocation() }" />
 								</label></li>
 							</c:forEach>
 
@@ -36,7 +36,7 @@
 								<li><input type="checkBox" name="adminChoice"
 										value="${lowAd.getId() }"> <label> <c:out
 											value="${lowAd.getName() }" /> <c:out
-											value="${lowAd.getLotation() }" />
+											value="${lowAd.getLocation() }" />
 								</label></li>
 							</c:forEach>
 						</div>
@@ -56,10 +56,12 @@
 				</form>
 				<hr class="line02">
 				<div class="results">
-					<form action="/admin/adminAdd" method="post">
+					<form action="/admin/addAdmin" method="post">
 						<button class="adminAdd">추가/변경</button>
-						<input type="radio" name="member" value="sub_admin">상위 관리자
-						<input type="radio" name="member" value="low_admin">하위 관리자
+						<input type="radio" name="member" value="sub_admin">
+						상위 관리자
+						<input type="radio" name="member" value="low_admin">
+						하위 관리자
 						<input type="text" name="location" placeholder="지역을 입력해주세요.">
 						<input type="hidden" name="id" value="${searchResult.getId()}">
 						<table class="searchResults">
@@ -78,6 +80,11 @@
 						</table>
 					</form>
 				</div>
+			</div>
+			<div class="go-home-button">
+				<a href="/main">
+					<button>메인으로</button>
+				</a>
 			</div>
 
 		</div>

@@ -23,9 +23,9 @@
 							class="VIPSSTORY" />
 
 						<div class="side-button-area">
-							<a href="./storeFirstBirthdayQ"> <img
-									src="/resources/images/store/firstBirthdayParty.gif" alt="돌잔치"
-									class="VIPS-story" />
+							<a href="./storeFirstBirthdayQ">
+								<img src="/resources/images/store/firstBirthdayParty.gif"
+									alt="돌잔치" class="VIPS-story" />
 							</a>
 						</div>
 					</div>
@@ -33,15 +33,18 @@
 					<div class="info-area">
 						<div class="path">
 							<span>
-								<a href="/intro"> <img
-										src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" /> Home
+								<a href="/intro">
+									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
+										alt="홈으로" />
+									Home
 								</a>
 							</span>
 							<span>
-								<a href="./storeFirstBirthdayQ"> <img
+								<a href="./storeFirstBirthdayQ">
+									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
-										alt="화살표" /> STORE
+										alt="화살표" />
+									STORE
 								</a>
 							</span>
 							<span>
@@ -66,25 +69,62 @@
 						</div>
 						<!-- 여기서부턴 db -->
 						<c:choose>
-						<c:when test="${userId==null}">
-							<div>
-								<form action="/store/reservationAdd" method="get">
-									<input type="hidden" name="user_id" value="${userId}">
-									성함
-									<input type="text" name="name">
-									연락처
-									<input type="text" name="phone_number">
-									날짜/시간
-									<input type="text" name="">
-									희망매장
-									<input type="text" name="desired_store">
-									인원
-									<input type="text" name="how_many_people">
-									기타문의
-									<input type="text" name="question">
-									<button>상담 신청 완료</button>
-								</form>
-							</div>
+							<c:when test="${userId!=null}">
+								<div class="reservation-area">
+									<form action="/store/reservationAdd" method="get"
+										class="reservation-form">
+										<input type="hidden" name="user_id" value="${userId}">
+										<div class="reservation-text-area">
+											성함
+											<div class="reservation-text-area-inner">
+												<input type="text" name="name" class="name">
+											</div>
+										</div>
+										<div class="reservation-text-area">
+											연락처
+											<div class="reservation-text-area-inner">
+												<input type="text" name="phone_number" class="phone_number">
+											</div>
+										</div>
+										<div class="reservation-text-area">
+											날짜/시간
+											<div class="reservation-text-area-inner">
+												<input type="datetime-local" name="time" class="time">
+											</div>
+										</div>
+										<div class="reservation-text-area">
+											희망매장
+											<div class="reservation-text-area-inner">
+												<input type="radio" name="location"
+													class="desired_store" value="서울">
+												서울
+												<input type="radio" name="location"
+													class="desired_store" value="대전">
+												대전
+												<input type="radio" name="location"
+													class="desired_store" value="인천">
+												인천
+												<input type="radio" name="location"
+													class="desired_store" value="경기">
+												경기
+											</div>
+										</div>
+										<div class="reservation-text-area">
+											인원
+											<div class="reservation-text-area-inner">
+												<input type="number" name="how_many_people"
+													class="how_many_people">명
+											</div>
+										</div>
+										<div class="reservation-question-area">
+											기타문의
+											<div class="reservation-text-area-inner">
+												<input type="text" name="reservation_contents" class="question">
+											</div>
+										</div>
+										<button>상담 신청 완료</button>
+									</form>
+								</div>
 							</c:when>
 							<c:otherwise>
 							로그인 해주세요
