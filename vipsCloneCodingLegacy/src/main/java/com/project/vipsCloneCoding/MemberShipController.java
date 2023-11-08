@@ -96,4 +96,14 @@ public class MemberShipController {
   public String msManiaQ4(Locale locale, Model model) {
     return "vipsCloneCoding/msManiaQ/msManiaQ4";
   }
+
+  @RequestMapping(value = "/addCard", method = RequestMethod.GET)
+  public String addCard(Locale locale, Model model) {
+    return "vipsCloneCoding/addCard";
+  }
+
+  @RequestMapping(value = "/deleteimage", method = RequestMethod.GET)
+  public String deleteimage(Locale locale, Model model) {
+    return "vipsCloneCoding/deleteimage";
+  }
 }
