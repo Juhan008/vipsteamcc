@@ -208,14 +208,14 @@
 							<tbody>
 							
 								<tr>							
-									<th rowspan="3">${allergyService.getDivision()}</th>
+									<th rowspan="4">${allergyService.getDivision()}</th>
 									<td class="material-menu">${allergyService.getMenu()}</td>
 									<td class="material-menuInfo">${allergyService.getInfo()}</td>
 								</tr>
-								<c:forEach var="i" begin="2" end="3">
+								<c:forEach var="item" items="${material01}">
 								<tr>
-									<td class="material-menu">${allergyService.getMenu()}</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
+									<td class="material-menu">${item.getMenu()}</td>
+									<td class="material-menuInfo">${item.getInfo()}</td>
 								</tr>
 								</c:forEach>
 								<!--  
