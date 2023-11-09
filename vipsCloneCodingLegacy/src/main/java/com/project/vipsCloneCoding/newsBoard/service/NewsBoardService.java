@@ -1,10 +1,14 @@
 package com.project.vipsCloneCoding.newsBoard.service;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import com.project.vipsCloneCoding.newsBoard.dao.NewsBoardDAO;
 import com.project.vipsCloneCoding.newsBoard.domain.NewsBoardVO;
 
@@ -115,5 +119,29 @@ public class NewsBoardService {
       // TODO Auto-generated catch block
       e.printStackTrace();
     } ;
+  }
+
+  public void imageUpload(MultipartFile image, String where, int id) {
+    try {
+      String savePath = Paths.get("../").toAbsolutePath().toString()
+          + "/git/Java4FirstProject/vipsCloneCodingLegacy/src/main/webapp/resources/images/" + where
+          + "/";
+      if (!image.isEmpty()) {
+
+        try {
+          File dir = new File(savePath);
+          dir.mkdir();
+        } catch (Exception e) {
+          e.printStackTrace();
+        }
+        String filename = id + ".png";
+        String filepath = savePath + filename;
+        File dest = new File(filepath);
+
+        image.transferTo(dest);
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
   }
 }

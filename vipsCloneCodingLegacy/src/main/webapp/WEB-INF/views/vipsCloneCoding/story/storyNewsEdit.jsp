@@ -74,19 +74,21 @@
 						<div class="table-area-padding">
 							<form action="" method="post" enctype="multipart/form-data">
 								<div>
+									<input type="hidden" name="currentPost" value="${currentPost}">
 									<input type="hidden" name="userId" value="${userId}">
 									<input type="file" name="file">
 								</div>
 								<div class="text-title-area">
 									<input type="text" name="title" placeholder="제목"
-										class="text-title">
+										class="text-title"
+										value="${newsBoardService.getTitle(currentPost)}">
 								</div>
 								<div class="text-boardContents-area">
 									<textarea name="boardContents" placeholder="내용"
-										class="text-boardContents"></textarea>
+										class="text-boardContents">${newsBoardService.getContents(currentPost)}</textarea>
 								</div>
 								<div class="button-area">
-									<button>글쓰기</button>
+									<button>수정</button>
 								</div>
 							</form>
 						</div>

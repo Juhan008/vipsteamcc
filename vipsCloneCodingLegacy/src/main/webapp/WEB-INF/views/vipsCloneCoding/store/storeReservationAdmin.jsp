@@ -31,40 +31,44 @@
 					</div>
 
 					<div class="info-area">
-						<div class="path">
-							<span>
-								<a href="/intro">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
-								</a>
-							</span>
-							<span>
-								<a href="./storeFirstBirthdayQ">
+						<div class="path-area">
+							<div class="path">
+								<span>
+									<a href="/intro">
+										<img
+											src="/resources/images/story/storyBrandStory/homeIcon.png"
+											alt="홈으로" />
+										Home
+									</a>
+								</span>
+								<span>
+									<a href="./storeFirstBirthdayQ">
+										<img
+											src="/resources/images/story/storyBrandStory/arrowIcon.png"
+											alt="화살표" />
+										STORE
+									</a>
+								</span>
+								<span>
 									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									STORE
-								</a>
-							</span>
-							<span>
-								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
-									alt="화살표" />
-								<strong> 돌잔치</strong>
-							</span>
-						</div>
+									<strong> 돌잔치</strong>
+								</span>
+							</div>
 
-						<div class="info-area-title">
-							<div class="happyBirthdayMessage">
-								<img src="/resources/images/store/happyBirthday1stParty.png"
-									alt="생일축하" />
-							</div>
-							<div class="firstBirthdayMessage">
-								<img src="/resources/images/store/firstBirthdayMessage.png"
-									alt="생일축하" />
-							</div>
-							<div class="infoTitleBackground">
-								<img src="/resources/images/store/infoTitleBackground.png">
+							<div class="info-area-title">
+								<div class="happyBirthdayMessage">
+									<img src="/resources/images/store/happyBirthday1stParty.png"
+										alt="생일축하" />
+								</div>
+								<div class="firstBirthdayMessage">
+									<img src="/resources/images/store/firstBirthdayMessage.png"
+										alt="생일축하" />
+								</div>
+								<div class="infoTitleBackground">
+									<img src="/resources/images/store/infoTitleBackground.png">
+								</div>
 							</div>
 						</div>
 						<!-- 여기서부턴 db -->
@@ -72,14 +76,14 @@
 							<c:choose>
 								<c:when
 									test="${member.equals('admin')||member.equals('sub_admin')}">
-								관리자
+								관리자 페이지 입니다.
 								<c:forEach var="reservation" items="${reservationTable}">
 										<form action="/store/storePrintAdmin">
 											<input type="hidden" name="id"
 												value="${reservation.getId() }">
-											<div>
+											<div class="reservation-bundle">
 												<div>접수시간 ${reservation.getCreatedAt() }</div>
-												<div>예약날짜 ${reservation.getTime() }</div>
+												<div>예약날짜 ${reservation.simpleDate() }</div>
 												<div>확인여부 ${reservation.getIsCheck() }</div>
 												<button>자세히보기</button>
 											</div>
@@ -87,12 +91,12 @@
 									</c:forEach>
 								</c:when>
 								<c:when test="${member.equals('low_admin')}">
-								지역 관리자
+								지역 관리자 페이지 입니다.
 								<c:forEach var="reservation" items="${reservationTable}">
 										<form action="/store/storePrintAdmin">
 											<input type="hidden" name="id"
-												value="${reservation.getId() }">
-											<div>
+												value="${reservation.getId()}">
+											<div class="reservation-bundle">
 												<div>신청자 ${reservation.getName()}</div>
 												<div>접수시간 ${reservation.getCreatedAt()}</div>
 												<div>예약날짜 ${reservation.getTime()}</div>

@@ -63,8 +63,7 @@
 										class="text-box" />
 								</div>
 								<div>
-									<input type="text" name="birth" placeholder="생년월일"
-										class="text-box" maxlength="8" />
+									<input type="date" name="birth" class="text-box" />
 								</div>
 								<button class="join-button">회원가입</button>
 							</form>

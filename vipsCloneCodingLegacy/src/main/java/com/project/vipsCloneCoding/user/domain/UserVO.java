@@ -9,7 +9,7 @@ public class UserVO {
   private String userId;
   private String pw;
   private String address;
-  private String birth;
+  private Date birth;
   private Date createdAt;
   private String coupon;
   private String member;
@@ -19,7 +19,7 @@ public class UserVO {
    * 전체호출용
    **/
   public UserVO(int id, String name, String phoneNumber, String userId, String pw, String address,
-      String birth, Date createdAt, String coupon, String member, String location) {
+      Date birth, Date createdAt, String coupon, String member, String location) {
     this.id = id;
     this.name = name;
     this.phoneNumber = phoneNumber;
@@ -37,7 +37,7 @@ public class UserVO {
    * 가입전용
    **/
   public UserVO(String name, String phoneNumber, String userId, String pw, String address,
-      String birth) {
+      Date birth) {
     this.name = name;
     this.phoneNumber = phoneNumber;
     this.userId = userId;
@@ -79,7 +79,7 @@ public class UserVO {
     return address;
   }
 
-  public String getBirth() {
+  public Date getBirth() {
     return birth;
   }
 

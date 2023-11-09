@@ -1,5 +1,6 @@
 package com.project.vipsCloneCoding.reservation.controller;
 
+import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -26,15 +27,19 @@ public class ReservationController {
   @RequestMapping(value = "/store/reservationAdd", method = RequestMethod.GET)
   public String reservationAdd(@RequestParam Map<String, String> map) {
     Date tempDate = null;
+    Timestamp tempTimestamp = null;
     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm");
     try {
+
       tempDate = formatter.parse(map.get("time"));
+      tempTimestamp = new Timestamp(tempDate.getTime());
+
     } catch (ParseException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
     }
     ReservationVO reservation = new ReservationVO(map.get("name"), map.get("phone_number"),
-        map.get("user_id"), tempDate, Integer.valueOf(map.get("how_many_people")),
+        map.get("user_id"), tempTimestamp, Integer.valueOf(map.get("how_many_people")),
         map.get("reservation_contents"), map.get("location"));
     reservationDAO.add(reservation);
     return "redirect:/store/storeFirstBirthdayQ";
@@ -77,7 +82,6 @@ public class ReservationController {
       try {
         sessoin.setAttribute("reservationTable", reservationDAO.getAllTable());
       } catch (Exception e) {
-        // TODO Auto-generated catch block
         e.printStackTrace();
       }
 

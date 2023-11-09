@@ -50,6 +50,11 @@ public class NewsBoardDAO {
     jdbcTemplate.update("update newsboard set board_view = " + view + " where id = " + id);
   }
 
+  public void update(int id, String userId, String title, String contents) throws Exception {
+    jdbcTemplate.update("update newsboard set user_id = '" + userId + "', title = '" + title
+        + "', board_contents = '" + contents + "' where id = " + id);
+  }
+
   public NewsBoardVO getNewsBoardFinalTable() throws Exception {
     return jdbcTemplate.queryForObject(
         "select * from (select * from newsboard order by id desc) where rownum = 1", mapper);
@@ -60,7 +65,6 @@ public class NewsBoardDAO {
     return jdbcTemplate.queryForObject("select count(1) from newsboard", count);
 
   }
-
 
   public void add(NewsBoardVO newsBoard) {
     jdbcTemplate.update("insert into newsboard (user_id, title, board_contents) values (?,?,?)",
@@ -77,6 +81,10 @@ public class NewsBoardDAO {
         "select * from (select rownum startRow, tempboard.*from(select * from newsboard order by id desc)tempboard) where ROWNUM <= 10 and startRow >= "
             + ((controll - 1) * 10 + 1),
         mapper);
+  }
+
+  public void Delete(int id) {
+    jdbcTemplate.update("delete from newsboard where id = " + id);
   }
 
 

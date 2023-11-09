@@ -32,41 +32,45 @@
 					</div>
 
 					<div class="info-area">
-						<div class="path">
-							<span>
-								<a href="/intro.jsp">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
-								</a>
-							</span>
-							<span>
-								<a href="/story/storyBrandStory">
+						<div class="path-area">
+							<div class="path">
+								<span>
+									<a href="/intro.jsp">
+										<img
+											src="/resources/images/story/storyBrandStory/homeIcon.png"
+											alt="홈으로" />
+										Home
+									</a>
+								</span>
+								<span>
+									<a href="/story/storyBrandStory">
+										<img
+											src="/resources/images/story/storyBrandStory/arrowIcon.png"
+											alt="화살표" />
+										VIPS STORY
+									</a>
+								</span>
+								<span>
 									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									VIPS STORY
-								</a>
-							</span>
-							<span>
-								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
-									alt="화살표" />
-								<strong> 새소식</strong>
-							</span>
-						</div>
-
-						<div class="big-title">
-							<h4>
-								<img src="/resources/images/story/storyNewsQ/newTitle.png"
-									alt="새소식" class="new-title" />
-							</h4>
-							<div>
-								<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
-									alt="설명" class="new-title-info" />
+									<strong> 새소식</strong>
+								</span>
 							</div>
-							<img
-								src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
-								alt="그림" class="big-title-background" />
+
+							<div class="big-title">
+								<h4>
+									<img src="/resources/images/story/storyNewsQ/newTitle.png"
+										alt="새소식" class="new-title" />
+								</h4>
+								<div>
+									<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
+										alt="설명" class="new-title-info" />
+								</div>
+								<img
+									src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
+									alt="그림" class="big-title-background" />
+							</div>
 						</div>
 
 
@@ -85,7 +89,11 @@
 										<strong>조회수</strong> ${newsBoardService.getView(currentPost)}
 									</div>
 								</div>
-								<div>${newsBoardService.getContents(currentPost)}</div>
+								<div>
+									<img src="/resources/images/story/imgUpload/${currentPost}.png"
+										onError="this.style.display='none'" class="post-img" />
+								</div>
+								<div class="post-text-area">${newsBoardService.getContents(currentPost)}</div>
 							</div>
 							<div class="table-controll-area">
 								<div class="table-controll-move">
@@ -129,9 +137,32 @@
 									</c:choose>
 								</div>
 							</div>
-							<a href="/story/storyNewsQ">
-								<button class="table-controll-button">목록</button>
-							</a>
+							<div>
+								<div class="table-controll-button-area-inner">
+									<a href="/story/storyNewsQ">
+										<button class="table-controll-button">목록</button>
+									</a>
+								</div>
+
+								<c:if
+									test="${member.equals('admin')||member.equals('sub_admin')}">
+									<div class="admin-button-area">
+										<div class="admin-button-area-inner">
+											<form action="/story/storyNewsEdit" method="get">
+												<input type="hidden" name="editPost" value="${currentPost}">
+												<button class="table-admin-button">수정</button>
+											</form>
+										</div>
+										<div class="admin-button-area-inner">
+											<form action="/story/storyNewsDelete" method="post">
+												<input type="hidden" name="deletePost"
+													value="${currentPost}">
+												<button class="table-admin-button">삭제</button>
+											</form>
+										</div>
+									</div>
+								</c:if>
+							</div>
 						</div>
 					</div>
 				</div>

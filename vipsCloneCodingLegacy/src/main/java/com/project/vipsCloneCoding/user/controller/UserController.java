@@ -1,5 +1,8 @@
 package com.project.vipsCloneCoding.user.controller;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
@@ -28,8 +31,17 @@ public class UserController {
 
   @RequestMapping(value = "/member/join", method = RequestMethod.POST)
   public String joinPost(@RequestParam Map<String, String> map) {
+
+    Date tempDate = null;
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    try {
+      tempDate = formatter.parse(map.get("birth"));
+    } catch (ParseException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
     UserVO user = new UserVO(map.get("name"), map.get("phone_number"), map.get("user_id"),
-        map.get("pw"), map.get("address"), map.get("birth"));
+        map.get("pw"), map.get("address"), tempDate);
     userService.join(user);
     return "redirect:/member/login";
   }
