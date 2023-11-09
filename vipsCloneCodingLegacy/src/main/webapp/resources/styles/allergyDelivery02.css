@@ -31,7 +31,7 @@ body {
 .mainContent02 {
 	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;	
-	height: 2785px;
+	height: 2200px;
 	width: 1000px;
     box-shadow: 4px 0px 5px #2b2424, -4px 0px 5px #2b2424;
 }
@@ -117,7 +117,7 @@ body {
 
 .contentFinish img {
 	position: absolute;
-    top: 2867px;
+    top: 2282px;
 }
 
 .footerLocation {
@@ -197,9 +197,6 @@ body {
     margin-left: 4px;
 }*/
 
-.rawMaterial img {
-	
-}
 
 .bottomLine {
 	width: 750px;
@@ -274,42 +271,18 @@ body {
 
 .division-01 {
 	width: 100%;
-	height: 90px;
+	height: 315px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 33px;
+    padding-top: 145px;
 }
 
 .division-02 {
 	width: 100%;
-	height: 240px;
-	border: 1px solid #aa9781;
-	border-left: none;
-    border-top: none;
-    text-align: center;
-    color: #402612;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 109px;
-}
-
-.division-03 {
-	width: 100%;
-	height: 30px;
-	border: 1px solid #aa9781;
-	border-left: none;
-    border-top: none;
-    text-align: center;
-    color: #402612;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 4px;
-}
-
-.division-04 {
-	width: 100%;
 	height: 90px;
 	border: 1px solid #aa9781;
 	border-left: none;
@@ -317,19 +290,43 @@ body {
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 34px;
+    padding-top: 35px;
 }
 
-.division-05 {
+.division-03 {
 	width: 100%;
-	height: 30px;
+	height: 315px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 4px;
+    padding-top: 55px;
+}
+
+.division-04 {
+	width: 100%;
+	height: 135px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 54px;
+}
+
+.division-05 {
+	width: 100%;
+	height: 450px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 190px;
 }
 
 .division-06 {
@@ -346,77 +343,65 @@ body {
 
 .division-07 {
 	width: 100%;
-	height: 120px;
+	height: 270px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 48px;
+    padding-top: 123px;
 }
 
 .division-08 {
 	width: 100%;
-	height: 405px;
+	height: 585px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 191px;
+    padding-top: 280px;
 }
 
 .division-09 {
 	width: 100%;
-	height: 315px;
+	height: 390px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 145px;
+    padding-top: 183px;
 }
 
 .division-10 {
 	width: 100%;
-	height: 90px;
+	height: 390px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 34px;
+    padding-top: 183px;
 }
 
 .division-11 {
 	width: 100%;
-	height: 60px;
+	height: 225px;
 	border: 1px solid #aa9781;
 	border-left: none;
     border-top: none;
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 20px;
+    padding-top: 99px;
 }
 
 .division-12 {
-	width: 100%;
-	height: 300px;
-	border: 1px solid #aa9781;
-	border-left: none;
-    border-top: none;
-    text-align: center;
-    color: #402612;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 138px;
-}
-
-.division-13 {
 	width: 100%;
 	height: 90px;
 	border: 1px solid #aa9781;
@@ -425,7 +410,19 @@ body {
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 34px;
+    padding-top: 33px;
+}
+
+.division-13 {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 64px;
 }
 
 .division-14 {
@@ -505,7 +502,7 @@ body {
 	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
     height: 150px;
-    margin-top: 2200px;
+    margin-top: 1578px;
     padding: 20px;
     z-index: 2;
 }

@@ -70,17 +70,7 @@ public class AllergyDao {
     return null;
   }
 
-  public Allergy getDivision01(String a, String b) {
-    try {
-      return jdbcTemplate.queryForObject(
-          "select * from Allergy where MATERIAL = ? and DIVISION = ?", new Object[] {a, b}, mapper);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-    return null;
-  }
-
-  public List<Allergy> getAllMenu(String division, String material) throws Exception {
+  public List<Allergy> getAllMenu01(String division, String material) throws Exception {
     return jdbcTemplate.query("select * from allergy where division = ? and material = ?",
         new Object[] {division, material}, mapper);
   }

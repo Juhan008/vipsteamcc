@@ -9,7 +9,7 @@ public class AllergyService {
   @Autowired
   private AllergyDao allergyDao;
 
-  public String getDivision() {
+  public String getDivision01() {
 
     try {
       return allergyDao.getId1("1").getDivision();
@@ -19,21 +19,163 @@ public class AllergyService {
     return null;
   }
 
-  public String getMenu() {
+  public String getDivision02() {
 
     try {
-      return allergyDao.getDivision01("난류", "BAKERY").getMenu();
-
+      return allergyDao.getId1("4").getDivision();
     } catch (Exception e) {
       e.printStackTrace();
     }
     return null;
   }
 
-  public String getInfo() {
+  public String getDivision03() {
 
     try {
-      return allergyDao.getId2("1").getInfo();
+      return allergyDao.getId1("12").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision04() {
+
+    try {
+      return allergyDao.getId1("13").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision05() {
+
+    try {
+      return allergyDao.getId1("16").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision06() {
+
+    try {
+      return allergyDao.getId1("17").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision07() {
+
+    try {
+      return allergyDao.getId1("23").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision08() {
+
+    try {
+      return allergyDao.getId1("27").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision09() {
+
+    try {
+      return allergyDao.getId1("36").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision10() {
+
+    try {
+      return allergyDao.getId1("43").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+
+  public String getDivision11() {
+
+    try {
+      return allergyDao.getId1("46").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision12() {
+
+    try {
+      return allergyDao.getId1("48").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision13() {
+
+    try {
+      return allergyDao.getId1("58").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision14() {
+
+    try {
+      return allergyDao.getId1("60").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public String getDivision15() {
+
+    try {
+      return allergyDao.getId1("62").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  // BEVERAGE
+  public String getDivision16() {
+
+    try {
+      return allergyDao.getId1("69").getDivision();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  // RICE SALAD
+  public String getDivision17() {
+
+    try {
+      return allergyDao.getId1("266").getDivision();
     } catch (Exception e) {
       e.printStackTrace();
     }

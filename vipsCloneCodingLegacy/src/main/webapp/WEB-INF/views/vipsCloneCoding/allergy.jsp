@@ -91,22 +91,22 @@
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergy02">
 										<img src="/resources/images/templet_allergy/우유.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergy03">
 										<img src="/resources/images/templet_allergy/메밀.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergy04">
 										<img src="/resources/images/templet_allergy/땅콩.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergy">
+									<a href="/allergy05">
 										<img src="/resources/images/templet_allergy/대두.gif">
 									</a>
 								</li>
@@ -188,302 +188,213 @@
 							</ul>
 						</div>
 						<div class="bottomLine"></div>
-						<div class="line54">
+						<div class="line01">
 							<img src="/resources/images/templet_ingredientInfo/line.png">
 						</div>
-						<table class="material01-info">
-						
-							<colgroup>
-								<col style="width:20%;">
-								<col style="width:30%;">
-								<col style="width:50%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th>구분</th>
-									<th>메뉴</th>
-									<th>정보</th>
-								</tr>								
-							</thead>
-							<tbody>
-							
-								<tr>							
-									<th rowspan="4">${allergyService.getDivision()}</th>
-									<td class="material-menu">${allergyService.getMenu()}</td>
-									<td class="material-menuInfo">${allergyService.getInfo()}</td>
-								</tr>
-								<c:forEach var="item" items="${material01}">
-								<tr>
-									<td class="material-menu">${item.getMenu()}</td>
-									<td class="material-menuInfo">${item.getInfo()}</td>
-								</tr>
+						<div class="material-header">
+							<div class="header-division">구분</div>
+							<div class="header-menu">메뉴</div>
+							<div class="header-info">정보</div>
+						</div>
+						<div class="line02"></div>
+						<div class="material-infoBox">
+							<div class="infoBox-01">
+								<div class="division-01">${allergyService.getDivision01()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division01}">
+									<div class="menu-01">${item.getMenu()}</div>
 								</c:forEach>
-								<!--  
-								<tr>
-									<td class="material-menu">피치브루스케타</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 복숭아, 호두</td>
-								</tr>
-								-->
-								<tr>
-									<th rowspan="8">DESSERT</th>
-									<td class="material-menu">마롱치즈케이크</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">베이크드 치즈케이크</td>
-									<td class="material-menuInfo">난류, 우유, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">브리오슈</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">빅토리아케이크</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">애플파이</td>
-									<td class="material-menuInfo">난류, 우유, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">초코분수</td>
-									<td class="material-menuInfo">난류, 우유, 대두</td>
-								</tr>
-								<tr>
-									<td class="material-menu">포레누아 케이크</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">홍시 레어치즈푸딩</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 호두</td>
-								</tr>
-								<tr>
-									<th>DIY</th>
-									<td class="material-menu">샤퀴테리보드</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기</td>
-								</tr>
-								<tr>
-									<th rowspan="3">DRESSING</th>
-									<td class="material-menu">마요네즈</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">치폴레소스</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 토마토</td>
-								</tr>
-								<tr>
-									<td class="material-menu">타르타르 소스</td>
-									<td class="material-menuInfo">난류, 대두, 쇠고기</td>
-								</tr>
-								<tr>
-									<th>FRUIT</th>
-									<td class="material-menu">망고 샐러드</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 돼지고기, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<th rowspan="6">GARDEN SALAD</th>
-									<td class="material-menu">그레인 샐러드</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 돼지고기, 토마토, 아황산류, 호두, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">빕스 시크릿 드레싱</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">시저 드레싱</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">요거트드레싱</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">크리미 샐러드</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 게, 토마토, 아황산류, 쇠고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">파마산슈레드</td>
-									<td class="material-menuInfo">난류, 우유</td>
-								</tr>
-								<tr>
-									<th rowspan="4">HOT APPETIZER</th>
-									<td class="material-menu">베이컨에그오픈샌드위치</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 아황산류, 쇠고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">치즈&아스파라거스</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">페퍼로니튀김</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 돼지고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">훈제연어오픈샌드위치</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 아황산류, 쇠고기, 조개류</td>
-								</tr>
-								<tr>
-									<th rowspan="9">HOT PLATE</th>
-									<td class="material-menu">멕시칸 라이스</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">바비큐포크</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 고등어, 돼지고기, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">체다스윗 콘립</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">치킨 파히타</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 토마토, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">치폴레 살사</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 토마토</td>
-								</tr>
-								<tr>
-									<td class="material-menu">칠리 콘 까르네</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">플래터가니쉬_코우슬로</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">플랜트미트타코라이스</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">후라이드 치킨</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 고등어, 새우, 돼지고기, 아황산류, 닭고기, 오징어, 조개류</td>
-								</tr>
-								<tr>
-									<th rowspan="7">MAIN MENU</th>
-									<td class="material-menu">1997스테이크</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 고등어, 돼지고기, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">립아이+랍스터</td>
-									<td class="material-menuInfo">난류, 우유, 밀, 게, 새우, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">립아이스테이크</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 토마토, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">본인립아이스테이크</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">치즈퐁듀 랍스터&씨푸드</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 고등어, 돼지고기, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">허브갈릭램&서로인스테이크</td>
-									<td class="material-menuInfo">난류, 우유, 밀, 토마토, 쇠고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">허브갈릭램스테이크</td>
-									<td class="material-menuInfo">난류, 우유, 밀, 토마토</td>
-								</tr>
-								<tr>
-									<th rowspan="3">MAIN SALAD</th>
-									<td class="material-menu">로스트머쉬룸샐러드</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 아황산류, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">브리오슈크루통</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀</td>
-								</tr>
-								<tr>
-									<td class="material-menu">오리엔탈 치킨 샐러드</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 아황산류, 닭고기</td>
-								</tr>
-								<tr>
-									<th rowspan="2">NOODLES</th>
-									<td class="material-menu">쌀국수육수</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 돼지고기, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">우동육수</td>
-									<td class="material-menuInfo">난류, 대두</td>
-								</tr>
-								<tr>
-									<th rowspan="10">PIZZA PASTA</th>
-									<td class="material-menu">갈릭떡볶이</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 토마토</td>
-								</tr>
-								<tr>
-									<td class="material-menu">머쉬룸크림파스타</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">멕시칸 BBQ 피자</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">멕시칸 치킨 퀘사디아</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 토마토, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">미트 로제 파스타</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">베이컨 까르보나라</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 쇠고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">볼로네제소스</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">스파게티면</td>
-									<td class="material-menuInfo">난류, 대두, 밀, 돼지고기, 닭고기</td>
-								</tr>
-								<tr>
-									<td class="material-menu">애플고르곤졸라피자</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 호두</td>
-								</tr>
-								<tr>
-									<td class="material-menu">할라피뇨베이컨오일파스타</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 닭고기</td>
-								</tr>
-								<tr>
-									<th rowspan="2">SEAFOOD</th>
-									<td class="material-menu">슈림프 에그 라이스</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 새우, 토마토, 아황산류, 쇠고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">스팀드 슈림프 에그</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 새우</td>
-								</tr>
-								<tr>
-									<th rowspan="2">SIDE</th>
-									<td class="material-menu">얌스톤 랍스터</td>
-									<td class="material-menuInfo">난류 우유, 대두, 게</td>
-								</tr>
-								<tr>
-									<td class="material-menu">프리미엄 가니쉬</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 토마토, 아황산류, 쇠고기</td>
-								</tr>
-								<tr>
-									<th rowspan="3">SOUP</th>
-									<td class="material-menu">머쉬룸스프</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">양송이스프</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 밀, 돼지고기, 닭고기, 조개류</td>
-								</tr>
-								<tr>
-									<td class="material-menu">육수</td>
-									<td class="material-menuInfo">난류, 우유, 대두, 쇠고기, 닭고기</td>
-								</tr>
-							</tbody>
-						</table>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division01}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-02">${allergyService.getDivision02()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division02}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division02}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-03">${allergyService.getDivision03()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division03}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division03}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-04">${allergyService.getDivision04()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division04}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division04}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-05">${allergyService.getDivision05()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division05}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division05}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-06">${allergyService.getDivision06()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division06}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division06}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-07">${allergyService.getDivision07()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division07}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division07}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-08">${allergyService.getDivision08()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division08}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division08}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-09">${allergyService.getDivision09()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division09}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division09}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-10">${allergyService.getDivision10()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division10}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division10}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-11">${allergyService.getDivision11()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division11}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division11}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-12">${allergyService.getDivision12()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division12}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division12}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-13">${allergyService.getDivision13()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division13}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division13}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-14">${allergyService.getDivision14()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division14}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division14}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-15">${allergyService.getDivision15()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division15}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division15}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							
+						</div>
 						<div class="caution">
 							<div class="lookList">
 								<img src="/resources/images/templet_saladMain/tit_look.png">
