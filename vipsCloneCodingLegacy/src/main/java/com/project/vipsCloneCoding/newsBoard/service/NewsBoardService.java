@@ -2,9 +2,11 @@ package com.project.vipsCloneCoding.newsBoard.service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.project.vipsCloneCoding.newsBoard.dao.NewsBoardDAO;
+import com.project.vipsCloneCoding.newsBoard.domain.NewsBoardVO;
 
 @Service
 public class NewsBoardService {
@@ -65,21 +67,9 @@ public class NewsBoardService {
     return null;
   }
 
-
-  public String isDelete(int i) {
-    try {
-      return newsBoardDAO.getNewsBoardTable(i).getIsDelete();
-    } catch (Exception e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
-    }
-    return null;
-  }
-
   public int tableFinish() {
-
     try {
-      return newsBoardDAO.getNewsBoardFinalTable().getId();
+      return newsBoardDAO.countTable().getCount();
     } catch (Exception e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
@@ -87,4 +77,43 @@ public class NewsBoardService {
     return 0;
   }
 
+  public int tableBottomController() {
+
+    int temp = newsBoardDAO.countTable().getCount() / 10;
+
+    if (newsBoardDAO.countTable().getCount() % 10 != 0) {
+      temp = temp + 1;
+    }
+    return temp;
+  }
+
+
+  public List<NewsBoardVO> getLastTen() {
+    try {
+      return newsBoardDAO.getLastTen();
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public List<NewsBoardVO> getLastTen(int controll) {
+    try {
+      return newsBoardDAO.getLastTen(controll);
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return null;
+  }
+
+  public void upView(int id) {
+    try {
+      newsBoardDAO.updateView(id, newsBoardDAO.getNewsBoardTable(id).getView() + 1);
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } ;
+  }
 }

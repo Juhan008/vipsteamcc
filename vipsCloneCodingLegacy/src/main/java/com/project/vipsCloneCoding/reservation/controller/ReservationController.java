@@ -73,7 +73,7 @@ public class ReservationController {
   @RequestMapping(value = "/store/storeReservationAdmin", method = RequestMethod.GET)
   public String storeReservationAdmin(HttpSession sessoin) {
     if (sessoin.getAttribute("member").equals("admin")
-        || sessoin.getAttribute("member").equals("sub-admin")) {
+        || sessoin.getAttribute("member").equals("sub_admin")) {
       try {
         sessoin.setAttribute("reservationTable", reservationDAO.getAllTable());
       } catch (Exception e) {
@@ -81,7 +81,7 @@ public class ReservationController {
         e.printStackTrace();
       }
 
-    } else if (sessoin.getAttribute("member").equals("low-admin")) {
+    } else if (sessoin.getAttribute("member").equals("low_admin")) {
       try {
         sessoin.setAttribute("reservationTable",
             reservationDAO.getLocationReservation(sessoin.getAttribute("location").toString()));

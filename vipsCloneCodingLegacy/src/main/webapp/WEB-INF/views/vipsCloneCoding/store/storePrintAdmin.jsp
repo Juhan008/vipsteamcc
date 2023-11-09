@@ -69,6 +69,9 @@
 						<!-- 여기서부턴 db -->
 						<div class="reservation-post-area">
 							<div>
+							<div>성함 : ${currentReservation.getTime()}</div>
+							<div>신청자 아이디 : ${currentReservation.getTime()}</div>
+							<div>신청자 전화번호 : ${currentReservation.getTime()}</div>
 								<div>예약 날짜 : ${currentReservation.getTime()}</div>
 								<div>지역 : ${currentReservation.getLocation()}</div>
 								<div>${currentReservation.getHowManyPeople()}명</div>

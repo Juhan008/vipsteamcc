@@ -19,22 +19,28 @@ public class NewsBoardController {
   private NewsBoardDAO newsBoardDAO;
 
   @RequestMapping(value = "/story/storyNewsQ", method = RequestMethod.GET)
-  public String storyNewsQ(HttpSession sessoin) {
+  public String storyNewsQ(HttpSession sessoin, @RequestParam Map<String, String> map) {
+    int temp = 1;
 
+    if (map.get("controll") != null) {
+      temp = Integer.valueOf(map.get("controll"));
+    }
     sessoin.setAttribute("newsBoardService", newsBoardService);
+    sessoin.setAttribute("lastPost", newsBoardService.getLastTen(temp));
     return "vipsCloneCoding/story/storyNewsQ";
   }
 
   @RequestMapping(value = "/main", method = RequestMethod.GET)
   public String main(HttpSession sessoin) {
-    sessoin.setAttribute("newsBoardService", newsBoardService);
+    sessoin.setAttribute("lastPost", newsBoardService.getLastTen());
     return "vipsCloneCoding/main";
   }
 
   @RequestMapping(value = "/story/storyNewsPrt", method = RequestMethod.GET)
-  public String storyNewsPrt(HttpSession sessoin, @RequestParam Map<String, Integer> map) {
+  public String storyNewsPrt(HttpSession sessoin, @RequestParam Map<String, String> map) {
+    newsBoardService.upView(Integer.valueOf(map.get("currentPost")));
     sessoin.setAttribute("newsBoardService", newsBoardService);
-    sessoin.setAttribute("currentPost", map.get("currentPost"));
+    sessoin.setAttribute("currentPost", Integer.valueOf(map.get("currentPost")));
     return "vipsCloneCoding/story/storyNewsPrt";
   }
 
@@ -53,7 +59,7 @@ public class NewsBoardController {
   public String storyNewsWritePost(HttpSession sessoin, @RequestParam Map<String, String> map) {
 
     if (sessoin.getAttribute("member").equals("admin")
-        || sessoin.getAttribute("member").equals("subAdmin")) {
+        || sessoin.getAttribute("member").equals("sub_admin")) {
 
       NewsBoardVO newsboard = new NewsBoardVO((String) sessoin.getAttribute("userId"),
           map.get("title"), map.get("boardContents"));

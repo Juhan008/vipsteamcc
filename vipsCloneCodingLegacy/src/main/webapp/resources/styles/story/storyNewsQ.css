@@ -6,13 +6,13 @@
 }
 
 .background-shadow {
+	height: 100%;
 	box-shadow: 0px 0px 20px 5px;
 }
 
 .padding-box {
 	height: 100%;
 	position: relative;
-	margin: auto;
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -48,8 +48,13 @@
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
+.path-area {
+	position: relative;
+	top: 40px;
+	height: 14%;
+}
+
 .path {
-	margin: 39px 0px 0px 0px;
 	font-size: 11px;
 	color: #765a3a;
 }
@@ -85,7 +90,7 @@
 .table-area-padding {
 	width: 100%;
 	position: relative;
-	margin: 125px 0px 0px 0px;
+	top: 125px;
 	/* background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -142,6 +147,7 @@
 .table-list-title {
 	width: 69%;
 }
+
 .table-list-title-2 {
 	width: 69%;
 	text-align: left;
@@ -162,14 +168,36 @@
 	width: 10%;
 }
 
+.bottomControllArea {
+	position: relative;
+	top: 25px;
+	justify-content: center;
+	display: flex;
+}
+
+.start-controll-button {
+	border: none;
+	background: none;
+}
+
+.repeat-controll-button {
+	border: none;
+	background: none;
+	border-left: solid 1px;
+}
+
+.write-button-area {
+	position: relative;
+	top: 50px;
+	left: 76%;
+}
+
 .write-button {
 	color: white;
 	font-size: 30px;
 	width: 17%;
 	height: 55px;
 	position: relative;
-	top: 253px;
-	left: 78%;
 	background-color: rgb(145, 24, 38);
 	border: none;
 	border-radius: 5px;

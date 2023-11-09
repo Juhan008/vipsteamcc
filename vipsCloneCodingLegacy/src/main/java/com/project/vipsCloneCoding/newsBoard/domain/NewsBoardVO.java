@@ -9,7 +9,11 @@ public class NewsBoardVO {
   private String contents;
   private Date createdAt;
   private int view = 0;
-  private String isDelete = "false";
+  private int count;
+
+  public NewsBoardVO(int count) {
+    this.count = count;
+  }
 
   public NewsBoardVO(int id, String userId, String title, String contents, Date createdAt,
       int view) {
@@ -62,8 +66,8 @@ public class NewsBoardVO {
     return view;
   }
 
-  public String getIsDelete() {
-    return isDelete;
+  public int getCount() {
+    return count;
   }
 
 }

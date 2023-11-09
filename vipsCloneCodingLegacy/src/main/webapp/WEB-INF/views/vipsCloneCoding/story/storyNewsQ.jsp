@@ -33,41 +33,45 @@
 					</div>
 
 					<div class="info-area">
-						<div class="path">
-							<span>
-								<a href="/intro.jsp">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
-								</a>
-							</span>
-							<span>
-								<a href="/story/storyBrandStory">
+						<div class="path-area">
+							<div class="path">
+								<span>
+									<a href="/intro.jsp">
+										<img
+											src="/resources/images/story/storyBrandStory/homeIcon.png"
+											alt="홈으로" />
+										Home
+									</a>
+								</span>
+								<span>
+									<a href="/story/storyBrandStory">
+										<img
+											src="/resources/images/story/storyBrandStory/arrowIcon.png"
+											alt="화살표" />
+										VIPS STORY
+									</a>
+								</span>
+								<span>
 									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									VIPS STORY
-								</a>
-							</span>
-							<span>
-								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
-									alt="화살표" />
-								<strong> 새소식</strong>
-							</span>
-						</div>
-
-						<div class="big-title">
-							<h4>
-								<img src="/resources/images/story/storyNewsQ/newTitle.png"
-									alt="새소식" class="new-title" />
-							</h4>
-							<div>
-								<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
-									alt="설명" class="new-title-info" />
+									<strong> 새소식</strong>
+								</span>
 							</div>
-							<img
-								src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
-								alt="그림" class="big-title-background" />
+
+							<div class="big-title">
+								<h4>
+									<img src="/resources/images/story/storyNewsQ/newTitle.png"
+										alt="새소식" class="new-title" />
+								</h4>
+								<div>
+									<img src="/resources/images/story/storyNewsQ/newTitleInfo.png"
+										alt="설명" class="new-title-info" />
+								</div>
+								<img
+									src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
+									alt="그림" class="big-title-background" />
+							</div>
 						</div>
 
 
@@ -91,30 +95,39 @@
 										<div class="table-list-createdAt">등록일</div>
 										<div class="table-list-view">조회수</div>
 									</div>
-									<c:if test="${newsBoardService!=null}">
-										<c:forEach var="i" begin="0" end="9">
-											<c:if
-												test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
+									<c:forEach var="post" items="${lastPost}">
+										<form action="/story/storyNewsPrt" class="table-text-area">
+											<input type="hidden" name="currentPost" value=${post.getId()}>
+											<div class="table-list-id">${post.getId()}</div>
+											<div class="table-list-title-2">
+												<button class="title-button">${post.getTitle()}</button>
+											</div>
+											<div class="table-list-createdAt">${post.getCreatedAt()}</div>
+											<div class="table-list-view">${post.getView()}</div>
+										</form>
+										<hr>
+									</c:forEach>
+								</div>
 
-												<form action="/story/storyNewsPrt" class="table-text-area">
-													<input type="hidden" name="currentPost"
-														value=${newsBoardService.getId(newsBoardService.tableFinish()-i)}>
-													<div class="table-list-id">${newsBoardService.getId(newsBoardService.tableFinish()-i)}</div>
-													<div class="table-list-title-2">
-														<button class="title-button">${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</button>
-													</div>
-													<div class="table-list-createdAt">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
-													<div class="table-list-view">${newsBoardService.getView(newsBoardService.tableFinish()-i)}</div>
-												</form>
+								<div class="bottomControllArea">
+									<form>
+										<input type="hidden" name="controll" value="1">
+										<button class="start-controll-button">1</button>
+									</form>
 
-												<hr>
-											</c:if>
-										</c:forEach>
-									</c:if>
+									<c:forEach var="controllNumber" begin="2"
+										end="${newsBoardService.tableBottomController()}">
+										<form>
+											<input type="hidden" name="controll"
+												value="${controllNumber}">
+											<button class="repeat-controll-button">${controllNumber }</button>
+										</form>
+									</c:forEach>
 								</div>
 							</div>
-							<c:if test="${member.equals('admin')||member.equals('subAdmin')}">
-								<div>
+							<c:if
+								test="${member.equals('admin')||member.equals('sub_admin')}">
+								<div class="write-button-area">
 									<a href="/story/storyNewsWrite">
 										<button class="write-button">글쓰기</button>
 									</a>

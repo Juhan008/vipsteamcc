@@ -43,14 +43,14 @@
 								<a href="/member/logout">로그아웃</a>
 							</div>
 							<c:if
-								test="${member.equals('admin')||member.equals('sub-admin')}">
+								test="${member.equals('admin')||member.equals('sub_admin')}">
 								<div class="template-head-menu">
 									<a href="/admin/adminPage">관리페이지</a>
 								</div>
 							</c:if>
 							
 							<c:if
-								test="${member.equals('admin')||member.equals('sub-admin')||member.equals('low-admin')}">
+								test="${member.equals('admin')||member.equals('sub_admin')||member.equals('low_admin')}">
 								<div class="template-head-menu">
 									<a href="/store/storeReservationAdmin">예약관리페이지</a>
 								</div>

@@ -71,7 +71,7 @@
 						<div class="reservation-post-area">
 							<c:choose>
 								<c:when
-									test="${member.equals('admin')||member.equals('sub-admin')}">
+									test="${member.equals('admin')||member.equals('sub_admin')}">
 								관리자
 								<c:forEach var="reservation" items="${reservationTable}">
 										<form action="/store/storePrintAdmin">
@@ -86,21 +86,27 @@
 										</form>
 									</c:forEach>
 								</c:when>
-								<c:when test="${member.equals('low-admin')}">
+								<c:when test="${member.equals('low_admin')}">
 								지역 관리자
 								<c:forEach var="reservation" items="${reservationTable}">
 										<form action="/store/storePrintAdmin">
 											<input type="hidden" name="id"
 												value="${reservation.getId() }">
 											<div>
-												<div>접수시간 ${reservation.getCreatedAt() }</div>
-												<div>예약날짜 ${reservation.getTime() }</div>
-												<div>확인여부 ${reservation.getIsCheck() }</div>
+												<div>신청자 ${reservation.getName()}</div>
+												<div>접수시간 ${reservation.getCreatedAt()}</div>
+												<div>예약날짜 ${reservation.getTime()}</div>
+												<div>
+													확인
+													<c:if test="${reservation.getManagerContents()==null}">
+												 필요
+												 </c:if>
+												</div>
 												<button>자세히보기</button>
 											</div>
 										</form>
 									</c:forEach>
-							</c:when>
+								</c:when>
 								<c:otherwise>
 								잘못된 접근 입니다.
 							</c:otherwise>
