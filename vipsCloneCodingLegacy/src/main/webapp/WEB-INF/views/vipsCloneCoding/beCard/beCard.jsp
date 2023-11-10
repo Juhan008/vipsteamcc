@@ -56,7 +56,11 @@
 										</h5>
 								</a>
 									<div class="contents-box">
-										<h6 class="benefit-title">30%~35% 할인</h6>
+										<h6 class="benefit-title">
+											<h6 class="benefit01">
+												<img src="/resources/images/benefit/beCard/CJ_ONE.png">
+											</h6>
+										</h6>
 										<table class="benefit01-tbl" border="1">
 											<colgroup>
 												<col style="width: 28%">
@@ -239,6 +243,9 @@
 											<img src="/resources/images/benefit/beCard/tab_beCard5.gif"
 												alt="청구서차감">
 										</h5></a></li>
+								<li><a href="beCard6"><h4>
+											<button class="Custom">Custom</button>
+										</h4></a></li>
 						</div>
 					</div>
 				</div>

@@ -197,21 +197,56 @@ u {
 .contents-box>h6>a>img {
 	margin: -4px 0px 0px 14px;
 }
-.DB-list{
+
+.DB-list {
 	margin-top: 30px;
 }
-.DB-list-div{
+
+.DB-list-div {
 	margin-top: 20px;
 }
-.DB-info-title{
+
+.DB-info-title {
 	font-size: 180%;
-	color:#352712;
+	color: #352712;
 }
-#content-wrap .visual-sub .DB-info-text{
+
+#content-wrap .visual-sub .DB-info-text {
 	position: absolute;
 	top: 175px;
 	font-size: 22px;
-	color:#6d4e34;
+	color: #6d4e34;
 	text-decoration: underline;
-	text-decoration-color:#6d4e34;
+	text-decoration-color: #6d4e34;
+}
+
+.benefit-title {
+	margin-top: 20px;
+	font-size: 22px;
+	color: #352712;
+	font-family: monospace;
+}
+
+.Custom {
+	margin: 3% 6% 0% 6%;
+	padding: 10% 4% 10% 4%;
+}
+
+.group-list {
+	text-align: left;
+	border: 0 none;
+	border: 1px solid #aa9781;
+	line-height: 16px;
+	padding: 16px 0px 15px 0px;
+	color: #352712;
+}
+
+.group-create-box {
+	margin-top:-1px;
+	text-align: left;
+	border: 0 none;
+	border: 1px solid #aa9781;
+	line-height: 16px;
+	padding: 16px 0px 15px 0px;
+	color: #352712;
 }
