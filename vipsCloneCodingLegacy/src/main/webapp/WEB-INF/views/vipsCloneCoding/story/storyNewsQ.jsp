@@ -80,14 +80,19 @@
 							<div class="table-total">
 								<img src="/resources/images/story/storyNewsQ/tableTotalIcon.png"
 									alt="" class="" />
-								<div class="total-post-number">전체건수 -
-									${newsBoardService.tableFinish()}건</div>
+								<div class="total-post-number">
+									전체건수 -
+									<c:if test="${searchSave==null }">${newsBoardService.tableFinish()}건</c:if>
+									<c:if test="${searchSave!=null }">${newsBoardService.tableFinish(searchSave)}건</c:if>
+								</div>
+
 								<div class="search-area">
-									<form class="search">
-										<input type="text" />
+									<form action="/story/storysearch" class="search" method="get">
+										<input type="text" name="search" />
 										<button>검색</button>
 									</form>
 								</div>
+
 								<div class="table-list-area">
 									<div class="table-list-sub">
 										<div class="table-list-id">글번호</div>
@@ -108,21 +113,32 @@
 										<hr>
 									</c:forEach>
 								</div>
+								<div class = "bottomControll-area">
+									<div class="bottomControll-area-inner">
+										<c:if test="${searchSave==null }">
+											<c:forEach var="controllNumber" begin="1"
+												end="${newsBoardService.tableBottomController()}">
+												<form>
+													<input type="hidden" name="controll"
+														value="${controllNumber}">
+													<input type="hidden" name="search" value="${searchSave}">
+													<button class="repeat-controll-button">${controllNumber}</button>
+												</form>
+											</c:forEach>
+										</c:if>
+										<c:if test="${searchSave!=null }">
+											<c:forEach var="controllNumber" begin="1"
+												end="${newsBoardService.searchtableBottomController(searchSave)}">
+												<form>
+													<input type="hidden" name="controll"
+														value="${controllNumber}">
+													<input type="hidden" name="search" value="${searchSave}">
+													<button class="repeat-controll-button">${controllNumber}</button>
+												</form>
+											</c:forEach>
 
-								<div class="bottomControllArea">
-									<form>
-										<input type="hidden" name="controll" value="1">
-										<button class="start-controll-button">1</button>
-									</form>
-
-									<c:forEach var="controllNumber" begin="2"
-										end="${newsBoardService.tableBottomController()}">
-										<form>
-											<input type="hidden" name="controll"
-												value="${controllNumber}">
-											<button class="repeat-controll-button">${controllNumber }</button>
-										</form>
-									</c:forEach>
+										</c:if>
+									</div>
 								</div>
 							</div>
 							<c:if

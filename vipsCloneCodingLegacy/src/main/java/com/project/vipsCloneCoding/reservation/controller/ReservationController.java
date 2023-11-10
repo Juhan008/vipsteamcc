@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.project.vipsCloneCoding.HomeController;
 import com.project.vipsCloneCoding.reservation.dao.ReservationDAO;
 import com.project.vipsCloneCoding.reservation.domain.ReservationVO;
+import com.project.vipsCloneCoding.reservation.service.ReservationService;
 
 @Controller
 public class ReservationController {
@@ -23,6 +24,8 @@ public class ReservationController {
   private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
   @Autowired
   ReservationDAO reservationDAO;
+  @Autowired
+  ReservationService reservationService;
 
   @RequestMapping(value = "/store/reservationAdd", method = RequestMethod.GET)
   public String reservationAdd(@RequestParam Map<String, String> map) {
@@ -76,19 +79,26 @@ public class ReservationController {
   }
 
   @RequestMapping(value = "/store/storeReservationAdmin", method = RequestMethod.GET)
-  public String storeReservationAdmin(HttpSession sessoin) {
+  public String storeReservationAdmin(@RequestParam Map<String, String> map, HttpSession sessoin) {
+    int tempControll = 1;
+    if (map.get("controll") != null) {
+      tempControll = Integer.valueOf(map.get("controll"));
+    }
     if (sessoin.getAttribute("member").equals("admin")
         || sessoin.getAttribute("member").equals("sub_admin")) {
+
       try {
-        sessoin.setAttribute("reservationTable", reservationDAO.getAllTable());
+        sessoin.setAttribute("reservationSize", reservationService.getAllControllSize());
+        sessoin.setAttribute("reservationTable", reservationDAO.getLastTen(tempControll));
       } catch (Exception e) {
         e.printStackTrace();
       }
-
     } else if (sessoin.getAttribute("member").equals("low_admin")) {
       try {
-        sessoin.setAttribute("reservationTable",
-            reservationDAO.getLocationReservation(sessoin.getAttribute("location").toString()));
+        sessoin.setAttribute("reservationSize", reservationService
+            .getLocationControllSize(sessoin.getAttribute("location").toString()));
+        sessoin.setAttribute("reservationTable", reservationDAO.getLocationReservationLastTen(
+            sessoin.getAttribute("location").toString(), tempControll));
       } catch (Exception e) {
         // TODO Auto-generated catch block
         e.printStackTrace();

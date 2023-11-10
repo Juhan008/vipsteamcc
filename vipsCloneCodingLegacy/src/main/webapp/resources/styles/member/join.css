@@ -66,6 +66,7 @@
 }
 
 .join-button {
+	cursor: pointer;
 	border-radius: 30px;
 	font-weight: bold;
 	background-color: green;

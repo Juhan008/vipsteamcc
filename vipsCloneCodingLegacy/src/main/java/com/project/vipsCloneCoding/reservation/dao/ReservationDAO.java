@@ -50,8 +50,8 @@ public class ReservationDAO {
   }
 
   public void updateAnswer(int id, String member) {
-    jdbcTemplate
-        .update("update reservation set manager_contents = '" + member + "' where id = " + id);
+    jdbcTemplate.update("update reservation set manager_contents = ?, isCheck = 1 where id = ?",
+        member, id);
   }
 
   public List<ReservationVO> getAllReservation(String user_id) throws Exception {
@@ -64,6 +64,13 @@ public class ReservationDAO {
         new Object[] {location}, mapper);
   }
 
+  public List<ReservationVO> getLocationReservationLastTen(String location, int controll)
+      throws Exception {
+    return jdbcTemplate.query(
+        "select * from (select rownum startRow, tempboard.*from(select * from reservation where location = ? order by id desc)tempboard) where ROWNUM <= 10 and startRow >= ?",
+        new Object[] {location, (controll - 1) * 10 + 1}, mapper);
+  }
+
   public ReservationVO get(int id) throws Exception {
     return jdbcTemplate.queryForObject("select * from reservation where id = ?", new Object[] {id},
         mapper);
@@ -71,6 +78,18 @@ public class ReservationDAO {
 
   public List<ReservationVO> getAllTable() throws Exception {
     return jdbcTemplate.query("select * from reservation", mapper);
+  }
+
+  public List<ReservationVO> getAllTable(String location) throws Exception {
+    return jdbcTemplate.query("select * from reservation where location = ?",
+        new Object[] {location}, mapper);
+  }
+
+  public List<ReservationVO> getLastTen(int controll) throws Exception {
+    return jdbcTemplate.query(
+        "select * from (select rownum startRow, tempboard.*from(select * from reservation order by id desc)tempboard) where ROWNUM <= 10 and startRow >= "
+            + ((controll - 1) * 10 + 1),
+        mapper);
   }
 
 }

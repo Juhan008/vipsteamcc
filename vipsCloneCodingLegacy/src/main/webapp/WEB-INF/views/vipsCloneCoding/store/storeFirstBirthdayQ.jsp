@@ -95,17 +95,17 @@
 										<div class="reservation-text-area">
 											희망매장
 											<div class="reservation-text-area-inner">
-												<input type="radio" name="location"
-													class="desired_store" value="서울">
+												<input type="radio" name="location" class="desired_store"
+													value="서울">
 												서울
-												<input type="radio" name="location"
-													class="desired_store" value="대전">
+												<input type="radio" name="location" class="desired_store"
+													value="대전">
 												대전
-												<input type="radio" name="location"
-													class="desired_store" value="인천">
+												<input type="radio" name="location" class="desired_store"
+													value="인천">
 												인천
-												<input type="radio" name="location"
-													class="desired_store" value="경기">
+												<input type="radio" name="location" class="desired_store"
+													value="경기">
 												경기
 											</div>
 										</div>
@@ -113,13 +113,14 @@
 											인원
 											<div class="reservation-text-area-inner">
 												<input type="number" name="how_many_people"
-													class="how_many_people">명
+													class="how_many_people">
+												명
 											</div>
 										</div>
 										<div class="reservation-question-area">
 											기타문의
 											<div class="reservation-text-area-inner">
-												<input type="text" name="reservation_contents" class="question">
+												<textarea name="reservation_contents" class="question"></textarea>
 											</div>
 										</div>
 										<button>상담 신청 완료</button>

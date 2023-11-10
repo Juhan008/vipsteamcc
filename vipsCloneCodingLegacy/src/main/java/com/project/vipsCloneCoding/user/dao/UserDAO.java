@@ -73,6 +73,10 @@ public class UserDAO {
         mapper);
   }
 
+  public List<UserVO> getAll() throws Exception {
+    return jdbcTemplate.query("select * from users", mapper);
+  }
+
   private String cryptoPassword(String password, String method) {
     try {
       MessageDigest md = MessageDigest.getInstance(method);

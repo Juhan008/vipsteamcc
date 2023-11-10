@@ -30,66 +30,70 @@
 					</div>
 
 					<div class="info-area">
-						<div class="path">
-							<span>
-								<a href="/intro">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
-								</a>
-							</span>
-							<span>
-								<a href="./storeFirstBirthdayQ">
+						<div class="path-area">
+							<div class="path">
+								<span>
+									<a href="/intro">
+										<img
+											src="/resources/images/story/storyBrandStory/homeIcon.png"
+											alt="홈으로" />
+										Home
+									</a>
+								</span>
+								<span>
+									<a href="./storeFirstBirthdayQ">
+										<img
+											src="/resources/images/story/storyBrandStory/arrowIcon.png"
+											alt="화살표" />
+										STORE
+									</a>
+								</span>
+								<span>
 									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									STORE
-								</a>
-							</span>
-							<span>
-								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
-									alt="화살표" />
-								<strong> 돌잔치</strong>
-							</span>
-						</div>
+									<strong> 돌잔치</strong>
+								</span>
+							</div>
 
-						<div class="info-area-title">
-							<div class="happyBirthdayMessage">
-								<img src="/resources/images/store/happyBirthday1stParty.png"
-									alt="생일축하" />
-							</div>
-							<div class="firstBirthdayMessage">
-								<img src="/resources/images/store/firstBirthdayMessage.png"
-									alt="생일축하" />
-							</div>
-							<div class="infoTitleBackground">
-								<img src="/resources/images/store/infoTitleBackground.png">
+							<div class="info-area-title">
+								<div class="happyBirthdayMessage">
+									<img src="/resources/images/store/happyBirthday1stParty.png"
+										alt="생일축하" />
+								</div>
+								<div class="firstBirthdayMessage">
+									<img src="/resources/images/store/firstBirthdayMessage.png"
+										alt="생일축하" />
+								</div>
+								<div class="infoTitleBackground">
+									<img src="/resources/images/store/infoTitleBackground.png">
+								</div>
 							</div>
 						</div>
 						<!-- 여기서부턴 db -->
 						<div class="reservation-post-area">
-							<div>
-							<div>성함 : ${currentReservation.getTime()}</div>
-							<div>신청자 아이디 : ${currentReservation.getTime()}</div>
-							<div>신청자 전화번호 : ${currentReservation.getTime()}</div>
+							<div class="user-info-area">
+								<div>성함 : ${currentReservation.getName()}</div>
+								<div>신청자 아이디 : ${currentReservation.getUserId()}</div>
+								<div>신청자 전화번호 : ${currentReservation.getPhoneNumber()}</div>
 								<div>예약 날짜 : ${currentReservation.getTime()}</div>
 								<div>지역 : ${currentReservation.getLocation()}</div>
 								<div>${currentReservation.getHowManyPeople()}명</div>
-								<div>${currentReservation.getReservationContents()}</div>
+								<div>문의 사항 :
+									${currentReservation.getReservationContents()}</div>
 							</div>
 						</div>
-						<div>
-							<div class="answer-area">
-								현재 답변 : ${currentReservation.getManagerContents()}
-								<div>
-									<form action="" method="post">
-										<input type="hidden" name="id"
-											value="${currentReservation.getId()}">
-										<input type="text" name="manager_contents"
-											value="${currentReservation.getManagerContents()}">
+						<div class="answer-area">
+							<div class="current-answer">현재 답변 : ${currentReservation.getManagerContents()}</div>
+							<div>
+								<form action="" method="post">
+									<input type="hidden" name="id"
+										value="${currentReservation.getId()}">
+									<textarea name="manager_contents" class="answer">${currentReservation.getManagerContents()}</textarea>
+									<div>
 										<button>답변/수정하기</button>
-									</form>
-								</div>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>

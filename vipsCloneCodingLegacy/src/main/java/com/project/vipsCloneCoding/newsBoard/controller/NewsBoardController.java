@@ -21,13 +21,14 @@ public class NewsBoardController {
 
   @RequestMapping(value = "/story/storyNewsQ", method = RequestMethod.GET)
   public String storyNewsQ(HttpSession sessoin, @RequestParam Map<String, String> map) {
-    int temp = 1;
+    int tempControll = 1;
 
     if (map.get("controll") != null) {
-      temp = Integer.valueOf(map.get("controll"));
+      tempControll = Integer.valueOf(map.get("controll"));
     }
     sessoin.setAttribute("newsBoardService", newsBoardService);
-    sessoin.setAttribute("lastPost", newsBoardService.getLastTen(temp));
+    sessoin.setAttribute("lastPost", newsBoardService.getLastTen(tempControll));
+    sessoin.setAttribute("searchSave", null);
     return "vipsCloneCoding/story/storyNewsQ";
   }
 
@@ -115,6 +116,26 @@ public class NewsBoardController {
       }
     }
     return "redirect:/story/storyNewsQ";
+  }
+
+  /**
+   * 검색
+   **/
+  @RequestMapping(value = "/story/storysearch", method = RequestMethod.GET)
+  public String storyNewsSearch(HttpSession sessoin, @RequestParam Map<String, String> map) {
+    int temp = 1;
+    if (map.get("controll") != null) {
+      temp = Integer.valueOf(map.get("controll"));
+    }
+    sessoin.setAttribute("newsBoardService", newsBoardService);
+    sessoin.setAttribute("searchSave", map.get("search"));
+    try {
+      sessoin.setAttribute("lastPost", newsBoardDAO.searchGetTen(temp, map.get("search")));
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return "vipsCloneCoding/story/storyNewsQ";
   }
 
 }

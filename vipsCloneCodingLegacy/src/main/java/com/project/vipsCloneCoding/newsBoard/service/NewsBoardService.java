@@ -81,11 +81,31 @@ public class NewsBoardService {
     return 0;
   }
 
+  public int tableFinish(String where) {
+    try {
+      return newsBoardDAO.searchcountTable(where).getCount();
+    } catch (Exception e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return 0;
+  }
+
   public int tableBottomController() {
 
     int temp = newsBoardDAO.countTable().getCount() / 10;
 
     if (newsBoardDAO.countTable().getCount() % 10 != 0) {
+      temp = temp + 1;
+    }
+    return temp;
+  }
+
+  public int searchtableBottomController(String where) {
+
+    int temp = newsBoardDAO.searchcountTable(where).getCount() / 10;
+
+    if (newsBoardDAO.searchcountTable(where).getCount() % 10 != 0) {
       temp = temp + 1;
     }
     return temp;

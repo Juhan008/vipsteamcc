@@ -56,7 +56,7 @@
 .path-area {
 	position: relative;
 	top: 40px;
-	height: 22%;
+	height: 160px;
 }
 
 .path {
@@ -92,6 +92,19 @@
 }
 
 .reservation-post-area {
-	top: 135px;
+	padding-top: 90px;
 	position: relative;
+	padding-bottom: 50px;
+}
+
+.reservation-bundle-area {
+	width: 50%;
+	border: solid 1px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.controll-area{
+	display: flex;
+	justify-content: center;
 }
