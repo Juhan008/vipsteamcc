@@ -81,29 +81,37 @@
 										<form action="/store/storePrintAdmin">
 											<input type="hidden" name="id"
 												value="${reservation.getId() }">
-											<div class="reservation-bundle">
+											<div class="reservation-bundle-area">
+												<div>신청자 ${reservation.getName()}</div>
 												<div>접수시간 ${reservation.getCreatedAt() }</div>
-												<div>예약날짜 ${reservation.simpleDate() }</div>
-												<div>확인여부 ${reservation.getIsCheck() }</div>
+												<div>예약날짜 ${reservation.getSimpleDate() }</div>
+												<div>
+													<c:if test="${reservation.getManagerContents()==null}">확인 필요
+												 </c:if>
+													<c:if test="${reservation.getManagerContents()!=null}">확인 완료
+												 </c:if>
+												</div>
 												<button>자세히보기</button>
 											</div>
 										</form>
 									</c:forEach>
+
+
 								</c:when>
 								<c:when test="${member.equals('low_admin')}">
 								지역 관리자 페이지 입니다.
 								<c:forEach var="reservation" items="${reservationTable}">
 										<form action="/store/storePrintAdmin">
 											<input type="hidden" name="id"
-												value="${reservation.getId()}">
+												value="${reservation.getId() }">
 											<div class="reservation-bundle">
 												<div>신청자 ${reservation.getName()}</div>
-												<div>접수시간 ${reservation.getCreatedAt()}</div>
-												<div>예약날짜 ${reservation.getTime()}</div>
+												<div>접수시간 ${reservation.getCreatedAt() }</div>
+												<div>예약날짜 ${reservation.getSimpleDate() }</div>
 												<div>
-													확인
-													<c:if test="${reservation.getManagerContents()==null}">
-												 필요
+													<c:if test="${reservation.getManagerContents()==null}">확인 필요
+												 </c:if>
+													<c:if test="${reservation.getManagerContents()!=null}">확인 완료
 												 </c:if>
 												</div>
 												<button>자세히보기</button>

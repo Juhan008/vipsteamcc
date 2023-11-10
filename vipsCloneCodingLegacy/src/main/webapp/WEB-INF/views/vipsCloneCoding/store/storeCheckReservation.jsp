@@ -73,14 +73,14 @@
 						</div>
 						<!-- 여기서부턴 db -->
 						<c:choose>
-							<c:when test="${reservationTotal!=null}">
+							<c:when test="${reservationTotal.size()!=0}">
 								<div class="reservation-post-area">
 									<c:forEach var="reservations" items="${reservationTotal}">
 										<div class="reservation-text-area">
 											<form action="/store/storePrintReservation" method="post">
 												<input type="hidden" name="reservation_id"
 													value="${reservations.getId()}">
-												<span>예약 날짜 : ${reservations.getTime()}</span>
+												<span>예약 날짜 : ${reservations.getSimpleDate()}</span>
 												<span>지역 : ${reservations.getLocation()}</span>
 												<span>${reservations.getHowManyPeople()}명</span>
 												<button>자세히보기</button>
@@ -91,7 +91,7 @@
 
 							</c:when>
 							<c:otherwise>
-								예약내역이 없습니다.
+								<div class="reservation-post-area">예약내역이 없습니다.</div>
 							</c:otherwise>
 						</c:choose>
 					</div>

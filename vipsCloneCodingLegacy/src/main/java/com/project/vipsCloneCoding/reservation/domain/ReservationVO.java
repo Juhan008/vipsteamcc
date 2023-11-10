@@ -98,8 +98,8 @@ public class ReservationVO {
     return isDelete;
   }
 
-  public String simpleDate() {
-    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH mm");
+  public String getSimpleDate() {
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy년MM월dd일 HH시 mm분");
     return formatter.format(time);
   }
 

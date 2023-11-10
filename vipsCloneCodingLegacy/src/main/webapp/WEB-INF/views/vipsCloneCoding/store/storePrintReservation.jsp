@@ -70,7 +70,7 @@
 						<!-- 여기서부턴 db -->
 						<div class="reservation-post-area">
 							<div class="user-text-area">
-								<div>예약하신 날짜 : ${currentReservation.getTime()}</div>
+								<div>예약하신 날짜 : ${currentReservation.getSimpleDate()}</div>
 								<div>지역 : ${currentReservation.getLocation()}</div>
 								<div>인원수 :${currentReservation.getHowManyPeople()}명</div>
 								<div>기타 문의 : ${currentReservation.getReservationContents()}</div>
