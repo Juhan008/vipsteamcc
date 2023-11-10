@@ -126,7 +126,7 @@
 												</ul>
 											</dd>
 										</dl>
-									</div></li>
+									</div></li></ul>
 						</div>
 					</div>
 				</div>

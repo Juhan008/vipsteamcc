@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10~30% 할인 | 제휴/할인카드 - VIPS</title>
+<title> 이미지 추가 - VIPS</title>
 <link rel='stylesheet' href='/resources/styles/commonEx.css' />
 <link rel='stylesheet' href='/resources/styles/becard.css' />
 </head>
@@ -19,23 +19,20 @@
 				<div id="container" class="clfix">
 					<div id="lnb">
 						<h3>
-							<img src="/resources/images/benefit/beCard/BENEFIT.gif"
+							<img src="/resources/images/benefit/beCard/ADMINTab.png"
 								alt="BENEFIT">
 						</h3>
 						<ul style="min-height: 1000px;">
 							<li class="active"><a href="beCard"><img
 									src="/resources/images/benefit/beCard/affiliatediscountcard.gif"
 									alt="제휴할인"></a></li>
-							<li class="active"><a href="beGiftCard"><img
+							<li class="active"><a href="addimage"><img
 									src="/resources/images/benefit/beCard/beGiftCard.gif" alt="상품권"></a></li>
-							<li class="active"><a href="giftCard"><img
-									src="/resources/images/benefit/beCard/GiftCard.gif" alt="기프트카드"></a></li>
 						</ul>
 					</div>
 					<div id="content-wrap" class="clfix">
 						<div class="path">
-							<a href="#" class="home">Home</a><a href="#">BENEFIT</a><strong>제휴/할인
-								카드</strong>
+							<a href="#" class="home">관리자</a><a href="#">ADMIN</a><strong>이미지 추가</strong>
 						</div>
 						<div class="visual-sub benefit-visual">
 							<h4>
@@ -56,7 +53,7 @@
 								</a>
 								<div class="contents-box">
 
-									<form method="POST" action="/addCard"
+									<form method="POST" action="/addimage"
 										enctype="multipart/form-data">
 										<div>
 											<label for="image">Image:</label> <input type="file"

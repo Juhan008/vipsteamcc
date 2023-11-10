@@ -34,8 +34,8 @@ public class ImageUploadDAOJdbc implements ImageUpoladDAO {
   @Override
   public void saveImage(ImageUploadVO image) {
     String sql =
-        "INSERT INTO image_table (file_name, file_path, description1, description2,description3,description4,description5,description6) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-    jdbcTemplate.update(sql, image.getFileName(), image.getFilePath(), image.getDescription1(),
+        "INSERT INTO image_table (image_name, image_path, description1, description2,description3,description4,description5,description6) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    jdbcTemplate.update(sql, image.getImageName(), image.getImagePath(), image.getDescription1(),
         image.getDescription2(), image.getDescription3(), image.getDescription4(),
         image.getDescription5(), image.getDescription6());
   }
@@ -47,8 +47,8 @@ public class ImageUploadDAOJdbc implements ImageUpoladDAO {
     return jdbcTemplate.queryForObject(sql, new Object[] {id}, new RowMapper<ImageUploadVO>() {
       @Override
       public ImageUploadVO mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return new ImageUploadVO(rs.getInt("image_id"), rs.getString("file_name"),
-            rs.getString("file_path"), rs.getString("description1"), rs.getString("description2"),
+        return new ImageUploadVO(rs.getInt("image_id"), rs.getString("image_name"),
+            rs.getString("image_path"), rs.getString("description1"), rs.getString("description2"),
             rs.getString("description3"), rs.getString("description4"),
             rs.getString("description5"), rs.getString("description6"));
       }
@@ -58,8 +58,8 @@ public class ImageUploadDAOJdbc implements ImageUpoladDAO {
 
   public void deleteImage(int id) {
     ImageUploadVO image = getImageById(id);
-    if (image != null && image.getFilePath() != null) {
-      File file = new File(image.getFilePath());
+    if (image != null && image.getImagePath() != null) {
+      File file = new File(image.getImagePath());
       if (file.exists() && file.delete()) {
         String sql = "DELETE FROM images WHERE id = ?";
         jdbcTemplate.update(sql, id);

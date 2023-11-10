@@ -56,7 +56,10 @@
 										</h5>
 								</a>
 									<div class="contents-box">
-										<h6 class="benefit-title">30%~35% 할인</h6>
+										<h6 class="benefit-title">
+										30%~35% 할인
+											
+										</h6>
 										<table class="benefit01-tbl" border="1">
 											<colgroup>
 												<col style="width: 28%">

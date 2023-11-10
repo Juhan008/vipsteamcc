@@ -3,8 +3,8 @@ package com.project.vipsCloneCoding.imageUpload.domain;
 public class ImageUploadVO {
 
   private int imageId;
-  private String fileName;
-  private String filePath;
+  private String imageName;
+  private String imagePath;
   private String description1;
   private String description2;
   private String description3;
@@ -12,12 +12,12 @@ public class ImageUploadVO {
   private String description5;
   private String description6;
 
-  public ImageUploadVO(int imageId, String fileName, String filePath, String description1,
+  public ImageUploadVO(int imageId, String imageName, String imagePath, String description1,
       String description2, String description3, String description4, String description5,
       String description6) {
     this.imageId = imageId;
-    this.fileName = fileName;
-    this.filePath = filePath;
+    this.imageName = imageName;
+    this.imagePath = imagePath;
     this.description1 = description1;
     this.description2 = description2;
     this.description3 = description3;
@@ -31,12 +31,12 @@ public class ImageUploadVO {
     return imageId;
   }
 
-  public String getFileName() {
-    return fileName;
+  public String getImageName() {
+    return imageName;
   }
 
-  public String getFilePath() {
-    return filePath;
+  public String getImagePath() {
+    return imagePath;
   }
 
   public String getDescription1() {

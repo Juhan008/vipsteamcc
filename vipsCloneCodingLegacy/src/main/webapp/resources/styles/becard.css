@@ -197,3 +197,21 @@ u {
 .contents-box>h6>a>img {
 	margin: -4px 0px 0px 14px;
 }
+.DB-list{
+	margin-top: 30px;
+}
+.DB-list-div{
+	margin-top: 20px;
+}
+.DB-info-title{
+	font-size: 180%;
+	color:#352712;
+}
+#content-wrap .visual-sub .DB-info-text{
+	position: absolute;
+	top: 175px;
+	font-size: 22px;
+	color:#6d4e34;
+	text-decoration: underline;
+	text-decoration-color:#6d4e34;
+}

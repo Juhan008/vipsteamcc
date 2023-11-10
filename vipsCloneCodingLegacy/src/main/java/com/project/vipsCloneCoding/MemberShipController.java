@@ -92,18 +92,14 @@ public class MemberShipController {
     return "vipsCloneCoding/msManiaQ/msManiaQ3";
   }
 
-  @RequestMapping(value = "/membership/msManiaQ4", method = RequestMethod.GET)
-  public String msManiaQ4(Locale locale, Model model) {
-    return "vipsCloneCoding/msManiaQ/msManiaQ4";
+
+  @RequestMapping(value = "/addimage", method = RequestMethod.GET)
+  public String addimage(Locale locale, Model model) {
+    return "vipsCloneCoding/addimage";
   }
 
-  @RequestMapping(value = "/addCard", method = RequestMethod.GET)
-  public String addCard(Locale locale, Model model) {
-    return "vipsCloneCoding/addCard";
-  }
-
-  @RequestMapping(value = "/deleteimage", method = RequestMethod.GET)
-  public String deleteimage(Locale locale, Model model) {
-    return "vipsCloneCoding/deleteimage";
+  @RequestMapping(value = "/benefit/beCard6", method = RequestMethod.GET)
+  public String beCard6(Locale locale, Model model) {
+    return "vipsCloneCoding/beCard/beCard6";
   }
 }
