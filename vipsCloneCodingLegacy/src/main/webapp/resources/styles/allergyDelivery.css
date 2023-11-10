@@ -31,7 +31,7 @@ body {
 .mainContent02 {
 	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;	
-	height: 2000px;
+	height: 2200px;
 	width: 1000px;
     box-shadow: 4px 0px 5px #2b2424, -4px 0px 5px #2b2424;
 }
@@ -117,11 +117,11 @@ body {
 
 .contentFinish img {
 	position: absolute;
-    top: 2082px;
+    top: 2282px;
 }
 
 .footerLocation {
-	position: relative;   
+	position: relative;    
 }
 
 .text01 {
@@ -197,9 +197,6 @@ body {
     margin-left: 4px;
 }*/
 
-.rawMaterial img {
-	
-}
 
 .bottomLine {
 	width: 750px;
@@ -209,38 +206,295 @@ body {
     z-index: 2;
 }
 
-.line54 {
+.line01 {
 	position: relative;
     bottom: 27px;
 }
 
-.material01-info {
-	width: 751px;
-    border-collapse: collapse;
-    font-size: 12px;
+.material-header {
+	width: 750px;
     position: relative;
-    bottom: 30px;
+    bottom: 26px;
+    font-size: 14px;
+    color: #543114;
+    font-weight: bold;
 }
 
-.material01-info thead th {
-	padding: 9px 0px;
-    border-bottom: 1px solid #6d4e34;
-}
-
-.material01-info tbody th {
-	border-bottom: 1px solid #aa9781;
-}
-
-.material01-info td {
-	border: 1px solid #aa9781;
-}
-
-.material01-info .material-menu {
-	padding: 10px;
-}
-
-.material01-info .material-menuInfo {
+.header-division {
+	float: left;
+	width: 20%;
 	text-align: center;
+}
+
+.header-menu {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+.header-info {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.line02 {
+	width: 750px;
+	margin-top: 20px;
+}
+
+.material-infoBox {
+	width: 750px;
+    border-top: 1px solid black;
+    position: relative;
+    bottom: 21px;
+    font-size: 13px;
+}
+
+.infoBox-01 {
+	float: left;
+	width: 20%;
+	font-weight: bold;
+}
+
+.infoBox-02 {
+	float: left;
+	width: 30%;
+	
+}
+
+.infoBox-03 {
+	float: left;
+	width: 50%;
+	
+}
+
+.division-01 {
+	width: 100%;
+	height: 315px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 145px;
+}
+
+.division-02 {
+	width: 100%;
+	height: 90px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 35px;
+}
+
+.division-03 {
+	width: 100%;
+	height: 135px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 55px;
+}
+
+.division-04 {
+	width: 100%;
+	height: 135px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 54px;
+}
+
+.division-05 {
+	width: 100%;
+	height: 405px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 190px;
+}
+
+.division-06 {
+	width: 100%;
+	height: 180px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 78px;
+}
+
+.division-07 {
+	width: 100%;
+	height: 270px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 123px;
+}
+
+.division-08 {
+	width: 100%;
+	height: 585px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 280px;
+}
+
+.division-09 {
+	width: 100%;
+	height: 390px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 183px;
+}
+
+.division-10 {
+	width: 100%;
+	height: 390px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 183px;
+}
+
+.division-11 {
+	width: 100%;
+	height: 225px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 99px;
+}
+
+.division-12 {
+	width: 100%;
+	height: 90px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 33px;
+}
+
+.division-13 {
+	width: 100%;
+	height: 150px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 64px;
+}
+
+.division-14 {
+	width: 100%;
+	height: 60px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 19px;
+}
+
+.division-15 {
+	width: 100%;
+	height: 90px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    text-align: center;
+    color: #402612;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 33px;
+}
+
+
+
+.menu-01 {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #535551;
+}
+
+.menu-02 {
+	width: 100%;
+	height: 45px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    padding-top: 12px;
+    padding-left: 10px;
+    color: #535551;
+}
+
+.info-01 {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    color: #535551;
+    padding-top: 5px;
+}
+
+.info-02 {
+	width: 100%;
+	height: 45px;
+	border: 1px solid #aa9781;
+	border-left: none;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    color: #535551;
+    padding-top: 5px;
 }
 
 .caution {
@@ -248,7 +502,7 @@ body {
 	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
     height: 150px;
-    margin-top: 32px;
+    margin-top: 1578px;
     padding: 20px;
     z-index: 2;
 }
