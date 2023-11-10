@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='/resources/styles/member/idCheck.css' />
+<meta charset="UTF-8">
+<title>중복확인</title>
+</head>
+<body>
+	<div>${repeat }</div>
+</body>
+</html>

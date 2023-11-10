@@ -78,13 +78,14 @@
 									test="${member.equals('admin')||member.equals('sub_admin')}">
 								관리자 페이지 입니다.
 								<c:forEach var="reservation" items="${reservationTable}">
-										<form action="/store/storePrintAdmin">
-											<input type="hidden" name="id"
-												value="${reservation.getId() }">
-											<div class="reservation-bundle-area">
+										<div class="reservation-bundle-area">
+											<form action="/store/storePrintAdmin">
+												<input type="hidden" name="id"
+													value="${reservation.getId() }">
 												<div>신청자 ${reservation.getName()}</div>
-												<div>접수시간 ${reservation.getCreatedAt() }</div>
-												<div>예약날짜 ${reservation.getSimpleDate() }</div>
+												<div>접수지역 ${reservation.getLocation()}</div>
+												<div>접수날짜 ${reservation.getCreatedAt()}</div>
+												<div>예약시간 ${reservation.getSimpleDate()}</div>
 												<div>
 													<c:if test="${reservation.getManagerContents()==null}">확인 필요
 												 </c:if>
@@ -92,8 +93,8 @@
 												 </c:if>
 												</div>
 												<button>자세히보기</button>
-											</div>
-										</form>
+											</form>
+										</div>
 									</c:forEach>
 
 
@@ -101,13 +102,13 @@
 								<c:when test="${member.equals('low_admin')}">
 								지역 관리자 페이지 입니다.
 								<c:forEach var="reservation" items="${reservationTable}">
-										<form action="/store/storePrintAdmin">
-											<input type="hidden" name="id"
-												value="${reservation.getId() }">
-											<div class="reservation-bundle">
+										<div class="reservation-bundle-area">
+											<form action="/store/storePrintAdmin">
+												<input type="hidden" name="id"
+													value="${reservation.getId() }">
 												<div>신청자 ${reservation.getName()}</div>
-												<div>접수시간 ${reservation.getCreatedAt() }</div>
-												<div>예약날짜 ${reservation.getSimpleDate() }</div>
+												<div>접수날짜 ${reservation.getCreatedAt() }</div>
+												<div>예약시간 ${reservation.getSimpleDate() }</div>
 												<div>
 													<c:if test="${reservation.getManagerContents()==null}">확인 필요
 												 </c:if>
@@ -115,14 +116,23 @@
 												 </c:if>
 												</div>
 												<button>자세히보기</button>
-											</div>
-										</form>
+											</form>
+										</div>
 									</c:forEach>
 								</c:when>
 								<c:otherwise>
 								잘못된 접근 입니다.
 							</c:otherwise>
 							</c:choose>
+							<div class="controll-area">
+								<c:forEach var="controllNumber" begin="1"
+									end="${reservationSize}">
+									<form>
+										<input type="hidden" name="controll" value="${controllNumber}">
+										<button class="repeat-controll-button">${controllNumber}</button>
+									</form>
+								</c:forEach>
+							</div>
 						</div>
 					</div>
 				</div>

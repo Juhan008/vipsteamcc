@@ -94,6 +94,7 @@
 }
 
 .login-button {
+	cursor: pointer;
 	border: none;
 	background: brown;
 	color: white;
@@ -116,6 +117,7 @@
 }
 
 .join-button {
+	cursor: pointer;
 	width: 12%;
 	height: 40px;
 	border: none;

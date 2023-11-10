@@ -51,7 +51,7 @@
 .path-area {
 	position: relative;
 	top: 40px;
-	height: 22%;
+	height: 130px;
 }
 
 .path {
@@ -90,7 +90,8 @@
 .table-area-padding {
 	width: 100%;
 	position: relative;
-	top: 150px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	/* background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -156,10 +157,13 @@
 }
 
 .title-button {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	width: 100%;
 	cursor: pointer;
 	border: none;
 	background: none;
-	overflow: hidden;
 }
 
 .table-list-createdAt {
@@ -170,10 +174,17 @@
 	width: 10%;
 }
 
-.bottomControllArea {
+.bottomControll-area{
+	display: flex;
+	justify-content: center;
+}
+
+.bottomControll-area-inner {
+	background-color: white;
+	overflow: auto;
+	width: 27%;
 	position: relative;
 	top: 25px;
-	justify-content: center;
 	display: flex;
 }
 
@@ -183,9 +194,17 @@
 }
 
 .repeat-controll-button {
+	cursor: pointer;
 	border: none;
 	background: none;
 	border-left: solid 1px;
+}
+
+.repeat-controll-button:hover {
+	color: blue;
+	border-left: solid 1px;
+	border-color: black;
+	font-weight: bold;
 }
 
 .write-button-area {

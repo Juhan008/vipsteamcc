@@ -61,9 +61,12 @@ public class NewsBoardDAO {
   }
 
   public NewsBoardVO countTable() {
-
     return jdbcTemplate.queryForObject("select count(1) from newsboard", count);
+  }
 
+  public NewsBoardVO searchcountTable(String where) {
+    return jdbcTemplate
+        .queryForObject("select count(1) from newsboard where title like '%" + where + "%'", count);
   }
 
   public void add(NewsBoardVO newsBoard) {
@@ -79,6 +82,15 @@ public class NewsBoardDAO {
   public List<NewsBoardVO> getLastTen(int controll) throws Exception {
     return jdbcTemplate.query(
         "select * from (select rownum startRow, tempboard.*from(select * from newsboard order by id desc)tempboard) where ROWNUM <= 10 and startRow >= "
+            + ((controll - 1) * 10 + 1),
+        mapper);
+  }
+
+  public List<NewsBoardVO> searchGetTen(int controll, String where) throws Exception {
+
+    return jdbcTemplate.query(
+        "select * from(select * from (select rownum startRow, tempboard.*from(select * from newsboard where title like '%"
+            + where + "%' order by id desc)tempboard))where ROWNUM <= 10 and startRow >= "
             + ((controll - 1) * 10 + 1),
         mapper);
   }

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.project.vipsCloneCoding.HomeController;
+import com.project.vipsCloneCoding.user.dao.UserDAO;
 import com.project.vipsCloneCoding.user.domain.UserVO;
 import com.project.vipsCloneCoding.user.service.UserService;
 
@@ -22,10 +23,11 @@ public class UserController {
 
   @Autowired
   UserService userService;
+  @Autowired
+  UserDAO userDAO;
 
   @RequestMapping(value = "/member/join", method = RequestMethod.GET)
   public String join() {
-
     return "vipsCloneCoding/member/join";
   }
 
@@ -70,9 +72,14 @@ public class UserController {
 
   @RequestMapping(value = "/admin/adminPage", method = RequestMethod.GET)
   public String adminPage(HttpSession sessoin) {
-    sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
-    sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
-    return "/vipsCloneCoding/adminPage";
+    if (sessoin.getAttribute("member").equals("sub_admin")
+        || sessoin.getAttribute("member").equals("admin")) {
+      sessoin.setAttribute("subAdmin", userService.getAllSubAdmin());
+      sessoin.setAttribute("lowAdmin", userService.getAllLowAdmin());
+      return "/vipsCloneCoding/adminPage";
+    } else {
+      return "redirect:vipsCloneCoding/main";
+    }
   }
 
   @RequestMapping(value = "/admin/deleteAdmin", method = RequestMethod.GET)
@@ -109,4 +116,17 @@ public class UserController {
 
     return "redirect:/admin/adminPage";
   }
+
+  @RequestMapping(value = "/member/idCheck", method = RequestMethod.GET)
+  public String idCheck(@RequestParam Map<String, String> map, HttpSession sessoin) {
+    try {
+      sessoin.setAttribute("repeat", "중복입니다.");
+      userDAO.get(map.get("user_id")).getUserId();
+    } catch (Exception e) {
+      sessoin.setAttribute("repeat", "사용가능합니다.");
+      e.printStackTrace();
+    }
+    return "vipsCloneCoding/member/idCheck";
+  }
+
 }
