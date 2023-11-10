@@ -68,7 +68,7 @@
 .text-box-id {
 	font-size: 24px;
 	height: 43px;
-	width: 41%;
+	width: 40.3%;
 	margin: 10px 0px 0px 0px;
 }
 
@@ -93,9 +93,51 @@
 .check-area {
 	margin-left: 10px;
 	cursor: pointer;
-	height: 25px;
+	height: 26px;
 	background-color: gray;
-	margin-top: 20px;
+	margin-top: 18px;
 	border-radius: 7px;
 	border: solid 1px;
+}
+
+.address-area {
+	padding-bottom: 10px;
+	padding-right: 9px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border: solid 2px;
+	display: inline-block;
+	width: 53%;
+
+}
+
+.address-text-box {
+	font-size: 24px;
+	height: 43px;
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+}
+
+.search-address-text-box {
+	font-size: 24px;
+	height: 43px;
+	width: 73%;
+	margin: 10px 0px 0px 0px;
+}
+
+.search-address {
+	display: flex;
+	cursor: pointer;
+}
+
+.search-address-button {
+	border-radius: 10px;
+	line-height: 33px;
+	font-size: 16px;
+	left: 6px;
+	position: relative;
+	top: 12px;
+	border: solid 1px;
+	height: 39px;
+	background: gray;
 }

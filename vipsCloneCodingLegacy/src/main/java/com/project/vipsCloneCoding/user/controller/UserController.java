@@ -42,8 +42,12 @@ public class UserController {
       // TODO Auto-generated catch block
       e.printStackTrace();
     }
+
+    String address = "우편번호 : " + map.get("postal-code") + "도로명 주소 : " + map.get("road-address")
+        + "상세 주소 : " + map.get("detail-address");
+
     UserVO user = new UserVO(map.get("name"), map.get("phone_number"), map.get("user_id"),
-        map.get("pw"), map.get("address"), tempDate);
+        map.get("pw"), address, tempDate);
     userService.join(user);
     return "redirect:/member/login";
   }
