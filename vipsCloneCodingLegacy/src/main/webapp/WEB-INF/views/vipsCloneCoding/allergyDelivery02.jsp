@@ -91,12 +91,12 @@
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergyDelivery">
+									<a href="/allergyDelivery02">
 										<img src="/resources/images/templet_allergy/txt_material02_on.gif">
 									</a>
 								</li>
 								<li class="otherList">
-									<a href="/allergyDelivery02">
+									<a href="/allergyDelivery">
 										<img src="/resources/images/templet_allergy/메밀.gif">
 									</a>
 								</li>
@@ -202,7 +202,7 @@
 								<div class="division-01">${allergyDeliveryService.getDivision01()}</div>
 							</div>
 							<div class="infoBox-02">
-								<c:forEach var="item" items="${division03}">
+								<c:forEach var="item" items="${division01}">
 									<div class="menu-02">${item.getMenu()}</div>
 								</c:forEach>
 							</div>
@@ -211,6 +211,85 @@
 									<div class="info-02">${item.getInfo()}</div>
 								</c:forEach>
 							</div>
+							<div class="infoBox-01">
+								<div class="division-02">${allergyDeliveryService.getDivision02()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division02}">
+									<div class="menu-01">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division02}">
+									<div class="info-01">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-03">${allergyDeliveryService.getDivision03()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division03}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division03}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-04">${allergyDeliveryService.getDivision04()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division04}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division04}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-05">${allergyDeliveryService.getDivision05()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division05}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division05}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-06">${allergyDeliveryService.getDivision06()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division06}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division06}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-01">
+								<div class="division-07">${allergyDeliveryService.getDivision07()}</div>
+							</div>
+							<div class="infoBox-02">
+								<c:forEach var="item" items="${division07}">
+									<div class="menu-02">${item.getMenu()}</div>
+								</c:forEach>
+							</div>
+							<div class="infoBox-03">
+								<c:forEach var="item" items="${division07}">
+									<div class="info-02">${item.getInfo()}</div>
+								</c:forEach>
+							</div>
+							
 							
 							
 						</div>

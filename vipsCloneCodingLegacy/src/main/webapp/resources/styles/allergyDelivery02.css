@@ -31,7 +31,7 @@ body {
 .mainContent02 {
 	background: url(../images/templet_saladMain/bg_contents.gif);
 	position: relative;	
-	height: 2200px;
+	height: 2400px;
 	width: 1000px;
     box-shadow: 4px 0px 5px #2b2424, -4px 0px 5px #2b2424;
 }
@@ -117,7 +117,7 @@ body {
 
 .contentFinish img {
 	position: absolute;
-    top: 2282px;
+    top: 2482px;
 }
 
 .footerLocation {
@@ -302,7 +302,7 @@ body {
     text-align: center;
     color: #402612;
     font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 55px;
+    padding-top: 144px;
 }
 
 .division-04 {
@@ -502,7 +502,7 @@ body {
 	background: url(../images/templet_saladMain/bg_caution.png);
 	width: 750px;
     height: 150px;
-    margin-top: 1578px;
+    margin-top: 1788px;
     padding: 20px;
     z-index: 2;
 }
