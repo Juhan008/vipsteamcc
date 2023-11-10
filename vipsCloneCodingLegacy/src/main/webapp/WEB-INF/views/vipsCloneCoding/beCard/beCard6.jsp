@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,8 +47,9 @@
 								<img src="/resources/images/benefit/beCard/beCard_top_text.png">
 							</p>
 						</div>
+					
 						<div id="content">
-							<ul class="discount-tab clfix" style="height: 1300px">
+							<ul class="discount-tab clfix" style="min-height: 1500px;">
 								<li><a href="beCard">
 										<h5>
 											<img
@@ -56,151 +58,48 @@
 										</h5>
 								</a>
 									<div class="contents-box">
-										<h6 class="benefit-title">
-										30%~35% 할인
-											
-										</h6>
-										<table class="benefit01-tbl" border="1">
-											<colgroup>
-												<col style="width: 28%">
-												<col style="width: 18%">
-												<col style="width: 54%">
-											</colgroup>
-											<thead>
-												<tr class="last">
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/card-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-scale.gif"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row"><img
-														src="/resources/images/benefit/beCard/img_card02.png">
-														<p class="mt10">CJ ONE 삼성카드</p></th>
-													<td class="mid-txt line">최대30%할인<br>+1%적립<br>
-														<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
-													<td class="at-txt">
-														<ul class="contents-txt">
-															<li><img class="dot"><u><strong>CJ
-																		ONE 삼성카드 결제 시, 결제금액에 대해 현장할인</strong></u></li>
-															<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원
-																: 30%할인+1%적립</li>
-															<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원
-																: 20%할인+1%적립</li>
-															<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액
-																20만원 한도 내</li>
-															<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
-														</ul>
-														<div>
-															<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
-															CJ ONE 삼성카드와 CJ ONE 신한카드는 동시에 제휴(할인/포인트<br>더블 적립)적용
-															불가
-														</div>
-													</td>
-												</tr>
-												<tr class="last"></tr>
-											</tbody>
-										</table>
-										<h6 class="benefit01">
-											<img src="/resources/images/benefit/beCard/discount2025.png">
-										</h6>
-										<table class="benefit01-tbl" border="1">
-											<colgroup>
-												<col style="width: 28%">
-												<col style="width: 18%">
-												<col style="width: 54%">
-											</colgroup>
-											<thead>
-												<tr class="last">
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/card-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-scale.gif"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row"><img
-														src="/resources/images/benefit/beCard/img_card02.png">
-														<p class="mt10">CJ ONE 삼성카드</p></th>
-													<td class="mid-txt line">최대25%할인<br>+1%적립<br>
-														<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
-													<td class="at-txt">
-														<ul class="contents-txt">
-															<li><img class="dot"><u><strong>CJ
-																		ONE 삼성카드 결제 시, 결제금액에 대해 현장할인</strong></u></li>
-															<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원
-																: 20%할인+1%적립</li>
-															<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원
-																: 20%할인+1%적립</li>
-															<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액
-																20만원 한도 내</li>
-															<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
-														</ul>
-														<div>
-															<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
-															CJ ONE 삼성카드와 CJ ONE 신한카드는 동시에 제휴(할인/포인트<br>더블 적립)적용
-															불가
-														</div>
-													</td>
-												</tr>
-												<tr class="last"></tr>
-											</tbody>
-										</table>
-										<h6 class="benefit01">
-											<img src="/resources/images/benefit/beCard/discount1015.png">
-										</h6>
-										<table class="benefit01-tbl" border="1">
-											<colgroup>
-												<col style="width: 28%">
-												<col style="width: 18%">
-												<col style="width: 54%">
-											</colgroup>
-											<thead>
-												<tr class="last">
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/card-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-kind.gif"></th>
-													<th scope="col"><img
-														src="/resources/images/benefit/beCard/dis-scale.gif"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<th scope="row"><img
-														src="/resources/images/benefit/beCard/img_card02.png">
-														<p class="mt10">CJ ONE 삼성카드</p></th>
-													<td class="mid-txt line">최대15%할인<br>+1%적립<br>
-														<span class="sub-info">(적립은 CJ ONE포인트)</span></td>
-													<td class="at-txt">
-														<ul class="contents-txt">
-															<li><img class="dot"><u><strong>CJ
-																		ONE 삼성카드 결제 시, 결제금액에 대해 현장할인</strong></u></li>
-															<li><img class="dot">전월(1일~말일)실적 50만원 이상 결제회원
-																: 10%할인+1%적립</li>
-															<li><img class="dot">전월(1일~말일)실적 20만원 이상 결제회원
-																: 10%할인+1%적립</li>
-															<li><img class="dot">1일 1회(연12회) / 할인 전 식사금액
-																20만원 한도 내</li>
-															<li><img class="dot">할인 횟수 초과 시, 기본 적립률의 2배 적립</li>
-														</ul>
-														<div>
-															<br>※ 전월(1일~말일)실적 20만원 미만 시, CJ ONE 멤버십 기본혜택 적용 <br>※
-															CJ ONE 삼성카드와 CJ ONE 신한카드는 동시에 제휴(할인/포인트<br>더블 적립)적용
-															불가
-														</div>
-													</td>
-												</tr>
-												<tr class="last"></tr>
-											</tbody>
-										</table>
+										<c:forEach items="${imageGroups}" var="group">
+											<h6 class="benefit-title">${group.groupTitle}</h6>
+											<table class="benefit01-tbl" border="1">
+												<colgroup>
+													<col style="width: 28%">
+													<col style="width: 18%">
+													<col style="width: 54%">
+												</colgroup>
+												<thead>
+													<tr class="last">
+														<th scope="col"><img
+															src="/resources/images/benefit/beCard/card-kind.gif"></th>
+														<th scope="col"><img
+															src="/resources/images/benefit/beCard/dis-kind.gif"></th>
+														<th scope="col"><img
+															src="/resources/images/benefit/beCard/dis-scale.gif"></th>
+													</tr>
+												</thead>
+												<c:forEach items="${images}" var="image">
+													<tbody>
+														<tr>
+															<th scope="row"><img
+																src="${pageContext.request.contextPath}${image.imagePath}"
+																alt="${image.imageName}" />
+																<p class="mt10">${image.imageName}</p></th>
+															<td class="mid-txt line">${image.description1}</td>
+															<td class="at-txt">
+																<ul class="contents-txt">
+																	<li><img class="dot"><u><strong>
+																				${image.description2}</strong></u></li>
+																	<li><img class="dot">${image.description3}</li>
+																	<li><img class="dot">${image.description4}</li>
+																	<li><img class="dot">${image.description5}</li>
+																	<li><img class="dot">${image.description6}</li>
+																</ul>
+															</td>
+														</tr>
+														<tr class="last"></tr>
+													</tbody>
+												</c:forEach>
+											</table>
+										</c:forEach>
 										<dl class="caution">
 											<dt>
 												<img src="/resources/images/benefit/beCard/tit_look.png">

@@ -98,8 +98,4 @@ public class MemberShipController {
     return "vipsCloneCoding/addimage";
   }
 
-  @RequestMapping(value = "/benefit/beCard6", method = RequestMethod.GET)
-  public String beCard6(Locale locale, Model model) {
-    return "vipsCloneCoding/beCard/beCard6";
-  }
 }

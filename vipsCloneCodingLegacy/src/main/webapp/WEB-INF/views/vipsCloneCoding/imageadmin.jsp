@@ -24,9 +24,9 @@
 								alt="BENEFIT">
 						</h3>
 						<ul style="min-height: 1000px;">
-							<li class="active"><a href="beCard"><img
+							<li class="active"><a href="imageadmin"><img
 									src="/resources/images/benefit/beCard/image_check_on.png"></a></li>
-							<li class="active"><a href="addimage"><img
+							<li class="active"><a href="imageGroups"><img
 									src="/resources/images/benefit/beCard/card_admin.png"></a></li>
 						</ul>
 					</div>
@@ -42,7 +42,7 @@
 							
 						</div>
 						<div id="content">
-							<ul class="discount-tab clfix" style="height: 500px">
+							<ul class="discount-tab clfix" style="height: 800px">
 								<li><a href="/imageadmin"><h5>
 											<img
 												src="/resources/images/benefit/beCard/image_check_on.png">
@@ -100,7 +100,7 @@
 											</c:if>
 										</div>
 									</div></li>
-								<li><a href="beCard2"><h5>
+								<li><a href="addimage"><h5>
 											<img src="/resources/images/benefit/beCard/card_admin.png">
 										</h5></a></li>
 							</ul>
