@@ -49,9 +49,13 @@ public class ReservationController {
   }
 
   @RequestMapping(value = "/store/storeFirstBirthdayQ", method = RequestMethod.GET)
-  public String storeFirstBirthdayQ() {
+  public String storeFirstBirthdayQ(HttpSession sessoin) {
 
-    return "vipsCloneCoding/store/storeFirstBirthdayQ";
+    if (sessoin.getAttribute("userId") == null) {
+      return "vipsCloneCoding/member/login";
+    } else {
+      return "vipsCloneCoding/store/storeFirstBirthdayQ";
+    }
   }
 
   @RequestMapping(value = "/store/storeCheckReservation", method = RequestMethod.GET)

@@ -65,6 +65,13 @@
 	margin: 10px 0px 0px 0px;
 }
 
+.text-box-id {
+	font-size: 24px;
+	height: 43px;
+	width: 41%;
+	margin: 10px 0px 0px 0px;
+}
+
 .join-button {
 	cursor: pointer;
 	border-radius: 30px;
@@ -76,4 +83,19 @@
 	width: 45%;
 	font-size: 25px;
 	margin: 66px 0px 30px 0px;
+}
+
+.id-check-area {
+	display: flex;
+	justify-content: center;
+}
+
+.check-area {
+	margin-left: 10px;
+	cursor: pointer;
+	height: 25px;
+	background-color: gray;
+	margin-top: 20px;
+	border-radius: 7px;
+	border: solid 1px;
 }

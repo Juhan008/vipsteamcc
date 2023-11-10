@@ -51,10 +51,10 @@
 									<input type="text" name="phone_number" placeholder="전화번호"
 										class="text-box" maxlength="12" minlength="10" />
 								</div>
-								<div>
+								<div class="id-check-area">
 									<input type="text" id="user_id" name="user_id" placeholder="아이디"
-										class="text-box" maxlength="20" minlength="5" />
-									<div onclick="chechRepeat()">중복체크</div>
+										class="text-box-id" maxlength="20" minlength="5" />
+									<div onclick="chechRepeat()" class="check-area">중복체크</div>
 								</div>
 								<div>
 									<input type="password" name="pw" placeholder="비밀번호"
