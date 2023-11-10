@@ -33,36 +33,39 @@
 					</div>
 
 					<div class="info-area">
-						<div class="path">
-							<span>
-								<a href="/intro">
-									<img src="/resources/images/story/storyBrandStory/homeIcon.png"
-										alt="홈으로" />
-									Home
-								</a>
-							</span>
-							<span>
-								<a href="/story/storyBrandStory">
+						<div class="path-area">
+							<div class="path">
+								<span>
+									<a href="/intro">
+										<img
+											src="/resources/images/story/storyBrandStory/homeIcon.png"
+											alt="홈으로" />
+										Home
+									</a>
+								</span>
+								<span>
+									<a href="/story/storyBrandStory">
+										<img
+											src="/resources/images/story/storyBrandStory/arrowIcon.png"
+											alt="화살표" />
+										VIPS STORY
+									</a>
+								</span>
+								<span>
 									<img
 										src="/resources/images/story/storyBrandStory/arrowIcon.png"
 										alt="화살표" />
-									VIPS STORY
-								</a>
-							</span>
-							<span>
-								<img src="/resources/images/story/storyBrandStory/arrowIcon.png"
-									alt="화살표" />
-								<strong> 브랜드 스토리</strong>
-							</span>
-						</div>
+									<strong> 브랜드 스토리</strong>
+								</span>
+							</div>
 
-						<div class="big-title">
-							<h4>VIPS</h4>
-							<img
-								src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
-								alt="타이틀그림" />
+							<div class="big-title">
+								<h4>VIPS</h4>
+								<img
+									src="/resources/images/story/storyBrandStory/bigTitleBackground.png"
+									alt="타이틀그림" />
+							</div>
 						</div>
-
 						<div class="contents">
 							<div>
 								<div class="contents-title-first">Premium Steak & Seasonal

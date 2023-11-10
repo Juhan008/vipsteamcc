@@ -1,13 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>새소식</title>
-<link rel='stylesheet' href='/resources/styles/story/storyNewsQ.css' />
+<title>새소식 관리자 페이지</title>
+<link rel='stylesheet' href='/resources/styles/story/storyNewsWrite.css' />
 </head>
 <body>
 	<div id="root">
@@ -73,66 +71,26 @@
 									alt="그림" class="big-title-background" />
 							</div>
 						</div>
-
-
 						<div class="table-area-padding">
-							<!-- 여기에선 db 연결해야된다 -->
-							<div class="table-total">
-								<img src="/resources/images/story/storyNewsQ/tableTotalIcon.png"
-									alt="" class="" />
-								<div class="total-post-number">전체건수 -
-									${newsBoardService.tableFinish()}건</div>
-								<div class="search-area">
-									<form class="search">
-										<input type="text" />
-										<button>검색</button>
-									</form>
+							<form action="" method="post" enctype="multipart/form-data">
+								<div>
+									<input type="hidden" name="currentPost" value="${currentPost}">
+									<input type="hidden" name="userId" value="${userId}">
+									<input type="file" name="file">
 								</div>
-								<div class="table-list-area">
-									<div class="table-list-sub">
-										<div class="table-list-id">글번호</div>
-										<div class="table-list-title">제목</div>
-										<div class="table-list-createdAt">등록일</div>
-										<div class="table-list-view">조회수</div>
-									</div>
-									<c:forEach var="post" items="${lastPost}">
-										<form action="/story/storyNewsPrt" class="table-text-area">
-											<input type="hidden" name="currentPost" value=${post.getId()}>
-											<div class="table-list-id">${post.getId()}</div>
-											<div class="table-list-title-2">
-												<button class="title-button">${post.getTitle()}</button>
-											</div>
-											<div class="table-list-createdAt">${post.getCreatedAt()}</div>
-											<div class="table-list-view">${post.getView()}</div>
-										</form>
-										<hr>
-									</c:forEach>
+								<div class="text-title-area">
+									<input type="text" name="title" placeholder="제목"
+										class="text-title"
+										value="${newsBoardService.getTitle(currentPost)}">
 								</div>
-
-								<div class="bottomControllArea">
-									<form>
-										<input type="hidden" name="controll" value="1">
-										<button class="start-controll-button">1</button>
-									</form>
-
-									<c:forEach var="controllNumber" begin="2"
-										end="${newsBoardService.tableBottomController()}">
-										<form>
-											<input type="hidden" name="controll"
-												value="${controllNumber}">
-											<button class="repeat-controll-button">${controllNumber }</button>
-										</form>
-									</c:forEach>
+								<div class="text-boardContents-area">
+									<textarea name="boardContents" placeholder="내용"
+										class="text-boardContents">${newsBoardService.getContents(currentPost)}</textarea>
 								</div>
-							</div>
-							<c:if
-								test="${member.equals('admin')||member.equals('sub_admin')}">
-								<div class="write-button-area">
-									<a href="/story/storyNewsWrite">
-										<button class="write-button">글쓰기</button>
-									</a>
+								<div class="button-area">
+									<button>수정</button>
 								</div>
-							</c:if>
+							</form>
 						</div>
 					</div>
 				</div>

@@ -69,18 +69,18 @@
 						</div>
 						<!-- 여기서부턴 db -->
 						<div class="reservation-post-area">
-							<div>
-								<div>예약 날짜 : ${currentReservation.getTime()}</div>
+							<div class="user-text-area">
+								<div>예약하신 날짜 : ${currentReservation.getSimpleDate()}</div>
 								<div>지역 : ${currentReservation.getLocation()}</div>
-								<div>${currentReservation.getHowManyPeople()}명</div>
-								<div>${currentReservation.getReservationContents()}</div>
+								<div>인원수 :${currentReservation.getHowManyPeople()}명</div>
+								<div>기타 문의 : ${currentReservation.getReservationContents()}</div>
 							</div>
 							<c:choose>
 								<c:when test="${currentReservation.getManagerContents()==null}">
-									<div>아직 답변이 없습니다.</div>
+									<div class="answer-text-area">아직 답변이 없습니다.</div>
 								</c:when>
 								<c:otherwise>
-									<div>${currentReservation.getManagerContents()}</div>
+									<div class="answer-text-area">${currentReservation.getManagerContents()}</div>
 								</c:otherwise>
 							</c:choose>
 						</div>

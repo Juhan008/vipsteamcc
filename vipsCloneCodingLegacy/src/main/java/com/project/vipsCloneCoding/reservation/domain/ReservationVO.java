@@ -1,5 +1,7 @@
 package com.project.vipsCloneCoding.reservation.domain;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ReservationVO {
@@ -8,7 +10,7 @@ public class ReservationVO {
   private String name;
   private String phoneNumber;
   private String userId;
-  private Date time;
+  private Timestamp time;
   private int howManyPeople;
   private String reservationContents;
   private String managerContents;
@@ -17,7 +19,7 @@ public class ReservationVO {
   private String isCheck;
   private String isDelete;
 
-  public ReservationVO(int id, String name, String phoneNumber, String userId, Date time,
+  public ReservationVO(int id, String name, String phoneNumber, String userId, Timestamp time,
       int howManyPeople, String reservationContents, String managerContents, String location,
       Date createdAt, String isCheck, String isDelete) {
     this.id = id;
@@ -37,8 +39,8 @@ public class ReservationVO {
   /**
    * 예약 받는 용도
    **/
-  public ReservationVO(String name, String phoneNumber, String userId, Date time, int howManyPeople,
-      String reservationContents, String location) {
+  public ReservationVO(String name, String phoneNumber, String userId, Timestamp time,
+      int howManyPeople, String reservationContents, String location) {
     this.name = name;
     this.phoneNumber = phoneNumber;
     this.userId = userId;
@@ -64,7 +66,7 @@ public class ReservationVO {
     return userId;
   }
 
-  public Date getTime() {
+  public Timestamp getTime() {
     return time;
   }
 
@@ -79,7 +81,6 @@ public class ReservationVO {
   public String getManagerContents() {
     return managerContents;
   };
-
 
   public String getLocation() {
     return location;
@@ -97,6 +98,9 @@ public class ReservationVO {
     return isDelete;
   }
 
-
+  public String getSimpleDate() {
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy년MM월dd일 HH시 mm분");
+    return formatter.format(time);
+  }
 
 }

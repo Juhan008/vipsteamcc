@@ -20,9 +20,9 @@ public class UserDAO {
     @Override
     public UserVO mapRow(ResultSet rs, int rowNum) throws SQLException {
       return new UserVO(rs.getInt("id"), rs.getString("name"), rs.getString("phone_number"),
-          rs.getString("user_id"), rs.getString("pw"), rs.getString("address"),
-          rs.getString("birth"), rs.getDate("created_at"), rs.getString("coupon"),
-          rs.getString("member"), rs.getString("location"));
+          rs.getString("user_id"), rs.getString("pw"), rs.getString("address"), rs.getDate("birth"),
+          rs.getDate("created_at"), rs.getString("coupon"), rs.getString("member"),
+          rs.getString("location"));
     }
   };
 
@@ -34,7 +34,7 @@ public class UserDAO {
     jdbcTemplate.update("create table users(id number(10,0) generated as identity primary key, "
         + "name varChar2(30) not null, " + "phone_number varchar2(50) not null, "
         + "user_id varchar2(20) not null unique, " + "pw varchar2(500) not null, "
-        + "address varchar2(300) not null, " + "birth varchar2(300) not null, "
+        + "address varchar2(300) not null, " + "birth Date not null, "
         + "created_at Date default sysdate, " + "coupon varchar2(1000), " + "member varchar2(30), "
         + "location varchar2(100))");
   }

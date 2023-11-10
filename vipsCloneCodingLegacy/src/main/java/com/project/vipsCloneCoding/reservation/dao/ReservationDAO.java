@@ -19,7 +19,7 @@ public class ReservationDAO {
     @Override
     public ReservationVO mapRow(ResultSet rs, int rowNum) throws SQLException {
       return new ReservationVO(rs.getInt("id"), rs.getString("name"), rs.getString("phone_number"),
-          rs.getString("user_id"), rs.getDate("time"), rs.getInt("how_many_people"),
+          rs.getString("user_id"), rs.getTimestamp("time"), rs.getInt("how_many_people"),
           rs.getString("reservation_contents"), rs.getString("manager_contents"),
           rs.getString("location"), rs.getDate("created_at"), rs.getString("isCheck"),
           rs.getString("isDelete"));

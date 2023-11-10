@@ -33,24 +33,21 @@
 							<div class="bottom-info-area-inner-news">
 								<img src="/resources/images/main/vipsNewsLogo.png" alt="빕스 뉴스" />
 								<div class="inner-ul">
-									<c:if test="${newsBoardService!=null}">
-										<c:forEach var="i" begin="0" end="9">
-											<c:if
-												test="${newsBoardService.getTitle(newsBoardService.tableFinish()-i)!=null}">
-												<div class="table-text-area">
-													<div class="db-title">
-														<form action="/story/storyNewsPrt">
-															<input type="hidden" name="currentPost"
-																value=${newsBoardService.getId(newsBoardService.tableFinish()-i)}>
-															<button>
-																<strong>${newsBoardService.getTitle(newsBoardService.tableFinish()-i)}</strong>
-															</button>
-														</form>
-													</div>
-													<div class="db-created-at">${newsBoardService.getCreatedAt(newsBoardService.tableFinish()-i)}</div>
+									<c:if test="${lastPost!=null}">
+										<c:forEach var="post" items="${lastPost}">
+											<div class="table-text-area">
+												<div class="db-title">
+													<form action="/story/storyNewsPrt">
+														<input type="hidden" name="currentPost"
+															value=${post.getId()}>
+														<button>
+															<strong>${post.getTitle()}</strong>
+														</button>
+													</form>
 												</div>
-												<hr>
-											</c:if>
+												<div class="db-created-at">${post.getCreatedAt()}</div>
+											</div>
+											<hr>
 										</c:forEach>
 									</c:if>
 								</div>

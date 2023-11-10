@@ -53,8 +53,13 @@
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
+.path-area {
+	position: relative;
+	top: 40px;
+	height: 22%;
+}
+
 .path {
-	margin: 39px 0px 0px 0px;
 	font-size: 11px;
 	color: #765a3a;
 }
@@ -76,8 +81,8 @@
 }
 
 .firstBirthdayMessage {
+	top: 20px;
 	position: relative;
-	margin: 20px 0px 0px 0px;
 }
 
 .infoTitleBackground {
@@ -87,6 +92,11 @@
 }
 
 .reservation-post-area {
-	margin: 60px 0px 0px 0px;
+	top: 155px;
 	position: relative;
+}
+
+.reservation-text-area {
+	margin: 5px;
+	text-align: center;
 }

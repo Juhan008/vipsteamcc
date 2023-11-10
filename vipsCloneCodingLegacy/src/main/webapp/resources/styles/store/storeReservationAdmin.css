@@ -53,8 +53,13 @@
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
+.path-area {
+	position: relative;
+	top: 40px;
+	height: 22%;
+}
+
 .path {
-	margin: 39px 0px 0px 0px;
 	font-size: 11px;
 	color: #765a3a;
 }
@@ -87,5 +92,6 @@
 }
 
 .reservation-post-area {
+	top: 135px;
 	position: relative;
 }

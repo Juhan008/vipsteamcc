@@ -5,7 +5,7 @@
 	margin: auto;
 }
 
-button{
+button {
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -54,8 +54,13 @@ button{
 	/*background-color: rgba(0, 255, 0, 0.5);*/
 }
 
+.path-area {
+	position: relative;
+	top: 40px;
+	height: 22%;
+}
+
 .path {
-	margin: 39px 0px 0px 0px;
 	font-size: 11px;
 	color: #765a3a;
 }
@@ -91,7 +96,7 @@ button{
 .table-area-padding {
 	width: 100%;
 	position: relative;
-	margin: 135px 0px 0px 0px;
+	top: 100px;
 	/* background-color: rgba(0, 255, 0, 0.5);*/
 }
 
@@ -118,6 +123,15 @@ button{
 	margin: 0px 0px 0px 10px;
 }
 
+.post-img {
+	max-width: 100%;
+}
+
+.post-text-area{
+	padding: 5px;
+}
+
+
 .table-controll-area {
 	font-size: 14px;
 	width: 95%;
@@ -125,22 +139,50 @@ button{
 	border-bottom: solid 2px;
 }
 
-.table-controll-move{
+.table-controll-move {
 	padding: 5px;
 }
-.move-table-form{
+
+.move-table-form {
 	display: inline-block;
+}
+
+.table-controll-button-area-inner {
+	position: relative;
+	top: 11px;
+	left: 88%;
 }
 
 .table-controll-button {
 	cursor: pointer;
-	position: relative;
-	top: 11px;
-	left: 88%;
 	font-size: 15px;
 	height: 27px;
 	width: 7%;
 	border: none;
 	color: white;
 	background-color: brown;
+}
+
+.admin-button-area {
+	width: 19%;
+	display: flex;
+	position: relative;
+	top: -16px;
+	left: 68%;
+}
+
+.admin-button-area button {
+	cursor: pointer;
+	font-size: 15px;
+	height: 27px;
+	width: 100%;
+	border: none;
+	color: white;
+	background-color: brown;
+}
+
+.admin-button-area-inner {
+	margin-left: 10px;
+	width: 43%;
+
 }
