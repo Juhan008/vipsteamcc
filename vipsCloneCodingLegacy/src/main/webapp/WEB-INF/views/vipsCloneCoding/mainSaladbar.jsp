@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -129,7 +129,9 @@
 								</div>
 							</div>							
 							<div class="checkMenu">
-								<img src="/resources/images/templet_saladMain/btn_storeType06.jpg">
+								<a href="/evtHotEventQ">
+									<img src="/resources/images/templet_saladMain/btn_storeType06.jpg">
+								</a>
 							</div>
 						</div>
 						<div class="caution">

@@ -124,4 +124,12 @@ public class SaladController {
 
     return "/vipsCloneCoding/adminAdd";
   }
+
+   @RequestMapping(value = "/error/exception", method = RequestMethod.GET)
+   public String exception(Locale locale, Model model) {
+  
+  
+  
+   return "/vipsCloneCoding/error/exception";
+   }
 }
