@@ -23,7 +23,7 @@ function searchAddress() {
 }
 
 function onlyNumber(event) {
-  const notNumber = /[^0-9a-zA-Z]/g;
+  const notNumber = /[^0-9]/g;
   const inputText = event.target;
   if (notNumber.test(inputText.value)) {
     inputText.value = inputText.value.replace(notNumber, '');
