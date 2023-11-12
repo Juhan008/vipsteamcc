@@ -23,7 +23,7 @@
 
 							<c:forEach var="subAd" items="${subAdmin}">
 								<li><input type="checkBox" name="adminChoice"
-										value="${subAd.getId() }"> <label> <c:out
+									value="${subAd.getId() }"> <label> <c:out
 											value="${subAd.getName() }" /> <c:out
 											value="${subAd.getLocation() }" />
 								</label></li>
@@ -34,7 +34,7 @@
 							일반 관리자
 							<c:forEach var="lowAd" items="${lowAdmin}">
 								<li><input type="checkBox" name="adminChoice"
-										value="${lowAd.getId() }"> <label> <c:out
+									value="${lowAd.getId() }"> <label> <c:out
 											value="${lowAd.getName() }" /> <c:out
 											value="${lowAd.getLocation() }" />
 								</label></li>
@@ -58,12 +58,11 @@
 				<div class="results">
 					<form action="/admin/addAdmin" method="post">
 						<button class="adminAdd">추가/변경</button>
-						<input type="radio" name="member" value="sub_admin">
-						상위 관리자
-						<input type="radio" name="member" value="low_admin">
-						하위 관리자
-						<input type="text" name="location" placeholder="지역을 입력해주세요.">
-						<input type="hidden" name="id" value="${searchResult.getId()}">
+						<input type="radio" name="member" value="sub_admin"> 상위
+						관리자 <input type="radio" name="member" value="low_admin">
+						하위 관리자 <input type="text" name="location"
+							placeholder="지역을 입력해주세요."> <input type="hidden" name="id"
+							value="${searchResult.getId()}">
 						<table class="searchResults">
 							<thead>
 								<tr>
@@ -80,6 +79,11 @@
 						</table>
 					</form>
 				</div>
+			</div>
+			<div class="go-home-button card">
+				<a href="/imageadmin">
+					<button>카드 혜택 수정</button>
+				</a>
 			</div>
 			<div class="go-home-button">
 				<a href="/main">

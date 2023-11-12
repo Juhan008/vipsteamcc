@@ -45,7 +45,7 @@
 							<ul class="discount-tab clfix" style="height: 500px">
 								<li><a href="imageGroups"><h5>
 											<img
-												src="/resources/images/benefit/beCard/image_check_on.png">
+												src="/resources/images/benefit/beCard/imageGroups_on.png">
 										</h5></a>
 									<div class="contents-box">
 										<div class="DB-list">

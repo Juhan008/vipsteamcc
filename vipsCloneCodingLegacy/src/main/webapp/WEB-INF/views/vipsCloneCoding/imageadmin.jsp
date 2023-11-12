@@ -45,7 +45,7 @@
 							<ul class="discount-tab clfix" style="height: 800px">
 								<li><a href="/imageadmin"><h5>
 											<img
-												src="/resources/images/benefit/beCard/image_check_on.png">
+												src="/resources/images/benefit/beCard/addedimg_on.png">
 										</h5></a>
 									<div class="contents-box">
 										<div class="DB-list">
@@ -101,7 +101,7 @@
 										</div>
 									</div></li>
 								<li><a href="addimage"><h5>
-											<img src="/resources/images/benefit/beCard/card_admin.png">
+											<img src="/resources/images/benefit/beCard/addimg.png">
 										</h5></a></li>
 							</ul>
 						</div>
