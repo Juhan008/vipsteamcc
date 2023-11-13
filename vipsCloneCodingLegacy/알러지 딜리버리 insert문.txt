@@ -1,0 +1,116 @@
+CREATE TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" 
+   (   "ID" NUMBER(10,0) GENERATED ALWAYS AS IDENTITY MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE , 
+   "DIVISION" VARCHAR2(100 BYTE), 
+   "MENU" VARCHAR2(100 BYTE), 
+   "INFO" VARCHAR2(300 BYTE), 
+   "MATERIAL" VARCHAR2(30 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into VIPSCLONEDB.ALLERGYDELIVERY
+SET DEFINE OFF;
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','수란톡 명란 까르보나라','난류, 우유, 대두, 밀, 돼지고기, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','쉬림프 로제 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','스테이크 고르곤 까르보나라','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','얌까르보 페투치니','난류, 우유, 대두, 밀, 돼지고기, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','얌새우 알리오올리오 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','토마토 마레 리조또','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 쇠고기, 닭고기, 오징어, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','토마토 마레 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 닭고기, 오징어, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','멕시칸 BBQ 피자','난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','멜팅 콰트로 치즈 피자','난류, 우유, 대두, 밀, 돼지고기, 호두, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','콤비네이션 피자','난류, 우유, 대두, 밀, 돼지고기, 토마토, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','그릴드 치킨 시저 샐러드','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 오징어','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','미주라도너츠','난류, 우유, 대두, 밀','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','시저드레싱 추가','난류, 우유, 대두, 밀, 아황산류, 쇠고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','티본 다이닝팩 2~3인 세트','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','티본 파티팩 3~4인 세트','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','BBQ 파티팩 2~3인 세트','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 오징어, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','그린샐러드','난류, 우유, 대두, 토마토, 아황산류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','그릴드치킨,메쉬포테이토','난류, 우유, 대두, 토마토, 닭고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','망고듬뿍 치즈케이크','난류, 우유, 대두, 밀, 아황산류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','빕스 감바스','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','시즈널스프','난류, 우유, 대두, 밀, 돼지고기, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','얌블랙브레드','난류, 우유, 밀, 오징어','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','치킨 텐더','난류, 대두, 밀, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','치킨윙regular','난류, 대두, 밀, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','콘립 프라이즈','난류, 우유','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','그릴드치킨,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','쉬림프,잠발라야라이스','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','스테이크,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','폭립,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','블랙 페퍼 채끝 스테이크','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','빕스 1997 스테이크','난류, 우유, 대두, 밀, 고등어, 돼지고기, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','빕스 안심 스테이크','난류, 우유, 대두, 토마토, 쇠고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','시그니처 바비큐 폭립','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','폭립 프라이즈','난류, 우유, 대두, 밀, 돼지고기, 쇠고기','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','학센 플래터','난류, 우유, 밀, 돼지고기, 오징어','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','수란톡 명란 까르보나라','난류, 우유, 대두, 밀, 돼지고기, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','쉬림프 로제 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','스테이크 고르곤 까르보나라','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','얌까르보 페투치니','난류, 우유, 대두, 밀, 돼지고기, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','얌새우 알리오올리오 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','토마토 마레 리조또','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 쇠고기, 닭고기, 오징어, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PASTA RICE','토마토 마레 파스타','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 닭고기, 오징어, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','멕시칸 BBQ 피자','난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','멜팅 콰트로 치즈 피자','난류, 우유, 대두, 밀, 돼지고기, 호두, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('PIZZA','콤비네이션 피자','난류, 우유, 대두, 밀, 돼지고기, 토마토, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','그릴드 치킨 시저 샐러드','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 오징어','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','미주라도너츠','난류, 우유, 대두, 밀','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','부라타 카프레제 샐러드','우유, 대두, 토마토, 아황산류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','쉬림프 망고 샐러드','우유, 대두, 밀, 새우, 토마토, 아황산류, 쇠고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','스파이시 쉬림프 누들 샐러드','우유, 대두, 밀, 새우, 토마토, 아황산류, 쇠고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','시그니처 훈제 연어 샐러드','우유, 대두, 토마토, 아황산류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SALAD MEAL','시저드레싱 추가','난류, 우유, 대두, 밀, 아황산류, 쇠고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','티본 다이닝팩 2~3인 세트','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','티본 파티팩 3~4인 세트','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SET','티본 파티팩 2~3인 세트','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 오징어, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','감바스 라이스','우유, 대두, 밀, 게, 새우, 돼지고기, 쇠고기, 닭고기, 오징어, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','그린샐러드','난류, 우유, 대두, 토마토, 아황산류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','그릴드치킨,메쉬포테이토','난류, 우유, 대두, 토마토, 닭고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','망고듬뿍 치즈케이크','난류, 우유, 대두, 밀, 아황산류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','불고기 라이스','우유, 대두, 밀, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','빕스 감바스','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','시즈널스프','난류, 우유, 대두, 밀, 돼지고기, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','얌블랙브레드','난류, 우유, 밀, 오징어','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','치킨 김치 라이스','우유, 대두, 밀, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SIDE','콘립 프라이즈','난류, 우유','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','그릴드치킨,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','쉬림프,잠발라야라이스','난류, 우유, 대두, 밀, 새우, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','스테이크,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('SINGLE PLATTER','폭립,잠발라야라이스','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','블랙 페퍼 채끝 스테이크','난류, 우유, 대두, 밀, 고등어, 돼지고기, 토마토, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','빕스 1997 스테이크','난류, 우유, 대두, 밀, 고등어, 돼지고기, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','빕스 안심 스테이크','난류, 우유, 대두, 토마토, 쇠고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','시그니처 바비큐 폭립','난류, 우유, 대두, 밀, 돼지고기, 토마토, 아황산류, 쇠고기, 닭고기, 조개류','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','폭립 프라이즈','난류, 우유, 대두, 밀, 돼지고기, 쇠고기','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('STEAK GRILL','학센 플래터','난류, 우유, 밀, 돼지고기, 오징어','우유');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('BAKERY','브리오슈바게트','난류, 우유, 대두, 밀','난류');
+Insert into VIPSCLONEDB.ALLERGYDELIVERY (DIVISION,MENU,INFO,MATERIAL) values ('BAKERY','브리오슈바게트','난류, 우유, 대두, 밀','난류');
+--------------------------------------------------------
+--  DDL for Index SYS_C008360
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "VIPSCLONEDB"."SYS_C008360" ON "VIPSCLONEDB"."ALLERGYDELIVERY" ("ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  Constraints for Table ALLERGYDELIVERY
+--------------------------------------------------------
+
+  ALTER TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" MODIFY ("ID" NOT NULL ENABLE);
+  ALTER TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" MODIFY ("MENU" NOT NULL ENABLE);
+  ALTER TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" MODIFY ("INFO" NOT NULL ENABLE);
+  ALTER TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" MODIFY ("MATERIAL" NOT NULL ENABLE);
+  ALTER TABLE "VIPSCLONEDB"."ALLERGYDELIVERY" ADD PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE;
