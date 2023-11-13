@@ -2,6 +2,7 @@ package com.project.vipsCloneCoding.imageUpload.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -31,8 +32,8 @@ public class ImageUploadService {
     try {
       if (!image.isEmpty()) {
         String filename = image.getOriginalFilename();
-        String directory =
-            "/Users/limjuhan/eclipse-workspace/git/Java4FirstProject/vipsCloneCodingLegacy/src/main/webapp/resources/images/Uploadfile/";
+        String directory = Paths.get("../").toAbsolutePath().toString()
+            + "/git/Java4FirstProject/vipsCloneCodingLegacy/src/main/webapp/resources/images/Uploadfile/";
         String filepath = directory + filename;
         File dest = new File(filepath);
         image.transferTo(dest);
