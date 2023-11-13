@@ -49,18 +49,11 @@ public class ImageUploadService {
   }
 
   public void deleteImage(int id) {
-    String sql = "SELECT image_path FROM image_table WHERE id = ?";
-    String filepath = jdbcTemplate.queryForObject(sql, new Object[] {id}, String.class);
-
-    if (filepath != null) {
-      try {
-        File file = new File(filepath);
-        if (file.exists() && file.delete()) {
-          jdbcTemplate.update("DELETE FROM image_table WHERE id = ?", id);
-        }
-      } catch (Exception e) {
-        e.printStackTrace();
-      }
+    try {
+      jdbcTemplate.update("DELETE FROM image_group_mapping WHERE image_id = ?", id);
+      jdbcTemplate.update("DELETE FROM image_table WHERE id = ?", id);
+    } catch (Exception e) {
+      e.printStackTrace();
     }
   }
 
