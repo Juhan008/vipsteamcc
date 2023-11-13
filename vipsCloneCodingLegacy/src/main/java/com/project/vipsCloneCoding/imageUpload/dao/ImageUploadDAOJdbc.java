@@ -69,15 +69,6 @@ public class ImageUploadDAOJdbc implements ImageUpoladDAO {
     this.jdbcTemplate = new JdbcTemplate(dataSource);
   }
 
-  public void createImageUploadTable() throws Exception {
-    jdbcTemplate
-        .update("CREATE TABLE image_table (" + "id NUMBER GENERATED AS IDENTITY PRIMARY KEY, "
-            + "image_name VARCHAR2(500), " + "image_path VARCHAR2(500), "
-            + "description1 VARCHAR2(500), " + "description2 VARCHAR2(500), "
-            + "description3 VARCHAR2(500), " + "description4 VARCHAR2(500), "
-            + "description5 VARCHAR2(500), " + "description6 VARCHAR2(500)" + ")");
-  }
-
 
   @Override
   public void saveImage(ImageUploadVO image) {
@@ -104,12 +95,19 @@ public class ImageUploadDAOJdbc implements ImageUpoladDAO {
   }
 
   public void deleteImage(int id) {
-    ImageUploadVO image = getImageById(id);
-    if (image != null && image.getImagePath() != null) {
-      File file = new File(image.getImagePath());
-      if (file.exists() && file.delete()) {
-        String sql = "DELETE FROM images WHERE id = ?";
-        jdbcTemplate.update(sql, id);
+    String sql = "SELECT image_path FROM image_table WHERE id = ?";
+    String filepath = jdbcTemplate.queryForObject(sql, new Object[] {id}, String.class);
+
+    if (filepath != null) {
+      try {
+        jdbcTemplate.update("DELETE FROM image_group_mapping WHERE image_id = ?", id);
+
+        File file = new File(filepath);
+        if (file.exists() && file.delete()) {
+          jdbcTemplate.update("DELETE FROM image_table WHERE id = ?", id);
+        }
+      } catch (Exception e) {
+        e.printStackTrace();
       }
     }
   }
