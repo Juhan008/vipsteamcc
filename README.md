@@ -1,5 +1,20 @@
-# develop
-개발용 브랜치입니다.
+# Java4FirstProject
+
+포트폴리오 : https://mabitlm.github.io/Portfolio/
+
+## 첫번째 프로젝트
+경일아카데미에서 진행한 팀 프로젝트
+
+기반 사이트 : https://www.ivips.co.kr:7002/main.asp
+
+배포 사이트 : https://vipsclonecoding.mabitlm.net/
+
+
+## 프로젝트 기간
+12/04 ~ 12/16
+
+## 적용 코딩 컨벤션
+eclipse-java-google-style
 
 ## 커밋메세지 규칙
 
