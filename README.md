@@ -1,13 +1,13 @@
 # Java4FirstProject
 
-포트폴리오 : https://mabitlm.github.io/Portfolio/
+포트폴리오 : https://juhan008.github.io/resume/
 
 ## 첫번째 프로젝트
 경일아카데미에서 진행한 팀 프로젝트
 
 기반 사이트 : https://www.ivips.co.kr:7002/main.asp
 
-배포 사이트 : https://vipsclonecoding.mabitlm.net/
+배포 사이트 : http://3.39.126.39/
 
 
 ## 프로젝트 기간
